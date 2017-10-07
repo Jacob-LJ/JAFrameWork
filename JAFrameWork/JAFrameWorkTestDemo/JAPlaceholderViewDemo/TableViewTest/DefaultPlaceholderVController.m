@@ -72,7 +72,7 @@ static NSString * const DefaultPlaceholderVCellID = @"DefaultPlaceholderVCell";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         static NSUInteger i = 0;
         if (i %2 == 0) {
-            for (NSInteger i = 0; i < arc4random()%10+1; i++) {
+            for (NSInteger i = 0; i < arc4random()%10 + 1; i++) {
                 [_dataArr addObject:[NSString stringWithFormat:@"Jacob Ramdon Test Data - %ld",i]];
             }
             NSLog(@"有 - 数据返回");
