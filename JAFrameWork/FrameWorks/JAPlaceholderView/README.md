@@ -29,7 +29,7 @@
 1. 在该分类中在 +load 方法对原类的 reloadData 方法进行 swizzle：
     - 影响：该分类中的+load 方法在文件被加载到 runtime 时候就被执行，即所有 tableview 都会被执行了 reloadData 方法的交换，也就是说以后所有 tableview 执行 reloadData 时候其实调用的都是自定义的方法。
     - 问题：全部都交换方法，影响的范围很大，怎样才可以只指定某个 tabelview 才执行分类方法？
-        - 解决办法1：可以将分类的+load 方法功能代码，放到子类化的JAPlaceholderTableView中，让想要 PlaceholderView 的就使用该子类。
+        - 解决办法1：可以将分类的+load 方法功能代码，放到子类化的JAPlaceholderTableView中，让想要 PlaceholderView 的就使用该子类。(这样的继承关系耦合度有点高啊~)
 
 
 
