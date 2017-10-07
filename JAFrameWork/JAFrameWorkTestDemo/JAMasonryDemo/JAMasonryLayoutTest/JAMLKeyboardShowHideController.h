@@ -1,5 +1,5 @@
 //
-//  JAMLKeyboardShowHide.h
+//  JAMLKeyboardShowHideController.h
 //  JAFrameWork
 //
 //  Created by Jacob_Liang on 2017/10/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JAMLKeyboardShowHide : UIViewController
+@interface JAMLKeyboardShowHideController : UIViewController
 
 @end

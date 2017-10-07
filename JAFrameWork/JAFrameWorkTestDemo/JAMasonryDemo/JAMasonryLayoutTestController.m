@@ -8,7 +8,7 @@
 
 #import "JAMasonryLayoutTestController.h"
 //vc
-#import "DefaultPlaceholderVController.h"
+#import "JAMLKeyboardShowHideController.h"
 
 static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
@@ -26,12 +26,13 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:JAMasonryLayoutTestCellID];
     
-    
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view); //所有边的布局
+    }];
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -51,7 +52,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     
     switch (indexPath.row) {
         case 0:
-            [self.navigationController pushViewController:[[DefaultPlaceholderVController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[JAMLKeyboardShowHideController alloc] init] animated:YES];
             break;
         case 1:
             [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];

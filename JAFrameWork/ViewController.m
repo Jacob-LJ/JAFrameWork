@@ -10,6 +10,7 @@
 
 //testDemo
 #import "JAPlaceholderViewTestController.h"
+#import "JAMasonryLayoutTestController.h"
 
 static NSString * const MainCellID = @"MainCell";
 
@@ -60,6 +61,10 @@ static NSString * const MainCellID = @"MainCell";
             [self.navigationController pushViewController:[[JAPlaceholderViewTestController alloc] init] animated:YES];
             break;
         }
+        case 1: {
+            [self.navigationController pushViewController:[[JAMasonryLayoutTestController alloc] init] animated:YES];
+            break;
+        }
             
         default:
             break;
@@ -71,6 +76,7 @@ static NSString * const MainCellID = @"MainCell";
     if (!_dataArray) {
         _dataArray = @[
                        @"JAPlaceholderViewTestController \ntableView 或 collectionView 的空状态占位视图",
+                       @"JAMasonryLayoutTestController \n masonry 布局 demo"
                        ];
     }
     return _dataArray;

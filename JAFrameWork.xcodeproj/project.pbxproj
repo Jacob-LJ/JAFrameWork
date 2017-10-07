@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */; };
-		16148FFC1F88AA74004B4EC8 /* JAMLKeyboardShowHide.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FFB1F88AA74004B4EC8 /* JAMLKeyboardShowHide.m */; };
+		161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
 		161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161B5A9E1F8250770062D34F /* UICollectionView+JAPlaceholderView.m */; };
@@ -32,9 +32,9 @@
 /* Begin PBXFileReference section */
 		16148FF61F888813004B4EC8 /* JAMasonryLayoutTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMasonryLayoutTestController.h; sourceTree = "<group>"; };
 		16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMasonryLayoutTestController.m; sourceTree = "<group>"; };
-		16148FFA1F88AA74004B4EC8 /* JAMLKeyboardShowHide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLKeyboardShowHide.h; sourceTree = "<group>"; };
-		16148FFB1F88AA74004B4EC8 /* JAMLKeyboardShowHide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLKeyboardShowHide.m; sourceTree = "<group>"; };
 		16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_JAFrameWork.pch; sourceTree = "<group>"; };
+		16148FFE1F88B111004B4EC8 /* JAMLKeyboardShowHideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLKeyboardShowHideController.h; sourceTree = "<group>"; };
+		16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLKeyboardShowHideController.m; sourceTree = "<group>"; };
 		161964611F8316F400B6D081 /* DefaultPlaceholderVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPlaceholderVController.h; sourceTree = "<group>"; };
 		161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPlaceholderVController.m; sourceTree = "<group>"; };
 		161964641F83812900B6D081 /* UITableView+testLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+testLoad.h"; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 		16148FF91F888888004B4EC8 /* JAMasonryLayoutTest */ = {
 			isa = PBXGroup;
 			children = (
-				16148FFA1F88AA74004B4EC8 /* JAMLKeyboardShowHide.h */,
-				16148FFB1F88AA74004B4EC8 /* JAMLKeyboardShowHide.m */,
+				16148FFE1F88B111004B4EC8 /* JAMLKeyboardShowHideController.h */,
+				16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */,
 			);
 			path = JAMasonryLayoutTest;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,
 				16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
@@ -380,7 +381,6 @@
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
-				16148FFC1F88AA74004B4EC8 /* JAMLKeyboardShowHide.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
 			);
