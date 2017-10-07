@@ -31,6 +31,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:JAMasonryLayoutTestCellID];
     
+    
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -68,9 +69,9 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[
-                       @"DefaultPlaceholder",
-                       @"CustomPlaceholder",
-                       @"MultiGroupTableView",
+                       @"1 keyboard show hide",
+                       @"2",
+                       @"3",
                        ];
     }
     return _dataArray;
