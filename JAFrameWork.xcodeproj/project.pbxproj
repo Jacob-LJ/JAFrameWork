@@ -25,6 +25,7 @@
 		16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84DF1F824B8000DE8F82 /* JAPlaceholderViewTestController.m */; };
 		16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84E31F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m */; };
 		16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84E61F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m */; };
+		2658D8E33B0BFEEF5DE18625 /* libPods-JAFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9779093145AA5E78DA62D25 /* libPods-JAFrameWork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,9 @@
 		16FD84E31F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JAPlaceholderViewSwizzling.m"; sourceTree = "<group>"; };
 		16FD84E51F824E3B00DE8F82 /* UITableView+JAPlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+JAPlaceholderView.h"; sourceTree = "<group>"; };
 		16FD84E61F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JAPlaceholderView.m"; sourceTree = "<group>"; };
+		C9779093145AA5E78DA62D25 /* libPods-JAFrameWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JAFrameWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69793E53ACA0951587B1010 /* Pods-JAFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFrameWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-JAFrameWork/Pods-JAFrameWork.release.xcconfig"; sourceTree = "<group>"; };
+		FB8CE4B1CC98128F46BF5D82 /* Pods-JAFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFrameWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAFrameWork/Pods-JAFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2658D8E33B0BFEEF5DE18625 /* libPods-JAFrameWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14C09FA47970E32F2332E411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB8CE4B1CC98128F46BF5D82 /* Pods-JAFrameWork.debug.xcconfig */,
+				D69793E53ACA0951587B1010 /* Pods-JAFrameWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		16148FF51F8887CB004B4EC8 /* JAMasonryDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +131,8 @@
 			children = (
 				16FD84B71F82403D00DE8F82 /* JAFrameWork */,
 				16FD84B61F82403D00DE8F82 /* Products */,
+				14C09FA47970E32F2332E411 /* Pods */,
+				AFDCDC743137A14F03B3FF12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +227,14 @@
 			path = JAPlaceholderViewCore;
 			sourceTree = "<group>";
 		};
+		AFDCDC743137A14F03B3FF12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9779093145AA5E78DA62D25 /* libPods-JAFrameWork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16FD84CB1F82403D00DE8F82 /* Build configuration list for PBXNativeTarget "JAFrameWork" */;
 			buildPhases = (
+				10F2DCCADA5E6FB0785FF48C /* [CP] Check Pods Manifest.lock */,
 				16FD84B11F82403D00DE8F82 /* Sources */,
 				16FD84B21F82403D00DE8F82 /* Frameworks */,
 				16FD84B31F82403D00DE8F82 /* Resources */,
+				E4791950388C70C0B1CD798E /* [CP] Embed Pods Frameworks */,
+				F808FB0E143F0F3413F662EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +305,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10F2DCCADA5E6FB0785FF48C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JAFrameWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4791950388C70C0B1CD798E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JAFrameWork/Pods-JAFrameWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F808FB0E143F0F3413F662EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JAFrameWork/Pods-JAFrameWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16FD84B11F82403D00DE8F82 /* Sources */ = {
@@ -370,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -419,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -428,6 +506,7 @@
 		};
 		16FD84CC1F82403D00DE8F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8CE4B1CC98128F46BF5D82 /* Pods-JAFrameWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +520,7 @@
 		};
 		16FD84CD1F82403D00DE8F82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69793E53ACA0951587B1010 /* Pods-JAFrameWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
