@@ -34,6 +34,7 @@
 		16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMasonryLayoutTestController.m; sourceTree = "<group>"; };
 		16148FFA1F88AA74004B4EC8 /* JAMLKeyboardShowHide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLKeyboardShowHide.h; sourceTree = "<group>"; };
 		16148FFB1F88AA74004B4EC8 /* JAMLKeyboardShowHide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLKeyboardShowHide.m; sourceTree = "<group>"; };
+		16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_JAFrameWork.pch; sourceTree = "<group>"; };
 		161964611F8316F400B6D081 /* DefaultPlaceholderVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPlaceholderVController.h; sourceTree = "<group>"; };
 		161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPlaceholderVController.m; sourceTree = "<group>"; };
 		161964641F83812900B6D081 /* UITableView+testLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+testLoad.h"; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 				16FD84C31F82403D00DE8F82 /* LaunchScreen.storyboard */,
 				16FD84C61F82403D00DE8F82 /* Info.plist */,
 				16FD84C71F82403D00DE8F82 /* main.m */,
+				16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */,
 			);
 			path = JAFrameWork;
 			sourceTree = "<group>";
@@ -516,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JAFrameWork/PrefixHeader_JAFrameWork.pch";
 				INFOPLIST_FILE = JAFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JacobSoftware.JAFrameWork;
@@ -530,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JAFrameWork/PrefixHeader_JAFrameWork.pch";
 				INFOPLIST_FILE = JAFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JacobSoftware.JAFrameWork;
