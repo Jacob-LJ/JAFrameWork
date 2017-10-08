@@ -11,6 +11,7 @@
 //testDemo
 #import "JAPlaceholderViewTestController.h"
 #import "JAMasonryLayoutTestController.h"
+#import "JALayoutDemoController.h"
 
 static NSString * const MainCellID = @"MainCell";
 
@@ -31,9 +32,9 @@ static NSString * const MainCellID = @"MainCell";
 - (void)setUpTableView {
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    tableView.rowHeight = 100;
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.rowHeight = 100;
     tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
     
@@ -65,7 +66,10 @@ static NSString * const MainCellID = @"MainCell";
             [self.navigationController pushViewController:[[JAMasonryLayoutTestController alloc] init] animated:YES];
             break;
         }
-            
+        case 2: {
+            [self.navigationController pushViewController:[[JALayoutDemoController alloc] init] animated:YES];
+            break;
+        }
         default:
             break;
     }
@@ -76,7 +80,8 @@ static NSString * const MainCellID = @"MainCell";
     if (!_dataArray) {
         _dataArray = @[
                        @"JAPlaceholderViewTestController \ntableView 或 collectionView 的空状态占位视图",
-                       @"JAMasonryLayoutTestController \n masonry 布局 demo"
+                       @"JAMasonryLayoutTestController \n masonry 布局 demo",
+                       @"JALayoutDemoController \n 布局相关知识点",
                        ];
     }
     return _dataArray;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */; };
 		161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */; };
+		161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161490031F892DDF004B4EC8 /* JALayoutDemoController.m */; };
+		161490081F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
 		161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161B5A9E1F8250770062D34F /* UICollectionView+JAPlaceholderView.m */; };
@@ -35,6 +37,10 @@
 		16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_JAFrameWork.pch; sourceTree = "<group>"; };
 		16148FFE1F88B111004B4EC8 /* JAMLKeyboardShowHideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLKeyboardShowHideController.h; sourceTree = "<group>"; };
 		16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLKeyboardShowHideController.m; sourceTree = "<group>"; };
+		161490021F892DDF004B4EC8 /* JALayoutDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALayoutDemoController.h; sourceTree = "<group>"; };
+		161490031F892DDF004B4EC8 /* JALayoutDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALayoutDemoController.m; sourceTree = "<group>"; };
+		161490061F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.h; sourceTree = "<group>"; };
+		161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m; sourceTree = "<group>"; };
 		161964611F8316F400B6D081 /* DefaultPlaceholderVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPlaceholderVController.h; sourceTree = "<group>"; };
 		161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPlaceholderVController.m; sourceTree = "<group>"; };
 		161964641F83812900B6D081 /* UITableView+testLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+testLoad.h"; sourceTree = "<group>"; };
@@ -110,6 +116,25 @@
 				16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */,
 			);
 			path = JAMasonryLayoutTest;
+			sourceTree = "<group>";
+		};
+		161490011F892DA9004B4EC8 /* JALayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				161490051F892DF0004B4EC8 /* JALayoutTest */,
+				161490021F892DDF004B4EC8 /* JALayoutDemoController.h */,
+				161490031F892DDF004B4EC8 /* JALayoutDemoController.m */,
+			);
+			path = JALayoutDemo;
+			sourceTree = "<group>";
+		};
+		161490051F892DF0004B4EC8 /* JALayoutTest */ = {
+			isa = PBXGroup;
+			children = (
+				161490061F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.h */,
+				161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */,
+			);
+			path = JALayoutTest;
 			sourceTree = "<group>";
 		};
 		161964601F8316F400B6D081 /* TableViewTest */ = {
@@ -204,6 +229,7 @@
 		16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				161490011F892DA9004B4EC8 /* JALayoutDemo */,
 				16148FF51F8887CB004B4EC8 /* JAMasonryDemo */,
 				16FD84DD1F824B5700DE8F82 /* JAPlaceholderViewDemo */,
 			);
@@ -379,6 +405,8 @@
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
+				161490081F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m in Sources */,
+				161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
