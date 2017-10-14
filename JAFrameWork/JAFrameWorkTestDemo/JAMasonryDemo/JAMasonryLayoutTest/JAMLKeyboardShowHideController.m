@@ -22,6 +22,7 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     _textField = [[UITextField alloc] init];
+    _textField.placeholder = @"点击我，触发弹出键盘";
     _textField.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:_textField];
@@ -54,7 +55,7 @@
     NSDictionary *userInfo = [notification userInfo];
     CGRect rect = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGFloat keyboardHeight = CGRectGetHeight(rect);
-    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+//    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     // 修改下边距约束
     [_textField mas_updateConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(-keyboardHeight);
@@ -71,7 +72,7 @@
     
     // 获得键盘动画时长
     NSDictionary *userInfo = [notification userInfo];
-    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+//    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     
     // 修改为以前的约束（距下边距0）
     [_textField mas_updateConstraints:^(MASConstraintMaker *make) {

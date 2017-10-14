@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1614715B1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614715A1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m */; };
+		1614715E1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614715D1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m */; };
+		161471611F91AA1B00630BDD /* JAMLSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471601F91AA1B00630BDD /* JAMLSudokuView.m */; };
+		161471641F91AA7B00630BDD /* JACommentFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471631F91AA7B00630BDD /* JACommentFrameModel.m */; };
+		161471671F91AA8E00630BDD /* JACommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471661F91AA8E00630BDD /* JACommentModel.m */; };
+		1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716B1F91AEAD00630BDD /* UIColor+Expand.m */; };
+		1614716F1F91B28100630BDD /* JAMLSudokuViewCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */; };
 		16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */; };
 		161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */; };
 		161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161490031F892DDF004B4EC8 /* JALayoutDemoController.m */; };
@@ -32,6 +39,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161471591F91A72C00630BDD /* JAMLCommentWith1to9PicsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLCommentWith1to9PicsController.h; sourceTree = "<group>"; };
+		1614715A1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLCommentWith1to9PicsController.m; sourceTree = "<group>"; };
+		1614715C1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLCommentWith1to9PicsCell.h; sourceTree = "<group>"; };
+		1614715D1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLCommentWith1to9PicsCell.m; sourceTree = "<group>"; };
+		1614715F1F91AA1B00630BDD /* JAMLSudokuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLSudokuView.h; sourceTree = "<group>"; };
+		161471601F91AA1B00630BDD /* JAMLSudokuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLSudokuView.m; sourceTree = "<group>"; };
+		161471621F91AA7B00630BDD /* JACommentFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACommentFrameModel.h; sourceTree = "<group>"; };
+		161471631F91AA7B00630BDD /* JACommentFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACommentFrameModel.m; sourceTree = "<group>"; };
+		161471651F91AA8E00630BDD /* JACommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACommentModel.h; sourceTree = "<group>"; };
+		161471661F91AA8E00630BDD /* JACommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACommentModel.m; sourceTree = "<group>"; };
+		1614716A1F91AEAD00630BDD /* UIColor+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expand.h"; sourceTree = "<group>"; };
+		1614716B1F91AEAD00630BDD /* UIColor+Expand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expand.m"; sourceTree = "<group>"; };
+		1614716D1F91B28100630BDD /* JAMLSudokuViewCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLSudokuViewCCell.h; sourceTree = "<group>"; };
+		1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLSudokuViewCCell.m; sourceTree = "<group>"; };
+		161471711F91B42D00630BDD /* LeeStarEvaluationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeStarEvaluationView.h; sourceTree = "<group>"; };
+		161471721F91B42D00630BDD /* LeeStarEvaluationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeStarEvaluationView.m; sourceTree = "<group>"; };
+		161471731F91B42D00630BDD /* star_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@2x.png"; sourceTree = "<group>"; };
+		161471741F91B42D00630BDD /* star_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@3x.png"; sourceTree = "<group>"; };
+		161471751F91B42D00630BDD /* star_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_sel@2x.png"; sourceTree = "<group>"; };
+		161471761F91B42D00630BDD /* star_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_sel@3x.png"; sourceTree = "<group>"; };
 		16148FF61F888813004B4EC8 /* JAMasonryLayoutTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMasonryLayoutTestController.h; sourceTree = "<group>"; };
 		16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMasonryLayoutTestController.m; sourceTree = "<group>"; };
 		16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_JAFrameWork.pch; sourceTree = "<group>"; };
@@ -99,6 +126,80 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		161471551F91A6A400630BDD /* JAMLCommentType */ = {
+			isa = PBXGroup;
+			children = (
+				161471561F91A6A400630BDD /* Controller */,
+				161471571F91A6A400630BDD /* Model */,
+				161471581F91A6A500630BDD /* View */,
+			);
+			path = JAMLCommentType;
+			sourceTree = "<group>";
+		};
+		161471561F91A6A400630BDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				161471591F91A72C00630BDD /* JAMLCommentWith1to9PicsController.h */,
+				1614715A1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		161471571F91A6A400630BDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				161471621F91AA7B00630BDD /* JACommentFrameModel.h */,
+				161471631F91AA7B00630BDD /* JACommentFrameModel.m */,
+				161471651F91AA8E00630BDD /* JACommentModel.h */,
+				161471661F91AA8E00630BDD /* JACommentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		161471581F91A6A500630BDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				161471701F91B42D00630BDD /* LeeStarEvaluationView */,
+				1614715C1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.h */,
+				1614715D1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m */,
+				1614715F1F91AA1B00630BDD /* JAMLSudokuView.h */,
+				161471601F91AA1B00630BDD /* JAMLSudokuView.m */,
+				1614716D1F91B28100630BDD /* JAMLSudokuViewCCell.h */,
+				1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		161471681F91AE2400630BDD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				161471691F91AE4500630BDD /* Category */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		161471691F91AE4500630BDD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1614716A1F91AEAD00630BDD /* UIColor+Expand.h */,
+				1614716B1F91AEAD00630BDD /* UIColor+Expand.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		161471701F91B42D00630BDD /* LeeStarEvaluationView */ = {
+			isa = PBXGroup;
+			children = (
+				161471711F91B42D00630BDD /* LeeStarEvaluationView.h */,
+				161471721F91B42D00630BDD /* LeeStarEvaluationView.m */,
+				161471731F91B42D00630BDD /* star_nor@2x.png */,
+				161471741F91B42D00630BDD /* star_nor@3x.png */,
+				161471751F91B42D00630BDD /* star_sel@2x.png */,
+				161471761F91B42D00630BDD /* star_sel@3x.png */,
+			);
+			path = LeeStarEvaluationView;
+			sourceTree = "<group>";
+		};
 		16148FF51F8887CB004B4EC8 /* JAMasonryDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +213,7 @@
 		16148FF91F888888004B4EC8 /* JAMasonryLayoutTest */ = {
 			isa = PBXGroup;
 			children = (
+				161471551F91A6A400630BDD /* JAMLCommentType */,
 				16148FFE1F88B111004B4EC8 /* JAMLKeyboardShowHideController.h */,
 				16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */,
 			);
@@ -178,6 +280,7 @@
 		16FD84B71F82403D00DE8F82 /* JAFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				161471681F91AE2400630BDD /* Util */,
 				16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */,
 				16FD84CE1F82406700DE8F82 /* FrameWorks */,
 				16FD84B81F82403D00DE8F82 /* AppDelegate.h */,
@@ -396,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */,
+				1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,
 				16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
@@ -404,12 +508,18 @@
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
+				161471671F91AA8E00630BDD /* JACommentModel.m in Sources */,
+				1614715E1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				161490081F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m in Sources */,
+				161471611F91AA1B00630BDD /* JAMLSudokuView.m in Sources */,
 				161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
+				1614716F1F91B28100630BDD /* JAMLSudokuViewCCell.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
+				1614715B1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m in Sources */,
+				161471641F91AA7B00630BDD /* JACommentFrameModel.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

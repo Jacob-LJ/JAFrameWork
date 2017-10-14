@@ -15,10 +15,52 @@
 
 #ifdef __OBJC__
 
+/**< import */
+#pragma mark - import
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
+//Lib
 #import <Masonry/Masonry.h>
+//Category
+#import "UIColor+Expand.h"
+
+/**< screen */
+#pragma mark - Screen
+
+#define JAScreenW [UIScreen mainScreen].bounds.size.width
+#define JAScreenH [UIScreen mainScreen].bounds.size.height
+
+/**< Weak objc */
+#pragma mark - Weak objc
+//weakSelf
+#define JAWeakSelf  __weak typeof(self) weakSelf = self;
+
+/**< Color */
+//rgb or a
+#define JARGBColor(r, g, b)         [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define JARGBAColor(r, g, b, a)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define JARandomColor               [UIColor colorWithRed:arc4random() % 256 / 256.0 green:arc4random() % 256 / 256.0 blue:arc4random() % 256 / 256.0 alpha:1]
+//hex color
+#define JAHexColor(HexString)       [UIColor colorWithHexString:HexString]
+#define JAHexColorA(HexString,a)    [UIColor colorWithHexString:HexString alpha:a]
+//default color
+#define kColor3333     [UIColor colorWithHexString:@"333333"]
+#define kColor6666     [UIColor colorWithHexString:@"666666"]
+#define kColor9999     [UIColor colorWithHexString:@"999999"]
+
+#define kColorCCCC     [UIColor colorWithHexString:@"cccccc"]
+#define kColorEEEE     [UIColor colorWithHexString:@"eeeeee"]
+#define kColorF6F6F6   [UIColor colorWithHexString:@"f6f6f6"]
+
+
+#define kColorFF4A2A   [UIColor colorWithHexString:@"ff4a2a"]
+#define kColorFF0000   [UIColor colorWithHexString:@"ff0000"]
+#define kColorFC694E   [UIColor colorWithHexString:@"fc694e"]
+
+#define kColor53C411   [UIColor colorWithHexString:@"53c411"]
+#define kColorFFD600   [UIColor colorWithHexString:@"ffd600"]
+#define kColorFFF5DF   [UIColor colorWithHexString:@"fff5df"]
+
 #endif
 
 
