@@ -13,8 +13,8 @@
 #import "JACommentFrameModel.h"
 #import "JACommentModel.h"
 
-#import "YYLabel.h"
-#import "NSAttributedString+YYText.h"
+#import <YYLabel.h>
+#import <NSAttributedString+YYText.h>
 
 @interface JAMLCommentWith1to9PicsCell ()
 

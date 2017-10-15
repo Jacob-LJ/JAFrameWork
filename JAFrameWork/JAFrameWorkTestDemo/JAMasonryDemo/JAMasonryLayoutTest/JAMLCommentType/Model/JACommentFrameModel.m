@@ -8,7 +8,7 @@
 
 #import "JACommentFrameModel.h"
 #import "JACommentModel.h"
-#import "YYLabel.h"
+#import <YYLabel.h>
 
 
 @interface JACommentFrameModel ()

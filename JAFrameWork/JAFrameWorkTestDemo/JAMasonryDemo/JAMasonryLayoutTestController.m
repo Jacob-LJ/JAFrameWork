@@ -9,6 +9,7 @@
 #import "JAMasonryLayoutTestController.h"
 //vc
 #import "JAMLKeyboardShowHideController.h"
+#import "JAMLCommentWith1to9PicsController.h"
 
 static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
@@ -26,6 +27,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
+    tableView.rowHeight = 100;
     [self.view addSubview:tableView];
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:JAMasonryLayoutTestCellID];
@@ -43,6 +45,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:JAMasonryLayoutTestCellID forIndexPath:indexPath];
     cell.textLabel.text = self.dataArray[indexPath.row];
+    cell.textLabel.numberOfLines = 0;
     return cell;
 }
 
@@ -55,7 +58,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
             [self.navigationController pushViewController:[[JAMLKeyboardShowHideController alloc] init] animated:YES];
             break;
         case 1:
-            [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[JAMLCommentWith1to9PicsController alloc] init] animated:YES];
             break;
         case 2:
             [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
@@ -71,7 +74,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     if (!_dataArray) {
         _dataArray = @[
                        @"1 keyboard show hide",
-                       @"2",
+                       @"2 JAMLCommentWith1to9PicsController \n  九宫格评论",
                        @"3",
                        ];
     }
