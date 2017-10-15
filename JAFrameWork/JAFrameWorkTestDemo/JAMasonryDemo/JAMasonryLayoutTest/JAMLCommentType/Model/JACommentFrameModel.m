@@ -8,7 +8,7 @@
 
 #import "JACommentFrameModel.h"
 #import "JACommentModel.h"
-#import <YYLabel.h>
+#import "YYLabel.h"
 
 
 @interface JACommentFrameModel ()
@@ -112,7 +112,7 @@
     self.contentLB.attributedText = text;
     [self.contentLB sizeToFit];
     
-    CGFloat contentH = self.contentLB.height;
+    CGFloat contentH = self.contentLB.frame.size.height;
     return contentH;
 }
 

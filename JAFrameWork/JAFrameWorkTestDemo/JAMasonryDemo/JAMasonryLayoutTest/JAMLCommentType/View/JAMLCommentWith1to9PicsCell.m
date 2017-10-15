@@ -9,10 +9,12 @@
 #import "JAMLCommentWith1to9PicsCell.h"
 
 #import "LeeStarEvaluationView.h"
-#import <YYLabel.h>
 #import "JAMLSudokuView.h"
 #import "JACommentFrameModel.h"
 #import "JACommentModel.h"
+
+#import "YYLabel.h"
+#import "NSAttributedString+YYText.h"
 
 @interface JAMLCommentWith1to9PicsCell ()
 
@@ -28,7 +30,7 @@
 @property (nonatomic, strong) JAMLSudokuView *sudokuView;
 @property (nonatomic, strong) UIView *bottomLineView;
 
-@property (nonatomic, strong) GTFirstFoodUserCommentFrameModel *frameModel;
+@property (nonatomic, strong) JACommentFrameModel *frameModel;
 
 
 @end
@@ -56,7 +58,7 @@
     //头像
     [self.avatarImageV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.equalTo(self.contentView).offset(kAvatarTopMargin);
-        make.width.height.equalTo(kAvatarWH);
+        make.width.height.mas_equalTo(kAvatarWH);
     }];
     
     //日期
@@ -69,7 +71,7 @@
     [self.verticalCenterNameLBStarViewContainerV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.avatarImageV.mas_right).offset(kImageVNameLBMargin);
         make.right.lessThanOrEqualTo(self.dateLB.mas_left).offset(-kLRMargin);
-        make.height.equalTo(self.nameLB.mas_height).offset(self.starView.height);
+        make.height.equalTo(self.nameLB.mas_height).offset(self.starView.frame.size.height);
         make.centerY.equalTo(self.avatarImageV.mas_centerY);
     }];
     //名字
@@ -84,12 +86,12 @@
         make.top.equalTo(self.nameLB.mas_bottom);
         make.left.equalTo(self.verticalCenterNameLBStarViewContainerV.mas_left);
         make.bottom.equalTo(self.verticalCenterNameLBStarViewContainerV.mas_bottom);
-        make.right.equalTo(self.verticalCenterNameLBStarViewContainerV.right);
+        make.right.equalTo(self.verticalCenterNameLBStarViewContainerV.mas_right);
     }];
     
     
     //正文内容
-    self.contentLB.preferredMaxLayoutWidth = (kScreenWidth - kAvatarWH - kLRMargin * 3);
+    self.contentLB.preferredMaxLayoutWidth = (JAScreenW - kAvatarWH - kLRMargin * 3);
     [self.contentLB setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
     [self.contentLB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.verticalCenterNameLBStarViewContainerV.mas_bottom).offset(kLRMargin);
@@ -110,7 +112,7 @@
         make.left.equalTo(self.contentView.mas_left).offset(kLRMargin);
         make.right.equalTo(self.contentView.mas_right).offset(-kLRMargin);
         make.bottom.equalTo(self.contentView.mas_bottom);
-        make.height.equalTo(1);
+        make.height.mas_equalTo(1);
     }];
     
 }
@@ -118,7 +120,7 @@
 #pragma mark - Private
 - (void)addSeeMoreButton {
     
-    kDefineWeakSelf;
+    JAWeakSelf
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"... 查看全文"];
     
     YYTextHighlight *hi = [[YYTextHighlight alloc] init];
@@ -131,20 +133,20 @@
     
     [text setColor:[UIColor colorWithHexString:@"#FF002D"] range:[text.string rangeOfString:@"查看全文"]];
     [text setTextHighlight:hi range:[text.string rangeOfString:@"查看全文"]];
-    text.font = kFontThinBigSize;
+    text.font = [UIFont systemFontOfSize:14];
     
     YYLabel *seeMore = [[YYLabel alloc] init];
     seeMore.attributedText = text;
     [seeMore sizeToFit];
     
-    NSAttributedString *truncationToken = [NSAttributedString attachmentStringWithContent:seeMore contentMode:UIViewContentModeCenter attachmentSize:seeMore.size alignToFont:text.font alignment:YYTextVerticalAlignmentCenter];
+    NSAttributedString *truncationToken = [NSAttributedString attachmentStringWithContent:seeMore contentMode:UIViewContentModeCenter attachmentSize:seeMore.frame.size alignToFont:text.font alignment:YYTextVerticalAlignmentCenter];
     self.contentLB.truncationToken = truncationToken;
 }
 
 #pragma mark - configModel
-- (void)configCellFrameModel:(GTFirstFoodUserCommentFrameModel *)frameModel {
+- (void)configCellFrameModel:(JACommentFrameModel *)frameModel {
     self.frameModel = frameModel;
-    GTFirstFoodUserCommentModel *commentModel = frameModel.model;
+    JACommentModel *commentModel = frameModel.model;
     
     //正文
     [self.contentLB setNumberOfLines:frameModel.isFoldUpContent ? 2 : 0];
@@ -153,8 +155,8 @@
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] init];
     NSString *contentStr = commentModel.content;
     [text appendAttributedString:[[NSAttributedString alloc] initWithString:contentStr attributes:@{
-                                                                                                    NSFontAttributeName : kFontThinBigSize,
-                                                                                                    NSForegroundColorAttributeName : kBackgoundColorMediumDaker,
+                                                                                                    NSFontAttributeName : [UIFont systemFontOfSize:14],
+                                                                                                    NSForegroundColorAttributeName : kColor6666,
                                                                                                     NSParagraphStyleAttributeName : style,
                                                                                                     }]];
     
@@ -182,9 +184,11 @@
 //头像
 - (UIImageView *)avatarImageV {
     if (!_avatarImageV) {
-        _avatarImageV = [[UIImageView alloc] initWithRoundingRectImageView];
-        //        _avatarImageV.backgroundColor = [UIColor purpleColor];
-        _avatarImageV.image = kImgWithName(@"test1");
+        _avatarImageV = [[UIImageView alloc] init];
+        _avatarImageV.layer.cornerRadius = kAvatarWH * 0.5;
+        _avatarImageV.clipsToBounds = YES;
+        _avatarImageV.backgroundColor = [UIColor purpleColor];
+//        _avatarImageV.image = kImgWithName(@"test1");
         [self.contentView addSubview:_avatarImageV];
     }
     return _avatarImageV;
@@ -222,8 +226,8 @@
     if (!_dateLB) {
         _dateLB = [[UILabel alloc] init];
         _dateLB.text = @"2017.5.7";
-        _dateLB.font = kFontThinSmallSize;
-        _dateLB.textColor = kBackgoundColorThinDaker;
+        _dateLB.font = [UIFont systemFontOfSize:12];
+        _dateLB.textColor = kColor9999;
         [self.contentView addSubview:_dateLB];
     }
     return _dateLB;
@@ -244,8 +248,8 @@
     if (!_nameLB) {
         _nameLB = [[UILabel alloc] init];
         _nameLB.text = @"我是昵称";
-        _nameLB.font = kFontMediumBigSize;
-        _nameLB.textColor = kBackgoundColorRegularDaker;
+        _nameLB.font = [UIFont systemFontOfSize:16];
+        _nameLB.textColor = kColor3333;
         [self.verticalCenterNameLBStarViewContainerV addSubview:_nameLB];
     }
     return _nameLB;
@@ -255,8 +259,8 @@
 - (YYLabel *)contentLB {
     if (!_contentLB) {
         _contentLB = [[YYLabel alloc] init];
-        _contentLB.font = kFontThinBigSize;
-        _contentLB.textColor = kBackgoundColorMediumDaker;
+        _contentLB.font = [UIFont systemFontOfSize:14];
+        _contentLB.textColor = kColor6666;
         _contentLB.numberOfLines = 2;
         [self.contentView addSubview:_contentLB];
     }
@@ -277,7 +281,7 @@
 - (UIView *)bottomLineView {
     if (!_bottomLineView) {
         _bottomLineView = [[UIView alloc] init];
-        _bottomLineView.backgroundColor = kBackgoundColorMediumGray;
+        _bottomLineView.backgroundColor = kColorEEEE;
         [self.contentView addSubview:_bottomLineView];
     }
     return _bottomLineView;

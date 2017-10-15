@@ -8,5 +8,6 @@ target 'JAFrameWork' do
   # Pods for JAFrameWork
 
 pod 'Masonry'
+pod 'YYKit'
 
 end

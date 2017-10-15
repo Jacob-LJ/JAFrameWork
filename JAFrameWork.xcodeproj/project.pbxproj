@@ -14,6 +14,7 @@
 		161471671F91AA8E00630BDD /* JACommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471661F91AA8E00630BDD /* JACommentModel.m */; };
 		1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716B1F91AEAD00630BDD /* UIColor+Expand.m */; };
 		1614716F1F91B28100630BDD /* JAMLSudokuViewCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */; };
+		1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471721F91B42D00630BDD /* LeeStarEvaluationView.m */; };
 		16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */; };
 		161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */; };
 		161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161490031F892DDF004B4EC8 /* JALayoutDemoController.m */; };
@@ -200,6 +201,13 @@
 			path = LeeStarEvaluationView;
 			sourceTree = "<group>";
 		};
+		161471771F91B4D800630BDD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		16148FF51F8887CB004B4EC8 /* JAMasonryDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +288,7 @@
 		16FD84B71F82403D00DE8F82 /* JAFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				161471771F91B4D800630BDD /* Lib */,
 				161471681F91AE2400630BDD /* Util */,
 				16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */,
 				16FD84CE1F82406700DE8F82 /* FrameWorks */,
@@ -498,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
 				161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */,
 				1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,

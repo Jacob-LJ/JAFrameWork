@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class GTFirstFoodUserCommentFrameModel;
+@class JACommentFrameModel;
 
 @interface JAMLSudokuView : UIView
 
 @property (nonatomic, copy) void(^clickSudokuImageBlock)(NSInteger index);
-@property (nonatomic, strong) GTFirstFoodUserCommentFrameModel *frameModel;
+@property (nonatomic, strong) JACommentFrameModel *frameModel;
 
 @end

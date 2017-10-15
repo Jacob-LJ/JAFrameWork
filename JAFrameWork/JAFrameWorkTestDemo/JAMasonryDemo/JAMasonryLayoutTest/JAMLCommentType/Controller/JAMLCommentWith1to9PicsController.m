@@ -83,8 +83,7 @@ static NSString * const JAMLCommentWith1to9PicsCellID = @"JAMLCommentWith1to9Pic
     JACommentFrameModel *frameModel = self.dataArray[indexPath.row];
     cell.foldOrNotBlock = ^{
         frameModel.foldUpContent = !frameModel.isFoldUpContent;
-        [weakSelf.tableView reloadRowAtIndexPath:indexPath withRowAnimation:UITableViewRowAnimationNone];
-        
+        [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     };
     cell.clickImageIndexBlock = ^(NSInteger index) {
         [weakSelf showBroswerViewWithIndex:index modelImageNum:frameModel.model.imageCount];
@@ -94,7 +93,7 @@ static NSString * const JAMLCommentWith1to9PicsCellID = @"JAMLCommentWith1to9Pic
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    GTFirstFoodUserCommentFrameModel *frameModel = self.dataArray[indexPath.row];
+    JACommentFrameModel *frameModel = self.dataArray[indexPath.row];
     return frameModel.cellHeight;
 }
 
@@ -153,7 +152,7 @@ static NSString * const JAMLCommentWith1to9PicsCellID = @"JAMLCommentWith1to9Pic
     //产生9个数字+三个随机字母
     NSMutableArray *array = [NSMutableArray array];
     for (NSInteger i =0; i<20; i++) {
-        JACommentFrameModel *commentModel = [[JACommentFrameModel alloc] init];
+        JACommentModel *commentModel = [[JACommentModel alloc] init];
         NSInteger state = (arc4random() % 3);
         switch (state) {
             case 0: {
@@ -174,14 +173,12 @@ static NSString * const JAMLCommentWith1to9PicsCellID = @"JAMLCommentWith1to9Pic
         }
         commentModel.imageCount = (arc4random() % 10);
         
-        GTFirstFoodUserCommentFrameModel *frameModel = [[GTFirstFoodUserCommentFrameModel alloc] init];
+        JACommentFrameModel *frameModel = [[JACommentFrameModel alloc] init];
         frameModel.model = commentModel;
         [array addObject:frameModel];
     }
     
     self.dataArray = [array copy];
 }
-
-@end
 
 @end
