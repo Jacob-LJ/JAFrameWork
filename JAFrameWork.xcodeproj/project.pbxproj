@@ -201,13 +201,6 @@
 			path = LeeStarEvaluationView;
 			sourceTree = "<group>";
 		};
-		161471771F91B4D800630BDD /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
 		16148FF51F8887CB004B4EC8 /* JAMasonryDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +238,26 @@
 				161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */,
 			);
 			path = JALayoutTest;
+			sourceTree = "<group>";
+		};
+		16186FB81F9AC6AA00D768C1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */,
+				16FD84C71F82403D00DE8F82 /* main.m */,
+				16FD84C61F82403D00DE8F82 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		16186FB91F9AC75800D768C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16FD84BE1F82403D00DE8F82 /* Main.storyboard */,
+				16FD84C11F82403D00DE8F82 /* Assets.xcassets */,
+				16FD84C31F82403D00DE8F82 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		161964601F8316F400B6D081 /* TableViewTest */ = {
@@ -288,20 +301,15 @@
 		16FD84B71F82403D00DE8F82 /* JAFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				161471771F91B4D800630BDD /* Lib */,
-				161471681F91AE2400630BDD /* Util */,
-				16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */,
-				16FD84CE1F82406700DE8F82 /* FrameWorks */,
 				16FD84B81F82403D00DE8F82 /* AppDelegate.h */,
 				16FD84B91F82403D00DE8F82 /* AppDelegate.m */,
 				16FD84BB1F82403D00DE8F82 /* ViewController.h */,
 				16FD84BC1F82403D00DE8F82 /* ViewController.m */,
-				16FD84BE1F82403D00DE8F82 /* Main.storyboard */,
-				16FD84C11F82403D00DE8F82 /* Assets.xcassets */,
-				16FD84C31F82403D00DE8F82 /* LaunchScreen.storyboard */,
-				16FD84C61F82403D00DE8F82 /* Info.plist */,
-				16FD84C71F82403D00DE8F82 /* main.m */,
-				16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */,
+				161471681F91AE2400630BDD /* Util */,
+				16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */,
+				16FD84CE1F82406700DE8F82 /* FrameWorks */,
+				16186FB81F9AC6AA00D768C1 /* SupportFiles */,
+				16186FB91F9AC75800D768C1 /* Resources */,
 			);
 			path = JAFrameWork;
 			sourceTree = "<group>";
