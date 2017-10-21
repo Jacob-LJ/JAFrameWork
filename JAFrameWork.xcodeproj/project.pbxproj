@@ -25,6 +25,12 @@
 		161B5AA41F82A14C0062D34F /* JADefaultPlaceholderView_NoneData.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D51F82455100DE8F82 /* JADefaultPlaceholderView_NoneData.png */; };
 		161B5AA51F82A1510062D34F /* JADefaultPlaceholderView_NetConnectError.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D41F8243E400DE8F82 /* JADefaultPlaceholderView_NetConnectError.png */; };
 		162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */; };
+		16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */; };
+		16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */; };
+		16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */; };
+		16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4FD1F9ACE670035BCC3 /* JALongPressMoveableTableView.m */; };
+		16FAE5021F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5011F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m */; };
+		16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5041F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m */; };
 		16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84B91F82403D00DE8F82 /* AppDelegate.m */; };
 		16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84BC1F82403D00DE8F82 /* ViewController.m */; };
 		16FD84C01F82403D00DE8F82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84BE1F82403D00DE8F82 /* Main.storyboard */; };
@@ -79,6 +85,18 @@
 		162696EC1F8474A00005E412 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		162696EE1F847EB90005E412 /* JAPlaceholderTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAPlaceholderTableView.h; sourceTree = "<group>"; };
 		162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAPlaceholderTableView.m; sourceTree = "<group>"; };
+		16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseTableViewController.h; sourceTree = "<group>"; };
+		16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseTableViewController.m; sourceTree = "<group>"; };
+		16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseViewController.h; sourceTree = "<group>"; };
+		16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseViewController.m; sourceTree = "<group>"; };
+		16FAE4F81F9ACCF50035BCC3 /* JABaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseNavigationController.h; sourceTree = "<group>"; };
+		16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseNavigationController.m; sourceTree = "<group>"; };
+		16FAE4FC1F9ACE670035BCC3 /* JALongPressMoveableTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALongPressMoveableTableView.h; sourceTree = "<group>"; };
+		16FAE4FD1F9ACE670035BCC3 /* JALongPressMoveableTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALongPressMoveableTableView.m; sourceTree = "<group>"; };
+		16FAE5001F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALongPressMoveableCollectionView.h; sourceTree = "<group>"; };
+		16FAE5011F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALongPressMoveableCollectionView.m; sourceTree = "<group>"; };
+		16FAE5031F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMoveableCollectonViewBaseCell.h; sourceTree = "<group>"; };
+		16FAE5041F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMoveableCollectonViewBaseCell.m; sourceTree = "<group>"; };
 		16FD84B51F82403D00DE8F82 /* JAFrameWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAFrameWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FD84B81F82403D00DE8F82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16FD84B91F82403D00DE8F82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,12 +189,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		161471681F91AE2400630BDD /* Util */ = {
+		161471681F91AE2400630BDD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				161471691F91AE4500630BDD /* Category */,
 			);
-			path = Util;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		161471691F91AE4500630BDD /* Category */ = {
@@ -256,8 +274,55 @@
 				16FD84BE1F82403D00DE8F82 /* Main.storyboard */,
 				16FD84C11F82403D00DE8F82 /* Assets.xcassets */,
 				16FD84C31F82403D00DE8F82 /* LaunchScreen.storyboard */,
+				16186FBB1F9ACA3900D768C1 /* Files */,
+				16186FBD1F9ACA4E00D768C1 /* Fonts */,
+				16186FBC1F9ACA4200D768C1 /* Images */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		16186FBA1F9AC96D00D768C1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				16FD84CF1F82414A00DE8F82 /* JAPlaceholderView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		16186FBB1F9ACA3900D768C1 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		16186FBC1F9ACA4200D768C1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		16186FBD1F9ACA4E00D768C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		16186FBE1F9ACB7100D768C1 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE4FF1F9ACFA20035BCC3 /* LongPressMoveableCollectionView */,
+				16FAE4FB1F9ACE120035BCC3 /* LongPressMoveableTableView */,
+				16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */,
+				16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */,
+				16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */,
+				16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */,
+				16FAE4F81F9ACCF50035BCC3 /* JABaseNavigationController.h */,
+				16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		161964601F8316F400B6D081 /* TableViewTest */ = {
@@ -278,6 +343,26 @@
 				162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */,
 			);
 			path = JASpecialClassPlaceholderView;
+			sourceTree = "<group>";
+		};
+		16FAE4FB1F9ACE120035BCC3 /* LongPressMoveableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE4FC1F9ACE670035BCC3 /* JALongPressMoveableTableView.h */,
+				16FAE4FD1F9ACE670035BCC3 /* JALongPressMoveableTableView.m */,
+			);
+			path = LongPressMoveableTableView;
+			sourceTree = "<group>";
+		};
+		16FAE4FF1F9ACFA20035BCC3 /* LongPressMoveableCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE5001F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.h */,
+				16FAE5011F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m */,
+				16FAE5031F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.h */,
+				16FAE5041F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m */,
+			);
+			path = LongPressMoveableCollectionView;
 			sourceTree = "<group>";
 		};
 		16FD84AC1F82403D00DE8F82 = {
@@ -305,21 +390,14 @@
 				16FD84B91F82403D00DE8F82 /* AppDelegate.m */,
 				16FD84BB1F82403D00DE8F82 /* ViewController.h */,
 				16FD84BC1F82403D00DE8F82 /* ViewController.m */,
-				161471681F91AE2400630BDD /* Util */,
-				16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */,
-				16FD84CE1F82406700DE8F82 /* FrameWorks */,
+				16FD84DC1F824B3B00DE8F82 /* Main */,
+				16186FBE1F9ACB7100D768C1 /* BaseClass */,
+				161471681F91AE2400630BDD /* Utils */,
+				16186FBA1F9AC96D00D768C1 /* ThirdParty */,
 				16186FB81F9AC6AA00D768C1 /* SupportFiles */,
 				16186FB91F9AC75800D768C1 /* Resources */,
 			);
 			path = JAFrameWork;
-			sourceTree = "<group>";
-		};
-		16FD84CE1F82406700DE8F82 /* FrameWorks */ = {
-			isa = PBXGroup;
-			children = (
-				16FD84CF1F82414A00DE8F82 /* JAPlaceholderView */,
-			);
-			path = FrameWorks;
 			sourceTree = "<group>";
 		};
 		16FD84CF1F82414A00DE8F82 /* JAPlaceholderView */ = {
@@ -346,14 +424,14 @@
 			path = JADefaultPics;
 			sourceTree = "<group>";
 		};
-		16FD84DC1F824B3B00DE8F82 /* JAFrameWorkTestDemo */ = {
+		16FD84DC1F824B3B00DE8F82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				161490011F892DA9004B4EC8 /* JALayoutDemo */,
 				16148FF51F8887CB004B4EC8 /* JAMasonryDemo */,
 				16FD84DD1F824B5700DE8F82 /* JAPlaceholderViewDemo */,
 			);
-			path = JAFrameWorkTestDemo;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		16FD84DD1F824B5700DE8F82 /* JAPlaceholderViewDemo */ = {
@@ -516,10 +594,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
+				16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */,
 				161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */,
 				1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,
 				16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */,
+				16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
 				16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */,
 				16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */,
@@ -528,17 +608,21 @@
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
 				161471671F91AA8E00630BDD /* JACommentModel.m in Sources */,
 				1614715E1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m in Sources */,
+				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				161490081F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m in Sources */,
 				161471611F91AA1B00630BDD /* JAMLSudokuView.m in Sources */,
+				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
 				161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				1614716F1F91B28100630BDD /* JAMLSudokuViewCCell.m in Sources */,
+				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
 				1614715B1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m in Sources */,
 				161471641F91AA7B00630BDD /* JACommentFrameModel.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
+				16FAE5021F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
