@@ -10,8 +10,8 @@
 
 //testDemo
 #import "JAPlaceholderViewTestController.h"
-#import "JAMasonryLayoutTestController.h"
-#import "JALayoutDemoController.h"
+#import "MasonryDemoMianController.h"
+#import "LayoutDemoMianController.h"
 
 static NSString * const MainCellID = @"MainCell";
 
@@ -25,6 +25,15 @@ static NSString * const MainCellID = @"MainCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Cities" ofType:@"json"]; //path 为 nil 时需要检查，Cities.json 文件是否已添加到 copy bundle resources内
+    NSError *error = nil;
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    
+    NSArray *citys = [NSJSONSerialization JSONObjectWithData:jsonData
+                                              options:NSJSONReadingAllowFragments
+                                                error:&error
+               ];
     
     [self setUpTableView];
 }
@@ -63,11 +72,11 @@ static NSString * const MainCellID = @"MainCell";
             break;
         }
         case 1: {
-            [self.navigationController pushViewController:[[JAMasonryLayoutTestController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[MasonryDemoMianController alloc] init] animated:YES];
             break;
         }
         case 2: {
-            [self.navigationController pushViewController:[[JALayoutDemoController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[LayoutDemoMianController alloc] init] animated:YES];
             break;
         }
         default:
@@ -80,8 +89,8 @@ static NSString * const MainCellID = @"MainCell";
     if (!_dataArray) {
         _dataArray = @[
                        @"JAPlaceholderViewTestController \ntableView 或 collectionView 的空状态占位视图",
-                       @"JAMasonryLayoutTestController \n masonry 布局 demo",
-                       @"JALayoutDemoController \n 布局相关知识点",
+                       @"MasonryDemoMianController \n masonry 布局 demo",
+                       @"LayoutDemoMianController \n 布局相关知识点",
                        ];
     }
     return _dataArray;

@@ -1,0 +1,109 @@
+[
+  {
+    "type":"hot",
+    "typeZh":"热门",
+    "musics":[
+      {"music": "default","name": "钢琴曲","author":"钢琴演奏曲","length":"53.289796"},
+      {"music": "peiniduguo", "name": "陪你度过漫长岁月","author":"陈奕迅","length":"132.250143"},
+      {"music": "qingfeideyi", "name": "情非得已","author":"庾澄庆","length":"172.870571"},
+      {"music": "sugar", "name": "sugar","author":"Maroon 5","length":"105.187286"},
+      {"music": "morning", "name": "morning","author":"卫兰","length":"116.681143"},
+      {"music": "You_are_my_sunshine", "name": "You Are My Sunshine","author":"张靓颖","length":"98.003571"},
+      {"music": "zamenjiehunba", "name": "咱们结婚吧","author":"齐晨","length":"67.317551"},
+      {"music": "love_paradise", "name": "Love Paradise","author":"陈慧琳","length":"53.786122"},
+      {"music": "could_this_be_love", "name": "Could This Be Love","author":"Victoria Acosta","length":"55.2224"},
+      {"music": "zhoujielunhunli", "name": "周杰伦婚礼音乐","author":"周杰伦","length":"61.64898"},
+      {"music": "amazing_grace", "name": "Amazing Grace","author":"钢琴演奏曲","length":"30.72"},
+      {"music": "huahaoyueyuan", "name": "花好月圆夜","author":"任贤齐,杨千嬅","length":"140.060714"}
+    ]
+  },
+  {
+    "type":"lyrics",
+    "typeZh":"抒情",
+    "musics":[
+      {"music": "yicijiuhao","name": "一次就好","author":"杨宗纬","length":"135.202"},
+      {"music": "i_love_you","name": "I love you","author":"Stewart Mac","length":"95.861571"},
+      {"music": "tiankongzhicheng","name": "天空之城","author":"钢琴演奏曲","length":"162.238714"},
+      {"music": "only_love", "name": "Only Love","author":"Trademark","length":"56.842449"},
+      {"music": "heartbeats","name":"heartbeats","author":"Amy Diamond","length":"107.982429"},
+      {"music": "rain","name": "记得(Rain)","author":"钢琴演奏曲","length":"60.700714"},
+      {"music": "diyigeqingchen","name":"第一个清晨","author":"王力宏","length":"146.095"},
+      {"music": "rabbit","name":"Rabbit","author":"Matt Duke","length":"127.443571"},
+      {"music": "tee_shirt","name":"Tee Shirt","author":"Birdy","length":"79.613429"},
+      {"music": "wedding_in_dream","name": "梦中的婚礼","author":"钢琴演奏曲","length":"87.319571"},
+      {"music": "proud_of_you","name": "Proud of You","author":"冯曦妤","length":"125.432143"}
+    ]
+  },
+  {
+    "type":"popular",
+    "typeZh":"流行",
+    "musics":[
+      {"music": "xiaoxingyun", "name": "小幸运","author":"金岐玟","length":"150.065571"},
+      {"music": "the_owl_moans_low", "name": "The Owl Moans Low","author":"Lonely Drifter Karen","length":"64.514571"},
+      {"music": "marry_me", "name": "今天你要嫁给我","author":"蔡依林 陶喆","length":"63.313"},
+      {"music": "xiangyiweiming", "name": "相依为命","author":"陈小春","length":"95.365286"},
+      {"music": "my_heart_will_go_on", "name": "My Heart will go on","author":"Celine Dion","length":"70.635102"},
+      {"music": "she", "name": "She","author":"Groove Coverage","length":"63.313"},
+      {"music": "beautiful_in_white", "name": "Beautiful in White","author":"Shane（Westlife）","length":"108.922714"},
+      {"music": "dont_tell_me_its_over","name": "Don't Tell Me It's Over","author":"Deep Side","length":"121.122"},
+      {"music": "rabbit","name":"Rabbit","author":"Matt Duke","length":"127.443571"},
+      {"music": "tee_shirt","name":"Tee Shirt","author":"Birdy","length":"79.613429"},
+      {"music": "wedding_in_dream","name": "梦中的婚礼","author":"钢琴演奏曲","length":"87.319571"},
+      {"music": "marry_you", "name": "Marry You","author":"Bruno Mars","length":"63.921"},
+      {"music": "truly_madly_deeply", "name": "Truly Madly Deeply","author":"Savage Garden","length":"58.122"},
+      {"music": "zaiyiqi", "name": "在一起","author":"钟欣桐 / 胡彦斌","length":"61.518367"},
+      {"music": "tiantiande", "name": "甜甜的","author":"周杰伦","length":"68.436"},
+      {"music": "aihenjiandan", "name": "爱很简单（陶喆）","author":"陶喆","length":"54.517551"},
+      {"music": "important_decision", "name": "最重要的决定","author":"范玮琪","length":"51.748571"},
+      {"music": "zhongyudengdaoni", "name": "终于等到你","author":"张靓颖","length":"63.6555"},
+      {"music": "my_love","name": "My Love","author":"Westlife","length":"129.559571"},
+      {"music": "time_flies","name": "Time Flies","author":"Taj Jackson","length":"80.632143"},
+      {"music": "baby_i_love_you","name":"Baby I Love You","author":"Tiffany Alvord","length":"88.286"},
+      {"music": "xiaoqingge","name":"小情歌","author":"苏打绿","length":"91.499143"},
+      {"music": "tebiederen","name":"特别的人","author":"方大同","length":"92.779143"},
+      {"music": "nothings_gonna_change_my_love_for_you","name":"Nothing's Gonna Change","author":"方大同","length":"77.523571"},
+      {"music": "sometimes_when_we_touch","name":"Sometimes When We Touch","author":"Olivia Ong","length":"135.646"},
+      {"music": "stay_here_forever","name":"Stay Here Forever","author":"Jewel","length":"123.107286"},
+      {"music": "everytime","name":"Everytime","author":"Chen / Punch","length":"119.424"},
+      {"music": "duoxingyun","name":"多幸运","author":"韩安旭","length":"159.913857"},
+      {"music": "gaobaiqiqiu","name":"告白气球","author":"Jay","length":"112.679229"}
+    ]
+  },
+  {
+    "type":"rhythm",
+    "typeZh":"节奏",
+    "musics":[
+      {"music": "flowerdance", "name": "Flower Dance","author":"钢琴演奏曲","length":"38.243265"},
+      {"music": "valentine","name": "Valentine","author":"钢琴演奏曲","length":"104.873857"},
+      {"music": "nothing_on_you","name":"Nothing On You","author":"Jason Chen","length":"59.969286"},
+      {"music": "you_are_not_alone","name":"You Are Not Alone","author":"Shayne Ward","length":"75.120286"},
+      {"music": "lcz_my_love","name":"My Love(李承哲)","author":"李承哲","length":"120.651714"},
+      {"music": "just_the_way_you_are","name":"Just The Way You Are","author":"Bruno Mars","length":"138.624"}
+    ]
+  },
+  {
+    "type":"light",
+    "typeZh":"轻快",
+    "musics":[
+      {"music": "love_story","name": "Love Story","author":"Taylor Swift","length":"50.565286"},
+      {"music": "everybody", "name": "Everybody","author":"Ingrid Michaelson","length":"39.758367"},
+      {"music": "rising_girl", "name": "Rising Girl","author":"Rising Girl乐队","length":"48.770612"},
+      {"music": "maybe_i_love_you","name": "Maybe I Love You","author":"Lenka","length":"64.540714"},
+      {"music": "marry_me_train","name":"Marry Me(Train)","author":"Train","length":"129.115429"},
+      {"music": "valentine_kina","name":"Valentine(Kina Grannis)","author":"Kina Grannis","length":"147.845286"},
+      {"music": "touch_love","name":"Touch Love","author":"尹美莱","length":"131.936714"},
+      {"music": "wedding_march","name":"Wedding March(Q/indivi)","author":"Q/indivi","length":"140.609286"}
+    ]
+  },
+  {
+    "type":"elegant",
+    "typeZh":"优雅",
+    "musics":[
+      {"music": "summer_air", "name": "夏日香气","author":"钢琴演奏曲","length":"47.725714"},
+      {"music": "close_to_you","name": "Close to You","author":"The Carpenters","length":"104.586429"},
+      {"music": "the_rose","name":"The Rose","author":"手嶌葵","length":"138.049286"},
+      {"music": "first_kiss","name":"Fisrt Kiss","author":"Chante Moore","length":"166.339857"},
+      {"music": "lets_start_from_here","name":"Let's Start From Here","author":"王若琳","length":"122.898286"}
+    ]
+  }
+]

@@ -7,18 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1614715B1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614715A1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m */; };
-		1614715E1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614715D1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m */; };
-		161471611F91AA1B00630BDD /* JAMLSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471601F91AA1B00630BDD /* JAMLSudokuView.m */; };
-		161471641F91AA7B00630BDD /* JACommentFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471631F91AA7B00630BDD /* JACommentFrameModel.m */; };
-		161471671F91AA8E00630BDD /* JACommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471661F91AA8E00630BDD /* JACommentModel.m */; };
 		1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716B1F91AEAD00630BDD /* UIColor+Expand.m */; };
-		1614716F1F91B28100630BDD /* JAMLSudokuViewCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */; };
 		1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471721F91B42D00630BDD /* LeeStarEvaluationView.m */; };
-		16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */; };
-		161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */; };
-		161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161490031F892DDF004B4EC8 /* JALayoutDemoController.m */; };
-		161490081F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
 		161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161B5A9E1F8250770062D34F /* UICollectionView+JAPlaceholderView.m */; };
@@ -31,6 +21,20 @@
 		16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4FD1F9ACE670035BCC3 /* JALongPressMoveableTableView.m */; };
 		16FAE5021F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5011F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m */; };
 		16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5041F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m */; };
+		16FAE5111F9ADA230035BCC3 /* JANotifation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5101F9ADA230035BCC3 /* JANotifation.m */; };
+		16FAE5181F9AE1FD0035BCC3 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 16FAE5171F9AE1240035BCC3 /* Cities.json */; };
+		16FAE5191F9AE2070035BCC3 /* musicList.json in Resources */ = {isa = PBXBuildFile; fileRef = 16FAE5141F9ADF900035BCC3 /* musicList.json */; };
+		16FAE51A1F9AE21D0035BCC3 /* EmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16FAE5131F9ADF900035BCC3 /* EmojisList.plist */; };
+		16FAE5201F9AE6690035BCC3 /* LayoutDemoMianController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE51F1F9AE6690035BCC3 /* LayoutDemoMianController.m */; };
+		16FAE5231F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5221F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.m */; };
+		16FAE5261F9AEBB20035BCC3 /* MasonryDemoMianController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */; };
+		16FAE5291F9AEC490035BCC3 /* MTKeyboardShowHideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5281F9AEC490035BCC3 /* MTKeyboardShowHideController.m */; };
+		16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE52E1F9AED460035BCC3 /* CTComment9PicsController.m */; };
+		16FAE5321F9AEDBA0035BCC3 /* CTCommentFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5311F9AEDBA0035BCC3 /* CTCommentFrameModel.m */; };
+		16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5341F9AEDCA0035BCC3 /* CTCommentModel.m */; };
+		16FAE5381F9AF0960035BCC3 /* CT9PicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE5371F9AF0960035BCC3 /* CT9PicsCell.m */; };
+		16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE53B1F9AF2200035BCC3 /* CTSudokuView.m */; };
+		16FAE53F1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE53E1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m */; };
 		16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84B91F82403D00DE8F82 /* AppDelegate.m */; };
 		16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD84BC1F82403D00DE8F82 /* ViewController.m */; };
 		16FD84C01F82403D00DE8F82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84BE1F82403D00DE8F82 /* Main.storyboard */; };
@@ -46,35 +50,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		161471591F91A72C00630BDD /* JAMLCommentWith1to9PicsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLCommentWith1to9PicsController.h; sourceTree = "<group>"; };
-		1614715A1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLCommentWith1to9PicsController.m; sourceTree = "<group>"; };
-		1614715C1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLCommentWith1to9PicsCell.h; sourceTree = "<group>"; };
-		1614715D1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLCommentWith1to9PicsCell.m; sourceTree = "<group>"; };
-		1614715F1F91AA1B00630BDD /* JAMLSudokuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLSudokuView.h; sourceTree = "<group>"; };
-		161471601F91AA1B00630BDD /* JAMLSudokuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLSudokuView.m; sourceTree = "<group>"; };
-		161471621F91AA7B00630BDD /* JACommentFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACommentFrameModel.h; sourceTree = "<group>"; };
-		161471631F91AA7B00630BDD /* JACommentFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACommentFrameModel.m; sourceTree = "<group>"; };
-		161471651F91AA8E00630BDD /* JACommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACommentModel.h; sourceTree = "<group>"; };
-		161471661F91AA8E00630BDD /* JACommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACommentModel.m; sourceTree = "<group>"; };
 		1614716A1F91AEAD00630BDD /* UIColor+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expand.h"; sourceTree = "<group>"; };
 		1614716B1F91AEAD00630BDD /* UIColor+Expand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expand.m"; sourceTree = "<group>"; };
-		1614716D1F91B28100630BDD /* JAMLSudokuViewCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLSudokuViewCCell.h; sourceTree = "<group>"; };
-		1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLSudokuViewCCell.m; sourceTree = "<group>"; };
 		161471711F91B42D00630BDD /* LeeStarEvaluationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeStarEvaluationView.h; sourceTree = "<group>"; };
 		161471721F91B42D00630BDD /* LeeStarEvaluationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeStarEvaluationView.m; sourceTree = "<group>"; };
 		161471731F91B42D00630BDD /* star_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@2x.png"; sourceTree = "<group>"; };
 		161471741F91B42D00630BDD /* star_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@3x.png"; sourceTree = "<group>"; };
 		161471751F91B42D00630BDD /* star_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_sel@2x.png"; sourceTree = "<group>"; };
 		161471761F91B42D00630BDD /* star_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_sel@3x.png"; sourceTree = "<group>"; };
-		16148FF61F888813004B4EC8 /* JAMasonryLayoutTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMasonryLayoutTestController.h; sourceTree = "<group>"; };
-		16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMasonryLayoutTestController.m; sourceTree = "<group>"; };
 		16148FFD1F88AE1B004B4EC8 /* PrefixHeader_JAFrameWork.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_JAFrameWork.pch; sourceTree = "<group>"; };
-		16148FFE1F88B111004B4EC8 /* JAMLKeyboardShowHideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMLKeyboardShowHideController.h; sourceTree = "<group>"; };
-		16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMLKeyboardShowHideController.m; sourceTree = "<group>"; };
-		161490021F892DDF004B4EC8 /* JALayoutDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALayoutDemoController.h; sourceTree = "<group>"; };
-		161490031F892DDF004B4EC8 /* JALayoutDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALayoutDemoController.m; sourceTree = "<group>"; };
-		161490061F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.h; sourceTree = "<group>"; };
-		161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m; sourceTree = "<group>"; };
 		161964611F8316F400B6D081 /* DefaultPlaceholderVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPlaceholderVController.h; sourceTree = "<group>"; };
 		161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPlaceholderVController.m; sourceTree = "<group>"; };
 		161964641F83812900B6D081 /* UITableView+testLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+testLoad.h"; sourceTree = "<group>"; };
@@ -97,6 +81,38 @@
 		16FAE5011F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALongPressMoveableCollectionView.m; sourceTree = "<group>"; };
 		16FAE5031F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMoveableCollectonViewBaseCell.h; sourceTree = "<group>"; };
 		16FAE5041F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMoveableCollectonViewBaseCell.m; sourceTree = "<group>"; };
+		16FAE50A1F9AD6DF0035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE50B1F9AD71E0035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE50C1F9AD75E0035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE50D1F9AD7D70035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE50E1F9AD8220035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE50F1F9ADA230035BCC3 /* JANotifation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JANotifation.h; sourceTree = "<group>"; };
+		16FAE5101F9ADA230035BCC3 /* JANotifation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JANotifation.m; sourceTree = "<group>"; };
+		16FAE5121F9ADF1D0035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE5131F9ADF900035BCC3 /* EmojisList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EmojisList.plist; sourceTree = "<group>"; };
+		16FAE5141F9ADF900035BCC3 /* musicList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = musicList.json; sourceTree = "<group>"; };
+		16FAE5161F9ADFB30035BCC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16FAE5171F9AE1240035BCC3 /* Cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
+		16FAE51E1F9AE6690035BCC3 /* LayoutDemoMianController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutDemoMianController.h; sourceTree = "<group>"; };
+		16FAE51F1F9AE6690035BCC3 /* LayoutDemoMianController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutDemoMianController.m; sourceTree = "<group>"; };
+		16FAE5211F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTranslatesAutoresizingMaskController.h; sourceTree = "<group>"; };
+		16FAE5221F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTranslatesAutoresizingMaskController.m; sourceTree = "<group>"; };
+		16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryDemoMianController.h; sourceTree = "<group>"; };
+		16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryDemoMianController.m; sourceTree = "<group>"; };
+		16FAE5271F9AEC490035BCC3 /* MTKeyboardShowHideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKeyboardShowHideController.h; sourceTree = "<group>"; };
+		16FAE5281F9AEC490035BCC3 /* MTKeyboardShowHideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTKeyboardShowHideController.m; sourceTree = "<group>"; };
+		16FAE52D1F9AED460035BCC3 /* CTComment9PicsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTComment9PicsController.h; sourceTree = "<group>"; };
+		16FAE52E1F9AED460035BCC3 /* CTComment9PicsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTComment9PicsController.m; sourceTree = "<group>"; };
+		16FAE5301F9AEDBA0035BCC3 /* CTCommentFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCommentFrameModel.h; sourceTree = "<group>"; };
+		16FAE5311F9AEDBA0035BCC3 /* CTCommentFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCommentFrameModel.m; sourceTree = "<group>"; };
+		16FAE5331F9AEDCA0035BCC3 /* CTCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCommentModel.h; sourceTree = "<group>"; };
+		16FAE5341F9AEDCA0035BCC3 /* CTCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTCommentModel.m; sourceTree = "<group>"; };
+		16FAE5361F9AF0960035BCC3 /* CT9PicsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CT9PicsCell.h; sourceTree = "<group>"; };
+		16FAE5371F9AF0960035BCC3 /* CT9PicsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CT9PicsCell.m; sourceTree = "<group>"; };
+		16FAE53A1F9AF2200035BCC3 /* CTSudokuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTSudokuView.h; sourceTree = "<group>"; };
+		16FAE53B1F9AF2200035BCC3 /* CTSudokuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTSudokuView.m; sourceTree = "<group>"; };
+		16FAE53D1F9AF2AC0035BCC3 /* CTSudokuViewCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTSudokuViewCCell.h; sourceTree = "<group>"; };
+		16FAE53E1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTSudokuViewCCell.m; sourceTree = "<group>"; };
 		16FD84B51F82403D00DE8F82 /* JAFrameWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAFrameWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FD84B81F82403D00DE8F82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16FD84B91F82403D00DE8F82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,21 +161,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		161471551F91A6A400630BDD /* JAMLCommentType */ = {
+		161471551F91A6A400630BDD /* CommentTypeTest */ = {
 			isa = PBXGroup;
 			children = (
 				161471561F91A6A400630BDD /* Controller */,
 				161471571F91A6A400630BDD /* Model */,
 				161471581F91A6A500630BDD /* View */,
 			);
-			path = JAMLCommentType;
+			path = CommentTypeTest;
 			sourceTree = "<group>";
 		};
 		161471561F91A6A400630BDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				161471591F91A72C00630BDD /* JAMLCommentWith1to9PicsController.h */,
-				1614715A1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m */,
+				16FAE52D1F9AED460035BCC3 /* CTComment9PicsController.h */,
+				16FAE52E1F9AED460035BCC3 /* CTComment9PicsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,10 +183,10 @@
 		161471571F91A6A400630BDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				161471621F91AA7B00630BDD /* JACommentFrameModel.h */,
-				161471631F91AA7B00630BDD /* JACommentFrameModel.m */,
-				161471651F91AA8E00630BDD /* JACommentModel.h */,
-				161471661F91AA8E00630BDD /* JACommentModel.m */,
+				16FAE5301F9AEDBA0035BCC3 /* CTCommentFrameModel.h */,
+				16FAE5311F9AEDBA0035BCC3 /* CTCommentFrameModel.m */,
+				16FAE5331F9AEDCA0035BCC3 /* CTCommentModel.h */,
+				16FAE5341F9AEDCA0035BCC3 /* CTCommentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,13 +194,10 @@
 		161471581F91A6A500630BDD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				16FAE5361F9AF0960035BCC3 /* CT9PicsCell.h */,
+				16FAE5371F9AF0960035BCC3 /* CT9PicsCell.m */,
+				16FAE5391F9AF1B40035BCC3 /* SudokuView */,
 				161471701F91B42D00630BDD /* LeeStarEvaluationView */,
-				1614715C1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.h */,
-				1614715D1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m */,
-				1614715F1F91AA1B00630BDD /* JAMLSudokuView.h */,
-				161471601F91AA1B00630BDD /* JAMLSudokuView.m */,
-				1614716D1F91B28100630BDD /* JAMLSudokuViewCCell.h */,
-				1614716E1F91B28100630BDD /* JAMLSudokuViewCCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +205,8 @@
 		161471681F91AE2400630BDD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				16FAE50D1F9AD7D70035BCC3 /* README.md */,
+				16FAE5061F9AD61B0035BCC3 /* Application */,
 				161471691F91AE4500630BDD /* Category */,
 			);
 			path = Utils;
@@ -219,43 +234,43 @@
 			path = LeeStarEvaluationView;
 			sourceTree = "<group>";
 		};
-		16148FF51F8887CB004B4EC8 /* JAMasonryDemo */ = {
+		16148FF51F8887CB004B4EC8 /* MasonryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				16148FF91F888888004B4EC8 /* JAMasonryLayoutTest */,
-				16148FF61F888813004B4EC8 /* JAMasonryLayoutTestController.h */,
-				16148FF71F888813004B4EC8 /* JAMasonryLayoutTestController.m */,
+				16148FF91F888888004B4EC8 /* MasonryTest */,
+				16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */,
+				16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */,
 			);
-			path = JAMasonryDemo;
+			path = MasonryDemo;
 			sourceTree = "<group>";
 		};
-		16148FF91F888888004B4EC8 /* JAMasonryLayoutTest */ = {
+		16148FF91F888888004B4EC8 /* MasonryTest */ = {
 			isa = PBXGroup;
 			children = (
-				161471551F91A6A400630BDD /* JAMLCommentType */,
-				16148FFE1F88B111004B4EC8 /* JAMLKeyboardShowHideController.h */,
-				16148FFF1F88B111004B4EC8 /* JAMLKeyboardShowHideController.m */,
+				161471551F91A6A400630BDD /* CommentTypeTest */,
+				16FAE5271F9AEC490035BCC3 /* MTKeyboardShowHideController.h */,
+				16FAE5281F9AEC490035BCC3 /* MTKeyboardShowHideController.m */,
 			);
-			path = JAMasonryLayoutTest;
+			path = MasonryTest;
 			sourceTree = "<group>";
 		};
-		161490011F892DA9004B4EC8 /* JALayoutDemo */ = {
+		161490011F892DA9004B4EC8 /* LayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				161490051F892DF0004B4EC8 /* JALayoutTest */,
-				161490021F892DDF004B4EC8 /* JALayoutDemoController.h */,
-				161490031F892DDF004B4EC8 /* JALayoutDemoController.m */,
+				16FAE51E1F9AE6690035BCC3 /* LayoutDemoMianController.h */,
+				16FAE51F1F9AE6690035BCC3 /* LayoutDemoMianController.m */,
+				161490051F892DF0004B4EC8 /* TranslatesAutoresizingMask */,
 			);
-			path = JALayoutDemo;
+			path = LayoutDemo;
 			sourceTree = "<group>";
 		};
-		161490051F892DF0004B4EC8 /* JALayoutTest */ = {
+		161490051F892DF0004B4EC8 /* TranslatesAutoresizingMask */ = {
 			isa = PBXGroup;
 			children = (
-				161490061F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.h */,
-				161490071F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m */,
+				16FAE5211F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.h */,
+				16FAE5221F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.m */,
 			);
-			path = JALayoutTest;
+			path = TranslatesAutoresizingMask;
 			sourceTree = "<group>";
 		};
 		16186FB81F9AC6AA00D768C1 /* SupportFiles */ = {
@@ -284,6 +299,7 @@
 		16186FBA1F9AC96D00D768C1 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				16FAE5161F9ADFB30035BCC3 /* README.md */,
 				16FD84CF1F82414A00DE8F82 /* JAPlaceholderView */,
 			);
 			path = ThirdParty;
@@ -292,6 +308,10 @@
 		16186FBB1F9ACA3900D768C1 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				16FAE5121F9ADF1D0035BCC3 /* README.md */,
+				16FAE5171F9AE1240035BCC3 /* Cities.json */,
+				16FAE5131F9ADF900035BCC3 /* EmojisList.plist */,
+				16FAE5141F9ADF900035BCC3 /* musicList.json */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -365,9 +385,57 @@
 			path = LongPressMoveableCollectionView;
 			sourceTree = "<group>";
 		};
+		16FAE5061F9AD61B0035BCC3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE5091F9AD6820035BCC3 /* Configure */,
+				16FAE5081F9AD6740035BCC3 /* Notification */,
+				16FAE5071F9AD64C0035BCC3 /* Constant */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		16FAE5071F9AD64C0035BCC3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE50C1F9AD75E0035BCC3 /* README.md */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		16FAE5081F9AD6740035BCC3 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE50B1F9AD71E0035BCC3 /* README.md */,
+				16FAE50F1F9ADA230035BCC3 /* JANotifation.h */,
+				16FAE5101F9ADA230035BCC3 /* JANotifation.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		16FAE5091F9AD6820035BCC3 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE50A1F9AD6DF0035BCC3 /* README.md */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		16FAE5391F9AF1B40035BCC3 /* SudokuView */ = {
+			isa = PBXGroup;
+			children = (
+				16FAE53A1F9AF2200035BCC3 /* CTSudokuView.h */,
+				16FAE53B1F9AF2200035BCC3 /* CTSudokuView.m */,
+				16FAE53D1F9AF2AC0035BCC3 /* CTSudokuViewCCell.h */,
+				16FAE53E1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m */,
+			);
+			path = SudokuView;
+			sourceTree = "<group>";
+		};
 		16FD84AC1F82403D00DE8F82 = {
 			isa = PBXGroup;
 			children = (
+				16FAE50E1F9AD8220035BCC3 /* README.md */,
 				16FD84B71F82403D00DE8F82 /* JAFrameWork */,
 				16FD84B61F82403D00DE8F82 /* Products */,
 				14C09FA47970E32F2332E411 /* Pods */,
@@ -427,21 +495,21 @@
 		16FD84DC1F824B3B00DE8F82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				161490011F892DA9004B4EC8 /* JALayoutDemo */,
-				16148FF51F8887CB004B4EC8 /* JAMasonryDemo */,
-				16FD84DD1F824B5700DE8F82 /* JAPlaceholderViewDemo */,
+				161490011F892DA9004B4EC8 /* LayoutDemo */,
+				16148FF51F8887CB004B4EC8 /* MasonryDemo */,
+				16FD84DD1F824B5700DE8F82 /* PlaceholderViewDemo */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		16FD84DD1F824B5700DE8F82 /* JAPlaceholderViewDemo */ = {
+		16FD84DD1F824B5700DE8F82 /* PlaceholderViewDemo */ = {
 			isa = PBXGroup;
 			children = (
 				16FD84DE1F824B8000DE8F82 /* JAPlaceholderViewTestController.h */,
 				16FD84DF1F824B8000DE8F82 /* JAPlaceholderViewTestController.m */,
 				161964601F8316F400B6D081 /* TableViewTest */,
 			);
-			path = JAPlaceholderViewDemo;
+			path = PlaceholderViewDemo;
 			sourceTree = "<group>";
 		};
 		16FD84E11F824D7F00DE8F82 /* JAPlaceholderViewCore */ = {
@@ -527,6 +595,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FAE51A1F9AE21D0035BCC3 /* EmojisList.plist in Resources */,
+				16FAE5191F9AE2070035BCC3 /* musicList.json in Resources */,
+				16FAE5181F9AE1FD0035BCC3 /* Cities.json in Resources */,
 				161B5AA51F82A1510062D34F /* JADefaultPlaceholderView_NetConnectError.png in Resources */,
 				161B5AA41F82A14C0062D34F /* JADefaultPlaceholderView_NoneData.png in Resources */,
 				16FD84C51F82403D00DE8F82 /* LaunchScreen.storyboard in Resources */,
@@ -594,34 +665,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
+				16FAE5201F9AE6690035BCC3 /* LayoutDemoMianController.m in Sources */,
 				16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */,
-				161490001F88B111004B4EC8 /* JAMLKeyboardShowHideController.m in Sources */,
+				16FAE5111F9ADA230035BCC3 /* JANotifation.m in Sources */,
 				1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,
 				16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */,
+				16FAE5381F9AF0960035BCC3 /* CT9PicsCell.m in Sources */,
+				16FAE5231F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.m in Sources */,
 				16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */,
+				16FAE5291F9AEC490035BCC3 /* MTKeyboardShowHideController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
-				16148FF81F888813004B4EC8 /* JAMasonryLayoutTestController.m in Sources */,
 				16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */,
+				16FAE5261F9AEBB20035BCC3 /* MasonryDemoMianController.m in Sources */,
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
-				161471671F91AA8E00630BDD /* JACommentModel.m in Sources */,
-				1614715E1F91A7AB00630BDD /* JAMLCommentWith1to9PicsCell.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
+				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
-				161490081F892E3E004B4EC8 /* JALayoutTest_UIViewProperty_translatesAutoresizingMaskIntoConstraints.m in Sources */,
-				161471611F91AA1B00630BDD /* JAMLSudokuView.m in Sources */,
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
-				161490041F892DDF004B4EC8 /* JALayoutDemoController.m in Sources */,
+				16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */,
+				16FAE5321F9AEDBA0035BCC3 /* CTCommentFrameModel.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
-				1614716F1F91B28100630BDD /* JAMLSudokuViewCCell.m in Sources */,
+				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
-				1614715B1F91A72C00630BDD /* JAMLCommentWith1to9PicsController.m in Sources */,
-				161471641F91AA7B00630BDD /* JACommentFrameModel.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
+				16FAE53F1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m in Sources */,
 				16FAE5021F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
