@@ -15,6 +15,8 @@
 		161B5AA41F82A14C0062D34F /* JADefaultPlaceholderView_NoneData.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D51F82455100DE8F82 /* JADefaultPlaceholderView_NoneData.png */; };
 		161B5AA51F82A1510062D34F /* JADefaultPlaceholderView_NetConnectError.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D41F8243E400DE8F82 /* JADefaultPlaceholderView_NetConnectError.png */; };
 		162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */; };
+		16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C111FA0E13B003CD66C /* AddingPicController.m */; };
+		16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C141FA0E19F003CD66C /* APImageCCell.m */; };
 		16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */; };
 		16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */; };
 		16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */; };
@@ -69,6 +71,10 @@
 		162696EC1F8474A00005E412 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		162696EE1F847EB90005E412 /* JAPlaceholderTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAPlaceholderTableView.h; sourceTree = "<group>"; };
 		162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAPlaceholderTableView.m; sourceTree = "<group>"; };
+		16414C101FA0E13B003CD66C /* AddingPicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingPicController.h; sourceTree = "<group>"; };
+		16414C111FA0E13B003CD66C /* AddingPicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingPicController.m; sourceTree = "<group>"; };
+		16414C131FA0E19F003CD66C /* APImageCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APImageCCell.h; sourceTree = "<group>"; };
+		16414C141FA0E19F003CD66C /* APImageCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APImageCCell.m; sourceTree = "<group>"; };
 		16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseTableViewController.h; sourceTree = "<group>"; };
 		16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseTableViewController.m; sourceTree = "<group>"; };
 		16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseViewController.h; sourceTree = "<group>"; };
@@ -365,6 +371,49 @@
 			path = JASpecialClassPlaceholderView;
 			sourceTree = "<group>";
 		};
+		16414C0B1FA0E033003CD66C /* CollectionViewAbout */ = {
+			isa = PBXGroup;
+			children = (
+				16414C0C1FA0E053003CD66C /* AddingPic */,
+			);
+			path = CollectionViewAbout;
+			sourceTree = "<group>";
+		};
+		16414C0C1FA0E053003CD66C /* AddingPic */ = {
+			isa = PBXGroup;
+			children = (
+				16414C0D1FA0E083003CD66C /* Controller */,
+				16414C0E1FA0E08C003CD66C /* View */,
+				16414C0F1FA0E091003CD66C /* Model */,
+			);
+			path = AddingPic;
+			sourceTree = "<group>";
+		};
+		16414C0D1FA0E083003CD66C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16414C101FA0E13B003CD66C /* AddingPicController.h */,
+				16414C111FA0E13B003CD66C /* AddingPicController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16414C0E1FA0E08C003CD66C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16414C131FA0E19F003CD66C /* APImageCCell.h */,
+				16414C141FA0E19F003CD66C /* APImageCCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16414C0F1FA0E091003CD66C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		16FAE4FB1F9ACE120035BCC3 /* LongPressMoveableTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +544,7 @@
 		16FD84DC1F824B3B00DE8F82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				16414C0B1FA0E033003CD66C /* CollectionViewAbout */,
 				161490011F892DA9004B4EC8 /* LayoutDemo */,
 				16148FF51F8887CB004B4EC8 /* MasonryDemo */,
 				16FD84DD1F824B5700DE8F82 /* PlaceholderViewDemo */,
@@ -682,11 +732,13 @@
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
+				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
 				16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */,
 				16FAE5321F9AEDBA0035BCC3 /* CTCommentFrameModel.m in Sources */,
+				16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
