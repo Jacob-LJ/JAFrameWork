@@ -15,6 +15,11 @@
 		161280831FAEB6BC0098C86E /* UIColor+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280821FAEB6BC0098C86E /* UIColor+JAExpand.m */; };
 		1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612808B1FAEBF7C0098C86E /* UIFont+JAExpand.m */; };
 		1612808F1FAEBF970098C86E /* NSString+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612808E1FAEBF970098C86E /* NSString+JAExpand.m */; };
+		161280991FAEFD990098C86E /* ApplicationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280981FAEFD990098C86E /* ApplicationService.m */; };
+		1612809C1FAEFDE30098C86E /* JAImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612809B1FAEFDE30098C86E /* JAImagePickerController.m */; };
+		161280A31FAF284E0098C86E /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280A21FAF284E0098C86E /* BaseRequestService.m */; };
+		161280A91FAF2A280098C86E /* NSError+BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280A81FAF2A280098C86E /* NSError+BaseRequest.m */; };
+		161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280AB1FAF2B470098C86E /* BRResponseMessage.m */; };
 		1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471721F91B42D00630BDD /* LeeStarEvaluationView.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
@@ -76,6 +81,21 @@
 		1612808B1FAEBF7C0098C86E /* UIFont+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JAExpand.m"; sourceTree = "<group>"; };
 		1612808D1FAEBF970098C86E /* NSString+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JAExpand.h"; sourceTree = "<group>"; };
 		1612808E1FAEBF970098C86E /* NSString+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JAExpand.m"; sourceTree = "<group>"; };
+		161280951FAEFCFA0098C86E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		161280961FAEFCFA0098C86E /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		161280971FAEFD990098C86E /* ApplicationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationService.h; sourceTree = "<group>"; };
+		161280981FAEFD990098C86E /* ApplicationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationService.m; sourceTree = "<group>"; };
+		1612809A1FAEFDE30098C86E /* JAImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAImagePickerController.h; sourceTree = "<group>"; };
+		1612809B1FAEFDE30098C86E /* JAImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAImagePickerController.m; sourceTree = "<group>"; };
+		1612809D1FAEFEA90098C86E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		161280A11FAF284E0098C86E /* BaseRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestService.h; sourceTree = "<group>"; };
+		161280A21FAF284E0098C86E /* BaseRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequestService.m; sourceTree = "<group>"; };
+		161280A41FAF28D20098C86E /* TaskProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskProtocol.h; sourceTree = "<group>"; };
+		161280A51FAF29070098C86E /* DataTransformerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTransformerProtocol.h; sourceTree = "<group>"; };
+		161280A71FAF2A280098C86E /* NSError+BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+BaseRequest.h"; sourceTree = "<group>"; };
+		161280A81FAF2A280098C86E /* NSError+BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+BaseRequest.m"; sourceTree = "<group>"; };
+		161280AA1FAF2B470098C86E /* BRResponseMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRResponseMessage.h; sourceTree = "<group>"; };
+		161280AB1FAF2B470098C86E /* BRResponseMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRResponseMessage.m; sourceTree = "<group>"; };
 		161471711F91B42D00630BDD /* LeeStarEvaluationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeStarEvaluationView.h; sourceTree = "<group>"; };
 		161471721F91B42D00630BDD /* LeeStarEvaluationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeStarEvaluationView.m; sourceTree = "<group>"; };
 		161471731F91B42D00630BDD /* star_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@2x.png"; sourceTree = "<group>"; };
@@ -187,6 +207,58 @@
 				D69793E53ACA0951587B1010 /* Pods-JAFrameWork.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		161280901FAEFCFA0098C86E /* ApplicationComponent */ = {
+			isa = PBXGroup;
+			children = (
+				1612809F1FAF0A490098C86E /* ProtocolWebController */,
+				161280951FAEFCFA0098C86E /* README.md */,
+				161280961FAEFCFA0098C86E /* Singleton.h */,
+				161280971FAEFD990098C86E /* ApplicationService.h */,
+				161280981FAEFD990098C86E /* ApplicationService.m */,
+				1612809A1FAEFDE30098C86E /* JAImagePickerController.h */,
+				1612809B1FAEFDE30098C86E /* JAImagePickerController.m */,
+			);
+			path = ApplicationComponent;
+			sourceTree = "<group>";
+		};
+		1612809E1FAEFFD80098C86E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				161280A61FAF29FA0098C86E /* Category */,
+				161280A01FAF28290098C86E /* BaseService */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1612809F1FAF0A490098C86E /* ProtocolWebController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProtocolWebController;
+			sourceTree = "<group>";
+		};
+		161280A01FAF28290098C86E /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				161280A41FAF28D20098C86E /* TaskProtocol.h */,
+				161280A51FAF29070098C86E /* DataTransformerProtocol.h */,
+				161280A11FAF284E0098C86E /* BaseRequestService.h */,
+				161280A21FAF284E0098C86E /* BaseRequestService.m */,
+				161280AA1FAF2B470098C86E /* BRResponseMessage.h */,
+				161280AB1FAF2B470098C86E /* BRResponseMessage.m */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		161280A61FAF29FA0098C86E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				161280A71FAF2A280098C86E /* NSError+BaseRequest.h */,
+				161280A81FAF2A280098C86E /* NSError+BaseRequest.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		161471551F91A6A400630BDD /* CommentTypeTest */ = {
@@ -318,6 +390,7 @@
 		16186FB91F9AC75800D768C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1612809D1FAEFEA90098C86E /* README.md */,
 				16FD84BE1F82403D00DE8F82 /* Main.storyboard */,
 				16FD84C11F82403D00DE8F82 /* Assets.xcassets */,
 				16FD84C31F82403D00DE8F82 /* LaunchScreen.storyboard */,
@@ -463,6 +536,7 @@
 		16FAE5061F9AD61B0035BCC3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				161280901FAEFCFA0098C86E /* ApplicationComponent */,
 				16FAE5091F9AD6820035BCC3 /* Configure */,
 				16FAE5081F9AD6740035BCC3 /* Notification */,
 				16FAE5071F9AD64C0035BCC3 /* Constant */,
@@ -537,6 +611,7 @@
 				16186FBE1F9ACB7100D768C1 /* BaseClass */,
 				161471681F91AE2400630BDD /* Utils */,
 				16186FBA1F9AC96D00D768C1 /* ThirdParty */,
+				1612809E1FAEFFD80098C86E /* Networking */,
 				16186FB81F9AC6AA00D768C1 /* SupportFiles */,
 				16186FB91F9AC75800D768C1 /* Resources */,
 			);
@@ -757,6 +832,7 @@
 			files = (
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
 				1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */,
+				161280A91FAF2A280098C86E /* NSError+BaseRequest.m in Sources */,
 				16FAE5201F9AE6690035BCC3 /* LayoutDemoMianController.m in Sources */,
 				16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */,
 				16FAE5111F9ADA230035BCC3 /* JANotifation.m in Sources */,
@@ -777,7 +853,11 @@
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
 				1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */,
+				161280A31FAF284E0098C86E /* BaseRequestService.m in Sources */,
+				1612809C1FAEFDE30098C86E /* JAImagePickerController.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
+				161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */,
+				161280991FAEFD990098C86E /* ApplicationService.m in Sources */,
 				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,

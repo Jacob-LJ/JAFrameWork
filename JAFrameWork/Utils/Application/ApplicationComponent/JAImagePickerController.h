@@ -1,0 +1,14 @@
+//
+//  JAImagePickerController.h
+//  JAFrameWork
+//
+//  Created by Jacob_Liang on 2017/11/5.
+//  Copyright © 2017年 Jacob. All rights reserved.
+//
+
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <TZImageManager.h>
+
+@interface JAImagePickerController : TZImagePickerController
+
+@end
