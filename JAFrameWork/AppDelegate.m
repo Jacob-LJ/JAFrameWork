@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MainTabBarController.h"
+#import "UIColor+JAExpand.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //通过代码处理主控制器
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self setUpRootViewController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+
+- (void)setUpRootViewController {
+    
+    MainTabBarController *mainTabBarVC = [[MainTabBarController alloc] init];
+    self.window.rootViewController = mainTabBarVC;
 }
 
 

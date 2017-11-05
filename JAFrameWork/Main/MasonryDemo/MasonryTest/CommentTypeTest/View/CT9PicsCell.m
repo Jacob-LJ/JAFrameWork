@@ -151,7 +151,7 @@
     NSString *contentStr = commentModel.content;
     [text appendAttributedString:[[NSAttributedString alloc] initWithString:contentStr attributes:@{
                                                                                                     NSFontAttributeName : [UIFont systemFontOfSize:14],
-                                                                                                    NSForegroundColorAttributeName : kColor6666,
+                                                                                                    NSForegroundColorAttributeName : [UIColor color6666],
                                                                                                     NSParagraphStyleAttributeName : style,
                                                                                                     }]];
     
@@ -222,7 +222,7 @@
         _dateLB = [[UILabel alloc] init];
         _dateLB.text = @"2017.5.7";
         _dateLB.font = [UIFont systemFontOfSize:12];
-        _dateLB.textColor = kColor9999;
+        _dateLB.textColor = [UIColor color9999];
         [self.contentView addSubview:_dateLB];
     }
     return _dateLB;
@@ -244,7 +244,7 @@
         _nameLB = [[UILabel alloc] init];
         _nameLB.text = @"我是昵称";
         _nameLB.font = [UIFont systemFontOfSize:16];
-        _nameLB.textColor = kColor3333;
+        _nameLB.textColor = [UIColor color3333];
         [self.verticalCenterNameLBStarViewContainerV addSubview:_nameLB];
     }
     return _nameLB;
@@ -255,7 +255,7 @@
     if (!_contentLB) {
         _contentLB = [[YYLabel alloc] init];
         _contentLB.font = [UIFont systemFontOfSize:14];
-        _contentLB.textColor = kColor6666;
+        _contentLB.textColor = [UIColor color6666];
         _contentLB.numberOfLines = 2;
         [self.contentView addSubview:_contentLB];
     }
@@ -276,7 +276,7 @@
 - (UIView *)bottomLineView {
     if (!_bottomLineView) {
         _bottomLineView = [[UIView alloc] init];
-        _bottomLineView.backgroundColor = kColorEEEE;
+        _bottomLineView.backgroundColor = [UIColor colorEEEE];
         [self.contentView addSubview:_bottomLineView];
     }
     return _bottomLineView;

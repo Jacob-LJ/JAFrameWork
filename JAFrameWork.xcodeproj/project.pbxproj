@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614716B1F91AEAD00630BDD /* UIColor+Expand.m */; };
+		161280671FAEA1850098C86E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280661FAEA1850098C86E /* MainTabBarController.m */; };
+		161280761FAEA4150098C86E /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280751FAEA4150098C86E /* FirstController.m */; };
+		161280791FAEA4240098C86E /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280781FAEA4240098C86E /* SecondController.m */; };
+		1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612807B1FAEA42E0098C86E /* ThirdController.m */; };
+		1612807F1FAEA43B0098C86E /* FourthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612807E1FAEA43B0098C86E /* FourthController.m */; };
+		161280831FAEB6BC0098C86E /* UIColor+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280821FAEB6BC0098C86E /* UIColor+JAExpand.m */; };
+		1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612808B1FAEBF7C0098C86E /* UIFont+JAExpand.m */; };
+		1612808F1FAEBF970098C86E /* NSString+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612808E1FAEBF970098C86E /* NSString+JAExpand.m */; };
 		1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471721F91B42D00630BDD /* LeeStarEvaluationView.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
@@ -52,8 +59,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1614716A1F91AEAD00630BDD /* UIColor+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expand.h"; sourceTree = "<group>"; };
-		1614716B1F91AEAD00630BDD /* UIColor+Expand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expand.m"; sourceTree = "<group>"; };
+		161280651FAEA1850098C86E /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		161280661FAEA1850098C86E /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		161280741FAEA4150098C86E /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstController.h; sourceTree = "<group>"; };
+		161280751FAEA4150098C86E /* FirstController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstController.m; sourceTree = "<group>"; };
+		161280771FAEA4240098C86E /* SecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
+		161280781FAEA4240098C86E /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
+		1612807A1FAEA42E0098C86E /* ThirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdController.h; sourceTree = "<group>"; };
+		1612807B1FAEA42E0098C86E /* ThirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdController.m; sourceTree = "<group>"; };
+		1612807D1FAEA43B0098C86E /* FourthController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthController.h; sourceTree = "<group>"; };
+		1612807E1FAEA43B0098C86E /* FourthController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthController.m; sourceTree = "<group>"; };
+		161280801FAEA4750098C86E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		161280811FAEB6BC0098C86E /* UIColor+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JAExpand.h"; sourceTree = "<group>"; };
+		161280821FAEB6BC0098C86E /* UIColor+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JAExpand.m"; sourceTree = "<group>"; };
+		1612808A1FAEBF7C0098C86E /* UIFont+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+JAExpand.h"; sourceTree = "<group>"; };
+		1612808B1FAEBF7C0098C86E /* UIFont+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JAExpand.m"; sourceTree = "<group>"; };
+		1612808D1FAEBF970098C86E /* NSString+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JAExpand.h"; sourceTree = "<group>"; };
+		1612808E1FAEBF970098C86E /* NSString+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JAExpand.m"; sourceTree = "<group>"; };
 		161471711F91B42D00630BDD /* LeeStarEvaluationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeStarEvaluationView.h; sourceTree = "<group>"; };
 		161471721F91B42D00630BDD /* LeeStarEvaluationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeStarEvaluationView.m; sourceTree = "<group>"; };
 		161471731F91B42D00630BDD /* star_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@2x.png"; sourceTree = "<group>"; };
@@ -221,8 +243,12 @@
 		161471691F91AE4500630BDD /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				1614716A1F91AEAD00630BDD /* UIColor+Expand.h */,
-				1614716B1F91AEAD00630BDD /* UIColor+Expand.m */,
+				161280811FAEB6BC0098C86E /* UIColor+JAExpand.h */,
+				161280821FAEB6BC0098C86E /* UIColor+JAExpand.m */,
+				1612808A1FAEBF7C0098C86E /* UIFont+JAExpand.h */,
+				1612808B1FAEBF7C0098C86E /* UIFont+JAExpand.m */,
+				1612808D1FAEBF970098C86E /* NSString+JAExpand.h */,
+				1612808E1FAEBF970098C86E /* NSString+JAExpand.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -544,6 +570,17 @@
 		16FD84DC1F824B3B00DE8F82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				161280801FAEA4750098C86E /* README.md */,
+				161280651FAEA1850098C86E /* MainTabBarController.h */,
+				161280661FAEA1850098C86E /* MainTabBarController.m */,
+				161280741FAEA4150098C86E /* FirstController.h */,
+				161280751FAEA4150098C86E /* FirstController.m */,
+				161280771FAEA4240098C86E /* SecondController.h */,
+				161280781FAEA4240098C86E /* SecondController.m */,
+				1612807A1FAEA42E0098C86E /* ThirdController.h */,
+				1612807B1FAEA42E0098C86E /* ThirdController.m */,
+				1612807D1FAEA43B0098C86E /* FourthController.h */,
+				1612807E1FAEA43B0098C86E /* FourthController.m */,
 				16414C0B1FA0E033003CD66C /* CollectionViewAbout */,
 				161490011F892DA9004B4EC8 /* LayoutDemo */,
 				16148FF51F8887CB004B4EC8 /* MasonryDemo */,
@@ -719,28 +756,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
+				1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */,
 				16FAE5201F9AE6690035BCC3 /* LayoutDemoMianController.m in Sources */,
 				16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */,
 				16FAE5111F9ADA230035BCC3 /* JANotifation.m in Sources */,
-				1614716C1F91AEAD00630BDD /* UIColor+Expand.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,
+				161280761FAEA4150098C86E /* FirstController.m in Sources */,
 				16FD84BD1F82403D00DE8F82 /* ViewController.m in Sources */,
 				16FAE5381F9AF0960035BCC3 /* CT9PicsCell.m in Sources */,
+				161280831FAEB6BC0098C86E /* UIColor+JAExpand.m in Sources */,
 				16FAE5231F9AE7330035BCC3 /* LDTranslatesAutoresizingMaskController.m in Sources */,
 				16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */,
+				161280671FAEA1850098C86E /* MainTabBarController.m in Sources */,
 				16FAE5291F9AEC490035BCC3 /* MTKeyboardShowHideController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
 				16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */,
 				16FAE5261F9AEBB20035BCC3 /* MasonryDemoMianController.m in Sources */,
+				1612807F1FAEA43B0098C86E /* FourthController.m in Sources */,
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
+				1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
 				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
 				16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */,
+				1612808F1FAEBF970098C86E /* NSString+JAExpand.m in Sources */,
 				16FAE5321F9AEDBA0035BCC3 /* CTCommentFrameModel.m in Sources */,
 				16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
@@ -749,6 +792,7 @@
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
+				161280791FAEA4240098C86E /* SecondController.m in Sources */,
 				16FAE53F1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m in Sources */,
 				16FAE5021F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m in Sources */,
 			);

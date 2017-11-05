@@ -38,7 +38,7 @@
         style.lineSpacing = 5;
         _contentAttributeDit = @{
                                  NSFontAttributeName : [UIFont systemFontOfSize:14],
-                                 NSForegroundColorAttributeName : kColor6666,
+                                 NSForegroundColorAttributeName : [UIColor color6666],
                                  NSParagraphStyleAttributeName : style,
                                  };
     }

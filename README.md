@@ -10,3 +10,31 @@
             -WeddingTimeMainController
             +WeddingTimeReplyTime //子功能
                 -WTReplyTimeController
+
+
+
+
+### 注释规则
+一、采用系统提供的方法注释： 快捷键 > opt+cmd+/
+```
+1.不带参数和返回值
+/**
+<#Description#>
+*/
+
+2.带返回值的
+/**
+<#Description#>
+
+@return <#return value description#>
+*/
+
+3.带参数和返回值的
+/**
+<#Description#>
+
+@param color <#color description#>
+@return <#return value description#>
+*/
+
+```

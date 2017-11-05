@@ -81,7 +81,7 @@
         _addIamgeV.image = [UIImage imageNamed:@"mine_increase"];
         _addIamgeV.contentMode = UIViewContentModeCenter;
         _addIamgeV.layer.borderWidth = 1;
-        _addIamgeV.layer.borderColor = kColorEEEE.CGColor;
+        _addIamgeV.layer.borderColor = [UIColor colorEEEE].CGColor;
         _addIamgeV.layer.cornerRadius = 4;
         [self.contentView addSubview:_addIamgeV];
     }
