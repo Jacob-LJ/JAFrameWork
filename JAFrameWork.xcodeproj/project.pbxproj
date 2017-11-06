@@ -209,6 +209,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */ = {
+			isa = PBXGroup;
+			children = (
+				160D66F81FB0B56000A9CE0F /* View */,
+				160D66F71FB0B55900A9CE0F /* Controller */,
+			);
+			path = SearchBarAndHistory;
+			sourceTree = "<group>";
+		};
+		160D66F71FB0B55900A9CE0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		160D66F81FB0B56000A9CE0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		161280901FAEFCFA0098C86E /* ApplicationComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +668,7 @@
 		16FD84DC1F824B3B00DE8F82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
 				161280801FAEA4750098C86E /* README.md */,
 				161280651FAEA1850098C86E /* MainTabBarController.h */,
 				161280661FAEA1850098C86E /* MainTabBarController.m */,
