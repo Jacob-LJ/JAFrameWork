@@ -29,6 +29,11 @@
 		162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */; };
 		16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C111FA0E13B003CD66C /* AddingPicController.m */; };
 		16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C141FA0E19F003CD66C /* APImageCCell.m */; };
+		16612B991FB1FF890091D49A /* UILabel+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612B981FB1FF890091D49A /* UILabel+JAExpand.m */; };
+		16612B9C1FB201380091D49A /* UIImage+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612B9B1FB201380091D49A /* UIImage+JAExpand.m */; };
+		16612BA21FB204450091D49A /* SamplePubuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA11FB204450091D49A /* SamplePubuController.m */; };
+		16612BA51FB2051E0091D49A /* SamplePubuCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA41FB2051E0091D49A /* SamplePubuCCell.m */; };
+		16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA71FB206AA0091D49A /* SamplePubuLayout.m */; };
 		16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */; };
 		16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */; };
 		16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */; };
@@ -117,6 +122,16 @@
 		16414C111FA0E13B003CD66C /* AddingPicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingPicController.m; sourceTree = "<group>"; };
 		16414C131FA0E19F003CD66C /* APImageCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APImageCCell.h; sourceTree = "<group>"; };
 		16414C141FA0E19F003CD66C /* APImageCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APImageCCell.m; sourceTree = "<group>"; };
+		16612B971FB1FF890091D49A /* UILabel+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+JAExpand.h"; sourceTree = "<group>"; };
+		16612B981FB1FF890091D49A /* UILabel+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JAExpand.m"; sourceTree = "<group>"; };
+		16612B9A1FB201380091D49A /* UIImage+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JAExpand.h"; sourceTree = "<group>"; };
+		16612B9B1FB201380091D49A /* UIImage+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JAExpand.m"; sourceTree = "<group>"; };
+		16612BA01FB204450091D49A /* SamplePubuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePubuController.h; sourceTree = "<group>"; };
+		16612BA11FB204450091D49A /* SamplePubuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuController.m; sourceTree = "<group>"; };
+		16612BA31FB2051E0091D49A /* SamplePubuCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePubuCCell.h; sourceTree = "<group>"; };
+		16612BA41FB2051E0091D49A /* SamplePubuCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuCCell.m; sourceTree = "<group>"; };
+		16612BA61FB206AA0091D49A /* SamplePubuLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePubuLayout.h; sourceTree = "<group>"; };
+		16612BA71FB206AA0091D49A /* SamplePubuLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuLayout.m; sourceTree = "<group>"; };
 		16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseTableViewController.h; sourceTree = "<group>"; };
 		16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseTableViewController.m; sourceTree = "<group>"; };
 		16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseViewController.h; sourceTree = "<group>"; };
@@ -344,6 +359,10 @@
 				1612808B1FAEBF7C0098C86E /* UIFont+JAExpand.m */,
 				1612808D1FAEBF970098C86E /* NSString+JAExpand.h */,
 				1612808E1FAEBF970098C86E /* NSString+JAExpand.m */,
+				16612B971FB1FF890091D49A /* UILabel+JAExpand.h */,
+				16612B981FB1FF890091D49A /* UILabel+JAExpand.m */,
+				16612B9A1FB201380091D49A /* UIImage+JAExpand.h */,
+				16612B9B1FB201380091D49A /* UIImage+JAExpand.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -496,6 +515,7 @@
 		16414C0B1FA0E033003CD66C /* CollectionViewAbout */ = {
 			isa = PBXGroup;
 			children = (
+				16612B9D1FB2036B0091D49A /* SimplePubu */,
 				16414C0C1FA0E053003CD66C /* AddingPic */,
 			);
 			path = CollectionViewAbout;
@@ -534,6 +554,35 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		16612B9D1FB2036B0091D49A /* SimplePubu */ = {
+			isa = PBXGroup;
+			children = (
+				16612B9E1FB203B30091D49A /* Controller */,
+				16612B9F1FB203BF0091D49A /* View */,
+			);
+			path = SimplePubu;
+			sourceTree = "<group>";
+		};
+		16612B9E1FB203B30091D49A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16612BA01FB204450091D49A /* SamplePubuController.h */,
+				16612BA11FB204450091D49A /* SamplePubuController.m */,
+				16612BA61FB206AA0091D49A /* SamplePubuLayout.h */,
+				16612BA71FB206AA0091D49A /* SamplePubuLayout.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16612B9F1FB203BF0091D49A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16612BA31FB2051E0091D49A /* SamplePubuCCell.h */,
+				16612BA41FB2051E0091D49A /* SamplePubuCCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		16FAE4FB1F9ACE120035BCC3 /* LongPressMoveableTableView */ = {
@@ -871,13 +920,16 @@
 				16FAE5291F9AEC490035BCC3 /* MTKeyboardShowHideController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
 				16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */,
+				16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */,
 				16FAE5261F9AEBB20035BCC3 /* MasonryDemoMianController.m in Sources */,
 				1612807F1FAEA43B0098C86E /* FourthController.m in Sources */,
+				16612B9C1FB201380091D49A /* UIImage+JAExpand.m in Sources */,
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
 				1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */,
 				161280A31FAF284E0098C86E /* BaseRequestService.m in Sources */,
+				16612BA51FB2051E0091D49A /* SamplePubuCCell.m in Sources */,
 				1612809C1FAEFDE30098C86E /* JAImagePickerController.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
 				161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */,
@@ -888,6 +940,7 @@
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
 				16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */,
 				1612808F1FAEBF970098C86E /* NSString+JAExpand.m in Sources */,
+				16612BA21FB204450091D49A /* SamplePubuController.m in Sources */,
 				16FAE5321F9AEDBA0035BCC3 /* CTCommentFrameModel.m in Sources */,
 				16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
@@ -899,6 +952,7 @@
 				161280791FAEA4240098C86E /* SecondController.m in Sources */,
 				16FAE53F1F9AF2AC0035BCC3 /* CTSudokuViewCCell.m in Sources */,
 				16FAE5021F9ACFC80035BCC3 /* JALongPressMoveableCollectionView.m in Sources */,
+				16612B991FB1FF890091D49A /* UILabel+JAExpand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

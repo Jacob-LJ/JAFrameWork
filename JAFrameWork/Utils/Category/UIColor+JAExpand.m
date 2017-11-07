@@ -71,52 +71,52 @@
 
 #pragma mark - 项目常用颜色方法
 + (UIColor *)color3333 {
-    return [UIColor colorWithHexString:@"333333"];
+    return [UIColor ja_colorWithHexString:@"333333"];
 }
 
 + (UIColor *)color6666 {
-    return [UIColor colorWithHexString:@"666666"];
+    return [UIColor ja_colorWithHexString:@"666666"];
 }
 
 + (UIColor *)color9999 {
-    return [UIColor colorWithHexString:@"999999"];
+    return [UIColor ja_colorWithHexString:@"999999"];
 }
 
 + (UIColor *)colorCCCC {
-    return [UIColor colorWithHexString:@"cccccc"];
+    return [UIColor ja_colorWithHexString:@"cccccc"];
 }
 
 + (UIColor *)colorEEEE {
-    return [UIColor colorWithHexString:@"eeeeee"];
+    return [UIColor ja_colorWithHexString:@"eeeeee"];
 }
 
 + (UIColor *)colorF6F6F6 {
-    return [UIColor colorWithHexString:@"f6f6f6"];
+    return [UIColor ja_colorWithHexString:@"f6f6f6"];
 }
 
 + (UIColor *)colorFF4A2A {
-    return [UIColor colorWithHexString:@"ff4a2a"];
+    return [UIColor ja_colorWithHexString:@"ff4a2a"];
 }
 
 + (UIColor *)colorFF0000 {
-    return [UIColor colorWithHexString:@"ff0000"];
+    return [UIColor ja_colorWithHexString:@"ff0000"];
 }
 
 + (UIColor *)colorFC694E {
-    return [UIColor colorWithHexString:@"fc694e"];
+    return [UIColor ja_colorWithHexString:@"fc694e"];
 }
 
 
 + (UIColor *)color53C411 {
-    return [UIColor colorWithHexString:@"53c411"];
+    return [UIColor ja_colorWithHexString:@"53c411"];
 }
 
 + (UIColor *)colorFFD600 {
-    return [UIColor colorWithHexString:@"ffd600"];
+    return [UIColor ja_colorWithHexString:@"ffd600"];
 }
 
 + (UIColor *)colorFFF5DF {
-    return [UIColor colorWithHexString:@"fff5df"];
+    return [UIColor ja_colorWithHexString:@"fff5df"];
 }
 
 @end
