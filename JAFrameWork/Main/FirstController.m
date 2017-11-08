@@ -12,6 +12,7 @@
 #import "JAPlaceholderViewTestController.h"
 #import "MasonryDemoMianController.h"
 #import "LayoutDemoMianController.h"
+#import "CollectionViewAboutMainController.h"
 
 static NSString * const MainCellID = @"MainCell";
 
@@ -27,15 +28,15 @@ static NSString * const MainCellID = @"MainCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Cities" ofType:@"json"]; //path 为 nil 时需要检查，Cities.json 文件是否已添加到 copy bundle resources内
-    NSError *error = nil;
-    NSData *jsonData = [NSData dataWithContentsOfFile:path];
-    
-    NSArray *citys = [NSJSONSerialization JSONObjectWithData:jsonData
-                                                     options:NSJSONReadingAllowFragments
-                                                       error:&error
-                      ];
+//    //加载本地Json文件转数组
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Cities" ofType:@"json"]; //path 为 nil 时需要检查，Cities.json 文件是否已添加到 copy bundle resources内
+//    NSError *error = nil;
+//    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+//
+//    NSArray *citys = [NSJSONSerialization JSONObjectWithData:jsonData
+//                                                     options:NSJSONReadingAllowFragments
+//                                                       error:&error
+//                      ];
     
     [self setUpTableView];
 }
@@ -70,15 +71,23 @@ static NSString * const MainCellID = @"MainCell";
     
     switch (indexPath.row) {
         case 0: {
+            //tableView 或 collectionView 的空状态占位视图
             [self.navigationController pushViewController:[[JAPlaceholderViewTestController alloc] init] animated:YES];
             break;
         }
         case 1: {
+            //masonry 布局 Demo
             [self.navigationController pushViewController:[[MasonryDemoMianController alloc] init] animated:YES];
             break;
         }
         case 2: {
+            //布局相关知识点 Demo
             [self.navigationController pushViewController:[[LayoutDemoMianController alloc] init] animated:YES];
+            break;
+        }
+        case 3: {
+            //collectionView 相关Demo
+            [self.navigationController pushViewController:[[CollectionViewAboutMainController alloc] init] animated:YES];
             break;
         }
         default:
@@ -90,9 +99,10 @@ static NSString * const MainCellID = @"MainCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[
-                       @"JAPlaceholderViewTestController \ntableView 或 collectionView 的空状态占位视图",
-                       @"MasonryDemoMianController \n masonry 布局 demo",
-                       @"LayoutDemoMianController \n 布局相关知识点",
+                       @"JAPlaceholderViewTestController \n tableView 或 collectionView 的空状态占位视图",
+                       @"MasonryDemoMianController \n masonry 布局 Demo",
+                       @"LayoutDemoMianController \n 布局相关知识点 Demo",
+                       @"CollectionViewAboutMainController \n collectionView 相关Demo"
                        ];
     }
     return _dataArray;

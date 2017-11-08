@@ -27,6 +27,7 @@
 		161B5AA41F82A14C0062D34F /* JADefaultPlaceholderView_NoneData.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D51F82455100DE8F82 /* JADefaultPlaceholderView_NoneData.png */; };
 		161B5AA51F82A1510062D34F /* JADefaultPlaceholderView_NetConnectError.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D41F8243E400DE8F82 /* JADefaultPlaceholderView_NetConnectError.png */; };
 		162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */; };
+		162F2F4C1FB2A44F000AEE68 /* CollectionViewAboutMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F2F4B1FB2A44F000AEE68 /* CollectionViewAboutMainController.m */; };
 		16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C111FA0E13B003CD66C /* AddingPicController.m */; };
 		16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C141FA0E19F003CD66C /* APImageCCell.m */; };
 		16612B991FB1FF890091D49A /* UILabel+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612B981FB1FF890091D49A /* UILabel+JAExpand.m */; };
@@ -119,6 +120,8 @@
 		162696EC1F8474A00005E412 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		162696EE1F847EB90005E412 /* JAPlaceholderTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAPlaceholderTableView.h; sourceTree = "<group>"; };
 		162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAPlaceholderTableView.m; sourceTree = "<group>"; };
+		162F2F4A1FB2A44F000AEE68 /* CollectionViewAboutMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewAboutMainController.h; sourceTree = "<group>"; };
+		162F2F4B1FB2A44F000AEE68 /* CollectionViewAboutMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewAboutMainController.m; sourceTree = "<group>"; };
 		16414C101FA0E13B003CD66C /* AddingPicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingPicController.h; sourceTree = "<group>"; };
 		16414C111FA0E13B003CD66C /* AddingPicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingPicController.m; sourceTree = "<group>"; };
 		16414C131FA0E19F003CD66C /* APImageCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APImageCCell.h; sourceTree = "<group>"; };
@@ -521,6 +524,8 @@
 		16414C0B1FA0E033003CD66C /* CollectionViewAbout */ = {
 			isa = PBXGroup;
 			children = (
+				162F2F4A1FB2A44F000AEE68 /* CollectionViewAboutMainController.h */,
+				162F2F4B1FB2A44F000AEE68 /* CollectionViewAboutMainController.m */,
 				16612B9D1FB2036B0091D49A /* SimplePubu */,
 				16414C0C1FA0E053003CD66C /* AddingPic */,
 			);
@@ -949,6 +954,7 @@
 				16FAE5321F9AEDBA0035BCC3 /* CTCommentFrameModel.m in Sources */,
 				16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
+				162F2F4C1FB2A44F000AEE68 /* CollectionViewAboutMainController.m in Sources */,
 				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
 				16612BAB1FB33F7B0091D49A /* SearchBarandHistoryView.m in Sources */,
@@ -1094,6 +1100,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUF7KN9PTX;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JAFrameWork/PrefixHeader_JAFrameWork.pch";
 				INFOPLIST_FILE = JAFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1109,6 +1116,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUF7KN9PTX;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JAFrameWork/PrefixHeader_JAFrameWork.pch";
 				INFOPLIST_FILE = JAFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

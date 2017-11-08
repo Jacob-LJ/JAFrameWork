@@ -22,22 +22,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUpNav];
     [self setUpCollectionView];
     
 }
 
+- (void)setUpNav {
+    self.title = @"简单瀑布流";
+}
+
 - (void)setUpCollectionView {
-    
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    self.collectionView.backgroundColor = [UIColor colorF6F6F6];
-    self.collectionView.showsVerticalScrollIndicator  = NO;
-    [self.view addSubview:self.collectionView];
+    SamplePubuLayout *pubuLayout = [[SamplePubuLayout alloc] init];
+    pubuLayout.delegate = self;
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:pubuLayout];
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    collectionView.backgroundColor = [UIColor colorF6F6F6];
+    collectionView.showsVerticalScrollIndicator  = NO;
+    [self.view addSubview:collectionView];
     
     //register cell
-    [self.collectionView registerClass:[SamplePubuCCell class] forCellWithReuseIdentifier:SamplePubuCCellID];
+    [collectionView registerClass:[SamplePubuCCell class] forCellWithReuseIdentifier:SamplePubuCCellID];
     
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
 }
