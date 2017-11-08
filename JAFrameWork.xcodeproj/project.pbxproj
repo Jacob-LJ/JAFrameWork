@@ -34,6 +34,7 @@
 		16612BA21FB204450091D49A /* SamplePubuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA11FB204450091D49A /* SamplePubuController.m */; };
 		16612BA51FB2051E0091D49A /* SamplePubuCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA41FB2051E0091D49A /* SamplePubuCCell.m */; };
 		16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA71FB206AA0091D49A /* SamplePubuLayout.m */; };
+		16612BAB1FB33F7B0091D49A /* SearchBarandHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BAA1FB33F7B0091D49A /* SearchBarandHistoryView.m */; };
 		16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */; };
 		16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */; };
 		16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */; };
@@ -132,6 +133,8 @@
 		16612BA41FB2051E0091D49A /* SamplePubuCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuCCell.m; sourceTree = "<group>"; };
 		16612BA61FB206AA0091D49A /* SamplePubuLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePubuLayout.h; sourceTree = "<group>"; };
 		16612BA71FB206AA0091D49A /* SamplePubuLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuLayout.m; sourceTree = "<group>"; };
+		16612BA91FB33F7B0091D49A /* SearchBarandHistoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBarandHistoryView.h; sourceTree = "<group>"; };
+		16612BAA1FB33F7B0091D49A /* SearchBarandHistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarandHistoryView.m; sourceTree = "<group>"; };
 		16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseTableViewController.h; sourceTree = "<group>"; };
 		16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseTableViewController.m; sourceTree = "<group>"; };
 		16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseViewController.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 		160D66F71FB0B55900A9CE0F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16612BA91FB33F7B0091D49A /* SearchBarandHistoryView.h */,
+				16612BAA1FB33F7B0091D49A /* SearchBarandHistoryView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 			children = (
 				16FAE51E1F9AE6690035BCC3 /* LayoutDemoMianController.h */,
 				16FAE51F1F9AE6690035BCC3 /* LayoutDemoMianController.m */,
+				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
 				161490051F892DF0004B4EC8 /* TranslatesAutoresizingMask */,
 			);
 			path = LayoutDemo;
@@ -717,7 +723,6 @@
 		16FD84DC1F824B3B00DE8F82 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
 				161280801FAEA4750098C86E /* README.md */,
 				161280651FAEA1850098C86E /* MainTabBarController.h */,
 				161280661FAEA1850098C86E /* MainTabBarController.m */,
@@ -946,6 +951,7 @@
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
+				16612BAB1FB33F7B0091D49A /* SearchBarandHistoryView.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,

@@ -9,6 +9,7 @@
 #import "LayoutDemoMianController.h"
 //vc
 #import "LDTranslatesAutoresizingMaskController.h"
+#import "SearchBarandHistoryView.h"
 
 static NSString * const JALayoutDemoCellID = @"JALayoutDemoCell";
 
@@ -57,7 +58,7 @@ static NSString * const JALayoutDemoCellID = @"JALayoutDemoCell";
             [self.navigationController pushViewController:[[LDTranslatesAutoresizingMaskController alloc] init] animated:YES];
             break;
         case 1:
-            [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
+            [self presentViewController:[[SearchBarandHistoryView alloc] init] animated:YES completion:NULL];
             break;
         case 2:
             [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
@@ -73,7 +74,7 @@ static NSString * const JALayoutDemoCellID = @"JALayoutDemoCell";
     if (!_dataArray) {
         _dataArray = @[
                        @"1 UIViewProperty \n translatesAutoresizingMaskIntoConstraints",
-                       @"2",
+                       @"2 SearchBarandHistoryView \n 简单Nav内的searchBar和靠左的 collectionView搜索关键字历史记录",
                        @"3",
                        ];
     }

@@ -40,6 +40,23 @@
 #define JAScreenW [UIScreen mainScreen].bounds.size.width
 #define JAScreenH [UIScreen mainScreen].bounds.size.height
 
+/**
+ Navbar
+ */
+//状态栏高度
+#define JAStatusBarH  [[UIApplication sharedApplication] statusBarFrame].size.height
+//导航栏高度
+#define JANavBarH self.navigationController.navigationBar.frame.size.height
+
+/**
+ iPhone Size
+ */
+#define isiPhone             ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define isiPhone5            (isiPhone && JAScreenH == 568.f)
+#define isiPhone6            (isiPhone && JAScreenH == 667.f)
+#define isiPhone6P           (isiPhone && JAScreenH == 736.f) // Both orientations
+#define isiPhoneX            (isiPhone && JAScreenH ==  812.f)
+
 
 
 
