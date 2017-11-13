@@ -12,7 +12,6 @@
 #import "JAPlaceholderViewTestController.h"
 #import "MasonryDemoMianController.h"
 #import "LayoutDemoMianController.h"
-#import "CollectionViewAboutMainController.h"
 
 static NSString * const MainCellID = @"MainCell";
 
@@ -86,8 +85,7 @@ static NSString * const MainCellID = @"MainCell";
             break;
         }
         case 3: {
-            //collectionView 相关Demo
-            [self.navigationController pushViewController:[[CollectionViewAboutMainController alloc] init] animated:YES];
+
             break;
         }
         default:
