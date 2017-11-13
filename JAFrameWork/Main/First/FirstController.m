@@ -90,9 +90,10 @@ static NSString * const MainCellID = @"MainCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[
-                       @"JAPlaceholderViewTestController \ntableView 或 collectionView 的空状态占位视图",
-                       @"MasonryDemoMianController \n masonry 布局 demo",
-                       @"LayoutDemoMianController \n 布局相关知识点",
+                       @"tableView 或 collectionView 的空状态占位视图\nJAPlaceholderViewTestController",
+                       @"控件集(masonry布局)\nMasonryDemoMianController",
+                       @"布局相关知识点\nLayoutDemoMianController",
+                       
                        ];
     }
     return _dataArray;

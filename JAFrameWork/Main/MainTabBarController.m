@@ -40,15 +40,15 @@
      JABaseNavigationController *recommendNav = [[JABaseNavigationController alloc] initWithRootViewController:[[FirstController alloc] init]];
     recommendNav.tabBarItem = [self tabBarItemWithTitle:@"推荐" image:@"tab_home" selectedImage:@"tab_home_selected"];
     
-    //发现
+    //
     JABaseNavigationController *discoveryNav = [[JABaseNavigationController alloc] initWithRootViewController:[[SecondController alloc] init]];
     discoveryNav.tabBarItem = [self tabBarItemWithTitle:@"发现" image:@"tab_home" selectedImage:@"tab_home_selected"];
     
-    //充值
+    //
     JABaseNavigationController *depositNav = [[JABaseNavigationController alloc] initWithRootViewController:[[ThirdController alloc] init]];
     depositNav.tabBarItem = [self tabBarItemWithTitle:@"充值" image:@"tab_home" selectedImage:@"tab_home_selected"];
     
-    //会员
+    //
     JABaseNavigationController *memberNav = [[JABaseNavigationController alloc] initWithRootViewController:[[FourthController alloc] init]];
     memberNav.tabBarItem = [self tabBarItemWithTitle:@"会员" image:@"tab_home" selectedImage:@"tab_home_selected"];
     

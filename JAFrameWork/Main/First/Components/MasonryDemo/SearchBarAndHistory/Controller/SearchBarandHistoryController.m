@@ -1,14 +1,14 @@
 //
-//  SearchBarandHistoryView.m
+//  SearchBarandHistoryController.m
 //  JAFrameWork
 //
-//  Created by Jacob_Liang on 2017/11/8.
+//  Created by Jacob_Liang on 2017/11/11.
 //  Copyright © 2017年 Jacob. All rights reserved.
 //
 
-#import "SearchBarandHistoryView.h"
+#import "SearchBarandHistoryController.h"
 
-@interface SearchBarandHistoryView ()<UITextFieldDelegate>
+@interface SearchBarandHistoryController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *searchContainerV;
 @property (nonatomic, strong) UITextField *textField;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation SearchBarandHistoryView
+@implementation SearchBarandHistoryController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

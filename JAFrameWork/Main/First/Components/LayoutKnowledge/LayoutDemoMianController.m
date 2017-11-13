@@ -1,25 +1,25 @@
 //
-//  MasonryDemoMianController.m
+//  LayoutDemoMianController.m
 //  JAFrameWork
 //
 //  Created by Jacob_Liang on 2017/10/21.
 //  Copyright © 2017年 Jacob. All rights reserved.
 //
 
-#import "MasonryDemoMianController.h"
+#import "LayoutDemoMianController.h"
 //vc
-#import "MTKeyboardShowHideController.h"
-#import "CTComment9PicsController.h"
+#import "LDTranslatesAutoresizingMaskController.h"
 
-static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
-@interface MasonryDemoMianController ()<UITableViewDelegate, UITableViewDataSource>
+static NSString * const JALayoutDemoCellID = @"JALayoutDemoCell";
+
+@interface LayoutDemoMianController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation MasonryDemoMianController
+@implementation LayoutDemoMianController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,10 +27,10 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.rowHeight = 100;
+    tableView.rowHeight = 80;
     [self.view addSubview:tableView];
     
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:JAMasonryLayoutTestCellID];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:JALayoutDemoCellID];
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view); //所有边的布局
@@ -43,9 +43,9 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:JAMasonryLayoutTestCellID forIndexPath:indexPath];
-    cell.textLabel.text = self.dataArray[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:JALayoutDemoCellID forIndexPath:indexPath];
     cell.textLabel.numberOfLines = 0;
+    cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
 }
 
@@ -55,10 +55,10 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
     
     switch (indexPath.row) {
         case 0:
-            [self.navigationController pushViewController:[[MTKeyboardShowHideController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[LDTranslatesAutoresizingMaskController alloc] init] animated:YES];
             break;
         case 1:
-            [self.navigationController pushViewController:[[CTComment9PicsController alloc] init] animated:YES];
+            
             break;
         case 2:
             [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
@@ -73,8 +73,8 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[
-                       @"1 MTKeyboardShowHideController \n 使用 masonry 显示隐藏键盘",
-                       @"2 CTComment9PicsController \n  九宫格评论",
+                       @"1 translatesAutoresizingMaskIntoConstraints\n[UIViewProperty]",
+                       @"2",
                        @"3",
                        ];
     }
@@ -82,3 +82,4 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 }
 
 @end
+

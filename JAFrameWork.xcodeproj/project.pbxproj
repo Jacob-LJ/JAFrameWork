@@ -34,7 +34,8 @@
 		16612BA21FB204450091D49A /* SamplePubuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA11FB204450091D49A /* SamplePubuController.m */; };
 		16612BA51FB2051E0091D49A /* SamplePubuCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA41FB2051E0091D49A /* SamplePubuCCell.m */; };
 		16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA71FB206AA0091D49A /* SamplePubuLayout.m */; };
-		16612BAB1FB33F7B0091D49A /* SearchBarandHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BAA1FB33F7B0091D49A /* SearchBarandHistoryView.m */; };
+		1695BE401FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1695BE3F1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m */; };
+		1695BE431FB7031D00A9DAB6 /* SearchBarandHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1695BE421FB7031D00A9DAB6 /* SearchBarandHistoryController.m */; };
 		16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */; };
 		16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */; };
 		16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */; };
@@ -133,8 +134,10 @@
 		16612BA41FB2051E0091D49A /* SamplePubuCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuCCell.m; sourceTree = "<group>"; };
 		16612BA61FB206AA0091D49A /* SamplePubuLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePubuLayout.h; sourceTree = "<group>"; };
 		16612BA71FB206AA0091D49A /* SamplePubuLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePubuLayout.m; sourceTree = "<group>"; };
-		16612BA91FB33F7B0091D49A /* SearchBarandHistoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBarandHistoryView.h; sourceTree = "<group>"; };
-		16612BAA1FB33F7B0091D49A /* SearchBarandHistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarandHistoryView.m; sourceTree = "<group>"; };
+		1695BE3E1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchSelectionAndHistoryView.h; sourceTree = "<group>"; };
+		1695BE3F1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionAndHistoryView.m; sourceTree = "<group>"; };
+		1695BE411FB7031D00A9DAB6 /* SearchBarandHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBarandHistoryController.h; sourceTree = "<group>"; };
+		1695BE421FB7031D00A9DAB6 /* SearchBarandHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarandHistoryController.m; sourceTree = "<group>"; };
 		16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseTableViewController.h; sourceTree = "<group>"; };
 		16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseTableViewController.m; sourceTree = "<group>"; };
 		16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseViewController.h; sourceTree = "<group>"; };
@@ -230,8 +233,8 @@
 		160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */ = {
 			isa = PBXGroup;
 			children = (
-				160D66F81FB0B56000A9CE0F /* View */,
 				160D66F71FB0B55900A9CE0F /* Controller */,
+				160D66F81FB0B56000A9CE0F /* View */,
 			);
 			path = SearchBarAndHistory;
 			sourceTree = "<group>";
@@ -239,8 +242,8 @@
 		160D66F71FB0B55900A9CE0F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				16612BA91FB33F7B0091D49A /* SearchBarandHistoryView.h */,
-				16612BAA1FB33F7B0091D49A /* SearchBarandHistoryView.m */,
+				1695BE411FB7031D00A9DAB6 /* SearchBarandHistoryController.h */,
+				1695BE421FB7031D00A9DAB6 /* SearchBarandHistoryController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +251,8 @@
 		160D66F81FB0B56000A9CE0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1695BE3E1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.h */,
+				1695BE3F1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,9 +393,12 @@
 		16148FF51F8887CB004B4EC8 /* MasonryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				16148FF91F888888004B4EC8 /* MasonryTest */,
 				16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */,
 				16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */,
+				16148FF91F888888004B4EC8 /* MasonryTest */,
+				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
+				16612B9D1FB2036B0091D49A /* SimplePubu */,
+				16414C0C1FA0E053003CD66C /* AddingPic */,
 			);
 			path = MasonryDemo;
 			sourceTree = "<group>";
@@ -405,15 +413,14 @@
 			path = MasonryTest;
 			sourceTree = "<group>";
 		};
-		161490011F892DA9004B4EC8 /* LayoutDemo */ = {
+		161490011F892DA9004B4EC8 /* LayoutKnowledge */ = {
 			isa = PBXGroup;
 			children = (
 				16FAE51E1F9AE6690035BCC3 /* LayoutDemoMianController.h */,
 				16FAE51F1F9AE6690035BCC3 /* LayoutDemoMianController.m */,
-				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
 				161490051F892DF0004B4EC8 /* TranslatesAutoresizingMask */,
 			);
-			path = LayoutDemo;
+			path = LayoutKnowledge;
 			sourceTree = "<group>";
 		};
 		161490051F892DF0004B4EC8 /* TranslatesAutoresizingMask */ = {
@@ -518,15 +525,6 @@
 			path = JASpecialClassPlaceholderView;
 			sourceTree = "<group>";
 		};
-		16414C0B1FA0E033003CD66C /* CollectionViewAbout */ = {
-			isa = PBXGroup;
-			children = (
-				16612B9D1FB2036B0091D49A /* SimplePubu */,
-				16414C0C1FA0E053003CD66C /* AddingPic */,
-			);
-			path = CollectionViewAbout;
-			sourceTree = "<group>";
-		};
 		16414C0C1FA0E053003CD66C /* AddingPic */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +587,53 @@
 				16612BA41FB2051E0091D49A /* SamplePubuCCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		16C743F11FB6F32F00DD16CB /* First */ = {
+			isa = PBXGroup;
+			children = (
+				161280741FAEA4150098C86E /* FirstController.h */,
+				161280751FAEA4150098C86E /* FirstController.m */,
+				16C743F21FB6F35800DD16CB /* Components */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		16C743F21FB6F35800DD16CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				16148FF51F8887CB004B4EC8 /* MasonryDemo */,
+				16FD84DD1F824B5700DE8F82 /* PlaceholderViewDemo */,
+				161490011F892DA9004B4EC8 /* LayoutKnowledge */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		16C743F31FB6F3BD00DD16CB /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				161280771FAEA4240098C86E /* SecondController.h */,
+				161280781FAEA4240098C86E /* SecondController.m */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		16C743F41FB6F3C900DD16CB /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				1612807A1FAEA42E0098C86E /* ThirdController.h */,
+				1612807B1FAEA42E0098C86E /* ThirdController.m */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		16C743F51FB6F3D400DD16CB /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
+				1612807D1FAEA43B0098C86E /* FourthController.h */,
+				1612807E1FAEA43B0098C86E /* FourthController.m */,
+			);
+			path = Fourth;
 			sourceTree = "<group>";
 		};
 		16FAE4FB1F9ACE120035BCC3 /* LongPressMoveableTableView */ = {
@@ -726,18 +771,10 @@
 				161280801FAEA4750098C86E /* README.md */,
 				161280651FAEA1850098C86E /* MainTabBarController.h */,
 				161280661FAEA1850098C86E /* MainTabBarController.m */,
-				161280741FAEA4150098C86E /* FirstController.h */,
-				161280751FAEA4150098C86E /* FirstController.m */,
-				161280771FAEA4240098C86E /* SecondController.h */,
-				161280781FAEA4240098C86E /* SecondController.m */,
-				1612807A1FAEA42E0098C86E /* ThirdController.h */,
-				1612807B1FAEA42E0098C86E /* ThirdController.m */,
-				1612807D1FAEA43B0098C86E /* FourthController.h */,
-				1612807E1FAEA43B0098C86E /* FourthController.m */,
-				16414C0B1FA0E033003CD66C /* CollectionViewAbout */,
-				161490011F892DA9004B4EC8 /* LayoutDemo */,
-				16148FF51F8887CB004B4EC8 /* MasonryDemo */,
-				16FD84DD1F824B5700DE8F82 /* PlaceholderViewDemo */,
+				16C743F11FB6F32F00DD16CB /* First */,
+				16C743F31FB6F3BD00DD16CB /* Second */,
+				16C743F41FB6F3C900DD16CB /* Third */,
+				16C743F51FB6F3D400DD16CB /* Fourth */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -942,6 +979,7 @@
 				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
+				1695BE401FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m in Sources */,
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
 				16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */,
 				1612808F1FAEBF970098C86E /* NSString+JAExpand.m in Sources */,
@@ -950,8 +988,8 @@
 				16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */,
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
+				1695BE431FB7031D00A9DAB6 /* SearchBarandHistoryController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
-				16612BAB1FB33F7B0091D49A /* SearchBarandHistoryView.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
