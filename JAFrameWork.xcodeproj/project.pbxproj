@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160CB06F1FBB3AE600D1A360 /* SearchHistoryCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB06E1FBB3AE600D1A360 /* SearchHistoryCCell.m */; };
+		160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB0711FBB3BA900D1A360 /* HIstoryAlignmentLayout.m */; };
 		161280671FAEA1850098C86E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280661FAEA1850098C86E /* MainTabBarController.m */; };
 		161280761FAEA4150098C86E /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280751FAEA4150098C86E /* FirstController.m */; };
 		161280791FAEA4240098C86E /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280781FAEA4240098C86E /* SecondController.m */; };
@@ -71,6 +73,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160CB06D1FBB3AE600D1A360 /* SearchHistoryCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchHistoryCCell.h; sourceTree = "<group>"; };
+		160CB06E1FBB3AE600D1A360 /* SearchHistoryCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchHistoryCCell.m; sourceTree = "<group>"; };
+		160CB0701FBB3BA900D1A360 /* HIstoryAlignmentLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIstoryAlignmentLayout.h; sourceTree = "<group>"; };
+		160CB0711FBB3BA900D1A360 /* HIstoryAlignmentLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIstoryAlignmentLayout.m; sourceTree = "<group>"; };
 		161280651FAEA1850098C86E /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		161280661FAEA1850098C86E /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		161280741FAEA4150098C86E /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstController.h; sourceTree = "<group>"; };
@@ -262,6 +268,10 @@
 			children = (
 				1695BE3E1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.h */,
 				1695BE3F1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m */,
+				160CB06D1FBB3AE600D1A360 /* SearchHistoryCCell.h */,
+				160CB06E1FBB3AE600D1A360 /* SearchHistoryCCell.m */,
+				160CB0701FBB3BA900D1A360 /* HIstoryAlignmentLayout.h */,
+				160CB0711FBB3BA900D1A360 /* HIstoryAlignmentLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -955,6 +965,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */,
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
 				1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */,
 				161280A91FAF2A280098C86E /* NSError+BaseRequest.m in Sources */,
@@ -985,6 +996,7 @@
 				1612809C1FAEFDE30098C86E /* JAImagePickerController.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
 				161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */,
+				160CB06F1FBB3AE600D1A360 /* SearchHistoryCCell.m in Sources */,
 				161280991FAEFD990098C86E /* ApplicationService.m in Sources */,
 				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,

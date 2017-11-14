@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+static const CGFloat kSwitchViewH = 147;
+
 @interface SearchSelectionAndHistoryView : UIView
 
 @end

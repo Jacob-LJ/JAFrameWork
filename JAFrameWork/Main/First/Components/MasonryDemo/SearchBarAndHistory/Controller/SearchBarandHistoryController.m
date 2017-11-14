@@ -7,6 +7,7 @@
 //
 
 #import "SearchBarandHistoryController.h"
+#import "SearchSelectionAndHistoryView.h"
 
 @interface SearchBarandHistoryController ()<UITextFieldDelegate>
 
@@ -15,6 +16,7 @@
 @property (nonatomic, strong) UIButton *cancelBtn;
 
 @property (nonatomic, assign) CGFloat searchContainerVH;
+@property (nonatomic, strong) SearchSelectionAndHistoryView *selectionView;
 
 @end
 
@@ -25,6 +27,8 @@
     
     [self setUpInit];
     [self setUpNav];
+    
+    [self setUpSelectionView];
 }
 
 - (void)setUpInit {
@@ -46,6 +50,15 @@
         make.height.mas_equalTo(self.searchContainerVH);
     }];
 }
+
+- (void)setUpSelectionView {
+    
+    [self.selectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(self.searchContainerVH);
+        make.left.right.bottom.equalTo(self.view);
+    }];
+}
+
 
 #pragma mark - private
 - (void)cancelBtnClick {
@@ -116,5 +129,14 @@
     return _cancelBtn;
 }
 
+
+#pragma mark  history and seletion
+- (SearchSelectionAndHistoryView *)selectionView {
+    if (!_selectionView) {
+        _selectionView = [[SearchSelectionAndHistoryView alloc] init];
+        [self.view addSubview:_selectionView];
+    }
+    return _selectionView;
+}
 
 @end
