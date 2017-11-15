@@ -12,6 +12,7 @@
 #import "CTComment9PicsController.h"
 #import "SearchBarandHistoryController.h"
 #import "ShareSheetController.h"
+#import "SamplePubuController.h"
 
 static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
@@ -68,6 +69,9 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
         case 3:
             [self.navigationController pushViewController:[[ShareSheetController alloc] init] animated:YES];
             break;
+        case 4:
+            [self.navigationController pushViewController:[[SamplePubuController alloc] init] animated:YES];
+            break;
         default:
             break;
     }
@@ -77,10 +81,11 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[
-                       @"0 MTKeyboardShowHideController \n 使用 masonry 显示隐藏键盘",
-                       @"1 CTComment9PicsController \n  九宫格评论",
-                       @"2 SearchBarandHistoryController \n 简单Nav内的searchBar和靠左的 collectionView搜索关键字历史记录",
-                       @"3 ShareSheetController \n 分享actionSheet样式",
+                       @"0 使用 masonry 显示隐藏键盘",
+                       @"1 九宫格评论",
+                       @"2 简单Nav内的searchBar和靠左的 collectionView搜索关键字历史记录",
+                       @"3 分享actionSheet样式",
+                       @"4 简单瀑布流"
                        ];
     }
     return _dataArray;

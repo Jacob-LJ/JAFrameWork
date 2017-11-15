@@ -11,7 +11,8 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-#ifdef __OBJC__
+
+#ifdef __OBJC__ //只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中
 
 
 
@@ -29,83 +30,11 @@
 #import "UIColor+JAExpand.h"
 #import "UIFont+JAExpand.h"
 #import "NSString+JAExpand.h"
+//Macros
+#import "DimensionMacros.h"
 
 
-
-/**
- Screen
- */
-#pragma mark - Screen
-
-#define JAScreenW [UIScreen mainScreen].bounds.size.width
-#define JAScreenH [UIScreen mainScreen].bounds.size.height
-
-/**
- Navbar
- */
-//状态栏高度
-#define JAStatusBarH  [[UIApplication sharedApplication] statusBarFrame].size.height
-//导航栏高度
-#define JANavBarH self.navigationController.navigationBar.frame.size.height
-
-/**
- iPhone Size
- */
-#define isiPhone             ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-#define isiPhone5            (isiPhone && JAScreenH == 568.f)
-#define isiPhone6            (isiPhone && JAScreenH == 667.f)
-#define isiPhone6P           (isiPhone && JAScreenH == 736.f) // Both orientations
-#define isiPhoneX            (isiPhone && JAScreenH ==  812.f)
+#endif //__OBJC__
 
 
-
-
-/**
- Weak objc
- */
-#pragma mark - Weak objc
-
-//weakSelf
-#define JAWeakSelf  __weak typeof(self) weakSelf = self;
-
-
-/**
- Color
- */
-#pragma mark - Color
-//rgba
-#define JARGBA(r, g, b, a)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
-
-
-/**
- NSLog
- */
-#pragma mark - NSLog
-
-#if DEBUG
-
-#define NSLog(format, ...) printf("[%s] %s [第%d行] \n\t\t\t%s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
-
-#else
-
-#define NSLog(FORMAT, ...) nil
-
-#endif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
 #endif /* PrefixHeader_JAFrameWork_pch */

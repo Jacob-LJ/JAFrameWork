@@ -80,7 +80,7 @@ static const CGFloat kTitleDescHeight = 65;
         _nameLB.textColor = [UIColor color3333];
         [self.contentView addSubview:_nameLB];
         
-        _nameLB.text = @"新鲜水果(奥体店)新鲜水果(奥体店)";
+        _nameLB.text = @"简单瀑布流简单瀑布流";
     }
     return _nameLB;
 }
@@ -93,7 +93,7 @@ static const CGFloat kTitleDescHeight = 65;
         _descLB.textColor = [UIColor color6666];
         [self.contentView addSubview:_descLB];
         
-        _descLB.text = @"箱包箱包箱包箱包箱包箱包箱包箱包箱包箱包";
+        _descLB.text = @"简单瀑布流简单瀑布流简单瀑布流简单瀑布流";
     }
     return _descLB;
 }
