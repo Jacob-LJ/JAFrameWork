@@ -31,6 +31,11 @@
 		162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */; };
 		16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C111FA0E13B003CD66C /* AddingPicController.m */; };
 		16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C141FA0E19F003CD66C /* APImageCCell.m */; };
+		164942B81FBC31F6005493AB /* GTShareActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 164942AF1FBC31F6005493AB /* GTShareActionSheet.m */; };
+		164942B91FBC31F6005493AB /* GTShareActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 164942B31FBC31F6005493AB /* GTShareActionSheetCell.m */; };
+		164942BA1FBC31F6005493AB /* GTShareItemCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 164942B51FBC31F6005493AB /* GTShareItemCCell.m */; };
+		164942BB1FBC31F6005493AB /* GTShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 164942B71FBC31F6005493AB /* GTShareItem.m */; };
+		164942BE1FBC3211005493AB /* ShareSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164942BD1FBC3211005493AB /* ShareSheetController.m */; };
 		16612B991FB1FF890091D49A /* UILabel+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612B981FB1FF890091D49A /* UILabel+JAExpand.m */; };
 		16612B9C1FB201380091D49A /* UIImage+JAExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612B9B1FB201380091D49A /* UIImage+JAExpand.m */; };
 		16612BA21FB204450091D49A /* SamplePubuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA11FB204450091D49A /* SamplePubuController.m */; };
@@ -131,6 +136,17 @@
 		16414C111FA0E13B003CD66C /* AddingPicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingPicController.m; sourceTree = "<group>"; };
 		16414C131FA0E19F003CD66C /* APImageCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APImageCCell.h; sourceTree = "<group>"; };
 		16414C141FA0E19F003CD66C /* APImageCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APImageCCell.m; sourceTree = "<group>"; };
+		164942AE1FBC31F6005493AB /* GTShareActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShareActionSheet.h; sourceTree = "<group>"; };
+		164942AF1FBC31F6005493AB /* GTShareActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShareActionSheet.m; sourceTree = "<group>"; };
+		164942B01FBC31F6005493AB /* GTShareActionSheetConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShareActionSheetConst.h; sourceTree = "<group>"; };
+		164942B21FBC31F6005493AB /* GTShareActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShareActionSheetCell.h; sourceTree = "<group>"; };
+		164942B31FBC31F6005493AB /* GTShareActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShareActionSheetCell.m; sourceTree = "<group>"; };
+		164942B41FBC31F6005493AB /* GTShareItemCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShareItemCCell.h; sourceTree = "<group>"; };
+		164942B51FBC31F6005493AB /* GTShareItemCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShareItemCCell.m; sourceTree = "<group>"; };
+		164942B61FBC31F6005493AB /* GTShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShareItem.h; sourceTree = "<group>"; };
+		164942B71FBC31F6005493AB /* GTShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShareItem.m; sourceTree = "<group>"; };
+		164942BC1FBC3211005493AB /* ShareSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareSheetController.h; sourceTree = "<group>"; };
+		164942BD1FBC3211005493AB /* ShareSheetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareSheetController.m; sourceTree = "<group>"; };
 		16612B971FB1FF890091D49A /* UILabel+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+JAExpand.h"; sourceTree = "<group>"; };
 		16612B981FB1FF890091D49A /* UILabel+JAExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JAExpand.m"; sourceTree = "<group>"; };
 		16612B9A1FB201380091D49A /* UIImage+JAExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JAExpand.h"; sourceTree = "<group>"; };
@@ -414,6 +430,7 @@
 			children = (
 				16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */,
 				16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */,
+				164942AC1FBC31F6005493AB /* ShareSheet */,
 				16148FF91F888888004B4EC8 /* MasonryTest */,
 				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
 				16612B9D1FB2036B0091D49A /* SimplePubu */,
@@ -577,6 +594,40 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		164942AC1FBC31F6005493AB /* ShareSheet */ = {
+			isa = PBXGroup;
+			children = (
+				164942BC1FBC3211005493AB /* ShareSheetController.h */,
+				164942BD1FBC3211005493AB /* ShareSheetController.m */,
+				164942AD1FBC31F6005493AB /* GTShareActionSheet */,
+			);
+			path = ShareSheet;
+			sourceTree = "<group>";
+		};
+		164942AD1FBC31F6005493AB /* GTShareActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				164942AE1FBC31F6005493AB /* GTShareActionSheet.h */,
+				164942AF1FBC31F6005493AB /* GTShareActionSheet.m */,
+				164942B01FBC31F6005493AB /* GTShareActionSheetConst.h */,
+				164942B11FBC31F6005493AB /* GTShareActionSheetSubView */,
+				164942B61FBC31F6005493AB /* GTShareItem.h */,
+				164942B71FBC31F6005493AB /* GTShareItem.m */,
+			);
+			path = GTShareActionSheet;
+			sourceTree = "<group>";
+		};
+		164942B11FBC31F6005493AB /* GTShareActionSheetSubView */ = {
+			isa = PBXGroup;
+			children = (
+				164942B21FBC31F6005493AB /* GTShareActionSheetCell.h */,
+				164942B31FBC31F6005493AB /* GTShareActionSheetCell.m */,
+				164942B41FBC31F6005493AB /* GTShareItemCCell.h */,
+				164942B51FBC31F6005493AB /* GTShareItemCCell.m */,
+			);
+			path = GTShareActionSheetSubView;
 			sourceTree = "<group>";
 		};
 		16612B9D1FB2036B0091D49A /* SimplePubu */ = {
@@ -985,6 +1036,7 @@
 				16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */,
 				16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */,
 				16FAE5261F9AEBB20035BCC3 /* MasonryDemoMianController.m in Sources */,
+				164942BE1FBC3211005493AB /* ShareSheetController.m in Sources */,
 				1612807F1FAEA43B0098C86E /* FourthController.m in Sources */,
 				16612B9C1FB201380091D49A /* UIImage+JAExpand.m in Sources */,
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
@@ -997,12 +1049,14 @@
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
 				161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */,
 				160CB06F1FBB3AE600D1A360 /* SearchHistoryCCell.m in Sources */,
+				164942BA1FBC31F6005493AB /* GTShareItemCCell.m in Sources */,
 				161280991FAEFD990098C86E /* ApplicationService.m in Sources */,
 				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				1695BE401FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m in Sources */,
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
+				164942BB1FBC31F6005493AB /* GTShareItem.m in Sources */,
 				16FAE53C1F9AF2200035BCC3 /* CTSudokuView.m in Sources */,
 				1612808F1FAEBF970098C86E /* NSString+JAExpand.m in Sources */,
 				16612BA21FB204450091D49A /* SamplePubuController.m in Sources */,
@@ -1013,6 +1067,8 @@
 				1695BE431FB7031D00A9DAB6 /* SearchBarandHistoryController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
+				164942B91FBC31F6005493AB /* GTShareActionSheetCell.m in Sources */,
+				164942B81FBC31F6005493AB /* GTShareActionSheet.m in Sources */,
 				16FD84E71F824E3B00DE8F82 /* UITableView+JAPlaceholderView.m in Sources */,
 				161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */,
 				161280791FAEA4240098C86E /* SecondController.m in Sources */,
