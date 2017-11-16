@@ -26,7 +26,6 @@
     
     [self setUpNav];
     
-    
     /**
      *  rightBarButton的点击标记，每次点击更改flag值。
      *  如果您用普通的button就不需要设置flag，通过按钮的seleted属性来控制即可
@@ -39,23 +38,26 @@
      *  e-mail : KongPro@163.com，喜欢请在github上点颗星星，不胜感激！ 🙏
      *  GitHub : https://github.com/KongPro/PopMenuTableView
      */
-    NSDictionary *dict1 = @{@"imageName" : @"icon_button_affirm",
-                            @"itemName" : @"撤回"
-                            };
-    NSDictionary *dict2 = @{@"imageName" : @"icon_button_recall",
-                            @"itemName" : @"确认"
-                            };
-    NSDictionary *dict3 = @{@"imageName" : @"icon_button_record",
-                            @"itemName" : @"记录"
-                            };
-    NSArray *dataArray = @[dict1,dict2,dict3];
+    MenuModel *model1 = [[MenuModel alloc] init];
+    model1.imageName = @"icon_button_affirm";
+    model1.itemName = @"撤回";
+
+    MenuModel *model2 = [[MenuModel alloc] init];
+    model2.imageName = @"icon_button_recall";
+    model2.itemName = @"确认";
+    
+    MenuModel *model3 = [[MenuModel alloc] init];
+    model3.imageName = @"icon_button_record";
+    model3.itemName = @"记录";
+    
+    NSArray *dataArray = @[model1,model2,model3];
     _dataArray = dataArray;
     
     __weak __typeof(&*self)weakSelf = self;
     /**
      *  创建普通的MenuView，frame可以传递空值，宽度默认120，高度自适应
      */
-    [CommonMenuView createMenuWithFrame:CGRectZero target:self dataArray:dataArray itemsClickBlock:^(NSString *str, NSInteger tag) {
+    [CommonMenuView createMenuWithFrame:CGRectZero dataArray:dataArray itemsClickBlock:^(NSString *str, NSInteger tag) {
         [weakSelf doSomething:(NSString *)str tag:(NSInteger)tag]; // do something
     } backViewTap:^{
         weakSelf.flag = YES; // 这里的目的是，让rightButton点击，可再次pop出menu
@@ -75,7 +77,14 @@
     
 }
 
-#pragma mark -- Nav上的四个button
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = touches.anyObject;
+    CGPoint point = [touch locationInView:touch.view];
+    [CommonMenuView showMenuAtPoint:point];
+}
+
+#pragma mark - Nav上的四个button
 - (void)popMenuAdd:(id)sender {
     CGFloat topMargin = isiPhoneX?30:0;
     [self popMenu:CGPointMake(30, 50 + topMargin)];
@@ -103,7 +112,7 @@
         [CommonMenuView showMenuAtPoint:point];
         self.flag = NO;
     }else{
-        [CommonMenuView hidden];
+        [CommonMenuView hideMenu];
         self.flag = YES;
     }
 }
@@ -111,10 +120,11 @@
 #pragma mark  -- 增加一个菜单项
 - (IBAction)addMenuItem:(id)sender {
     
-    NSDictionary *addDict = @{@"imageName" : @"icon_button_recall",
-                              @"itemName" : [NSString stringWithFormat:@"新增项%d",self.itemCount + 1]
-                              };
-    NSArray *newItemArray = @[addDict];
+    MenuModel *addModel = [[MenuModel alloc] init];
+    addModel.imageName = @"icon_button_recall";
+    addModel.itemName = [NSString stringWithFormat:@"新增项%d",self.itemCount + 1];
+    
+    NSArray *newItemArray = @[addModel];
     /**
      *  追加菜单项
      */
@@ -135,7 +145,7 @@
     self.numberLabel.text = [NSString stringWithFormat:@"累计增加 %d 项", self.itemCount];
 }
 
-#pragma mark -- 回调事件(自定义)
+#pragma mark - 回调事件(自定义)
 - (void)doSomething:(NSString *)str tag:(NSInteger)tag{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:str message:[NSString stringWithFormat:@"点击了第%ld个菜单项",tag] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -143,17 +153,11 @@
     [alertController addAction:action];
     [self presentViewController:alertController animated:YES completion:nil];
     
-    [CommonMenuView hidden];
+    [CommonMenuView hideMenu];
     self.flag = YES;
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UITouch *touch = touches.anyObject;
-    CGPoint point = [touch locationInView:touch.view];
-    [CommonMenuView showMenuAtPoint:point];
-}
-
-#pragma mark -- dealloc:释放菜单
+#pragma mark - dealloc
 - (void)dealloc{
     [CommonMenuView clearMenu];   // 移除菜单
 }

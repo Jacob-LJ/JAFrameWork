@@ -13,6 +13,4 @@
 @property (nonatomic,copy) NSString *imageName;
 @property (nonatomic,copy) NSString *itemName;
 
-+ (instancetype)MenuModelWithDict:(NSDictionary *)dict;
-
 @end

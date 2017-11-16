@@ -21,7 +21,7 @@
 #define KDefaultMaxValue 6  // 菜单项最大值
 
 @interface CommonMenuView () <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic,strong) CommonMenuView * selfMenu;
+
 @property (nonatomic,strong) UITableView * contentTableView;;
 @property (nonatomic,strong) NSMutableArray * menuDataArray;
 @end
@@ -31,36 +31,33 @@
     CGFloat arrowPointX; // 箭头位置
 }
 
-- (void)setMenuDataArray:(NSMutableArray *)menuDataArray{
-    if (!_menuDataArray) {
-        _menuDataArray = [NSMutableArray array];
-    }
-    [menuDataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (![obj isKindOfClass:[MenuModel class]]) {
-            MenuModel *model = [MenuModel MenuModelWithDict:(NSDictionary *)obj];
-            [_menuDataArray addObject:model];
-        }
-    }];
++ (CommonMenuView *)createMenuWithFrame:(CGRect)frame dataArray:(NSArray *)dataArray itemsClickBlock:(void(^)(NSString *str, NSInteger tag))itemsClickBlock backViewTap:(void(^)(void))backViewTapBlock{
+    
+    CGFloat menuWidth = frame.size.width ? frame.size.width : 120;
+    
+    CommonMenuView *menuView = [[CommonMenuView alloc] initWithFrame:CGRectMake(0, 0, menuWidth, 40 * dataArray.count)];
+    //    menuView.selfMenu = menuView;
+    menuView.itemsClickBlock = itemsClickBlock;
+    menuView.backViewTapBlock = backViewTapBlock;
+    menuView.menuDataArray = [NSMutableArray arrayWithArray:dataArray];
+    menuView.maxValueForItemCount = 6;
+    menuView.tag = kMenuTag;
+    return menuView;
 }
 
-- (void)setMaxValueForItemCount:(NSInteger)maxValueForItemCount{
-    if (maxValueForItemCount <= KDefaultMaxValue) {
-        _maxValueForItemCount = maxValueForItemCount;
-    }else{
-        _maxValueForItemCount = KDefaultMaxValue;
-    }
-}
-
-
-- (instancetype)initWithFrame:(CGRect)frame{
-    if (self == [super initWithFrame:frame]) {
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
         [self setUpUI];
     }
     return self;
 }
-- (void)setUpUI{
+
+- (void)setUpUI {
+    
     self.backgroundColor = [UIColor colorWithRed:61/255.0 green:61/255.0 blue:61/255.0 alpha:1];
+    
     arrowPointX = self.width * 0.5;
+    
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kTriangleHeight, self.width, self.height)];
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -85,15 +82,29 @@
 
     CAShapeLayer *lay = [self getBorderLayer];
     self.layer.mask = lay;
+    
     [self addSubview:tableView];
+    
     [[UIApplication sharedApplication].keyWindow addSubview:self];
 }
-#pragma mark --- TableView DataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+- (void)setMaxValueForItemCount:(NSInteger)maxValueForItemCount {
+    
+    if (maxValueForItemCount <= KDefaultMaxValue) {
+        _maxValueForItemCount = maxValueForItemCount;
+    } else {
+        _maxValueForItemCount = KDefaultMaxValue;
+    }
+}
+
+
+#pragma mark - UITableViewDataSource, UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.menuDataArray.count;
 }
 
-- (MenuTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (MenuTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     MenuModel *model = self.menuDataArray[indexPath.row];
     MenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MenuTableViewCell class]) forIndexPath:indexPath];
     cell.menuModel = model;
@@ -101,7 +112,8 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     MenuModel *model = self.menuDataArray[indexPath.row];
     if (self.itemsClickBlock) {
@@ -109,8 +121,8 @@
     }
 }
 
-#pragma mark --- 关于菜单展示
-- (void)displayAtPoint:(CGPoint)point{
+#pragma mark - 关于菜单展示
+- (void)displayAtPoint:(CGPoint)point {
     
     point = [self.superview convertPoint:point toView:self.window];
     self.layer.affineTransform = CGAffineTransformIdentity;
@@ -155,7 +167,8 @@
     }];
 }
 
-- (void)adjustPosition:(CGPoint)point{
+- (void)adjustPosition:(CGPoint)point {
+    
     self.x = point.x - self.width * 0.5;
     self.y = point.y + kMargin;
     if (self.x < kMargin) {
@@ -166,7 +179,8 @@
     self.layer.affineTransform = CGAffineTransformMakeScale(1.0, 1.0);
 }
 
-- (void)updateFrameForMenu{
+- (void)updateFrameForMenu {
+    
     CommonMenuView *menuView = [[UIApplication sharedApplication].keyWindow viewWithTag:kMenuTag];
     menuView.maxValueForItemCount = menuView.menuDataArray.count;
     menuView.transform = CGAffineTransformMakeScale(1.0, 1.0);;
@@ -176,23 +190,7 @@
     menuView.transform = CGAffineTransformMakeScale(0.01, 0.01);
 }
 
-- (void)hiddenMenu{
-    self.contentTableView.contentOffset = CGPointMake(0, 0);
-    [UIView animateWithDuration:0.25 animations:^{
-        self.layer.affineTransform = CGAffineTransformMakeScale(0.01, 0.01);
-        self.alpha = 0;
-        _backView.alpha = 0;
-    }];
-}
-
-- (void)tap:(UITapGestureRecognizer *)sender{
-    if (self.backViewTapBlock) {
-        self.backViewTapBlock();
-    }
-    [self hiddenMenu];
-    
-}
-- (CAShapeLayer *)getBorderLayer{
+- (CAShapeLayer *)getBorderLayer {
     // 上下左右的圆角中心点
     CGPoint upperLeftCornerCenter = CGPointMake(kRadius, kTriangleHeight + kRadius);
     CGPoint upperRightCornerCenter = CGPointMake(self.width - kRadius, kTriangleHeight + kRadius);
@@ -219,40 +217,51 @@
     return borderLayer;
 }
 
-#pragma mark --- 类方法封装
-+ (CommonMenuView *)createMenuWithFrame:(CGRect)frame target:(UIViewController *)target dataArray:(NSArray *)dataArray itemsClickBlock:(void(^)(NSString *str, NSInteger tag))itemsClickBlock backViewTap:(void(^)(void))backViewTapBlock{
+#pragma mark - private
+
+- (void)tap:(UITapGestureRecognizer *)sender{
+    if (self.backViewTapBlock) {
+        self.backViewTapBlock();
+    }
+    [self hiddenMenu];
     
-    CGFloat menuWidth = frame.size.width ? frame.size.width : 120;
-    
-    CommonMenuView *menuView = [[CommonMenuView alloc] initWithFrame:CGRectMake(0, 0, menuWidth, 40 * dataArray.count)];
-    menuView.selfMenu = menuView;
-    menuView.itemsClickBlock = itemsClickBlock;
-    menuView.backViewTapBlock = backViewTapBlock;
-    menuView.menuDataArray = [NSMutableArray arrayWithArray:dataArray];
-    menuView.maxValueForItemCount = 6;
-    menuView.tag = kMenuTag;
-    return menuView;
 }
 
+- (void)hiddenMenu {
+    
+    self.contentTableView.contentOffset = CGPointMake(0, 0);
+    [UIView animateWithDuration:0.25 animations:^{
+        self.layer.affineTransform = CGAffineTransformMakeScale(0.01, 0.01);
+        self.alpha = 0;
+        _backView.alpha = 0;
+    }];
+}
+
+#pragma mark - public
+
 + (void)showMenuAtPoint:(CGPoint)point{
+    
     CommonMenuView *menuView = [[UIApplication sharedApplication].keyWindow viewWithTag:kMenuTag];
     [menuView displayAtPoint:point];
 }
 
-+ (void)hidden{
++ (void)hideMenu {
+    
     CommonMenuView *menuView = [[UIApplication sharedApplication].keyWindow viewWithTag:kMenuTag];
     [menuView hiddenMenu];
 }
 
-+ (void)clearMenu{
-    [CommonMenuView hidden];
++ (void)clearMenu {
+    
+    [CommonMenuView hideMenu];
     CommonMenuView *menuView = [[UIApplication sharedApplication].keyWindow viewWithTag:kMenuTag];
     UIView *coverView = [[UIApplication sharedApplication].keyWindow viewWithTag:kCoverViewTag];
     [menuView removeFromSuperview];
     [coverView removeFromSuperview];
 }
 
-+ (void)appendMenuItemsWith:(NSArray *)appendItemsArray{
++ (void)appendMenuItemsWith:(NSArray *)appendItemsArray {
+    
     CommonMenuView *menuView = [[UIApplication sharedApplication].keyWindow viewWithTag:kMenuTag];
     NSMutableArray *tempMutableArr = [NSMutableArray arrayWithArray:menuView.menuDataArray];
     [tempMutableArr addObjectsFromArray:appendItemsArray];
@@ -261,7 +270,8 @@
     [menuView updateFrameForMenu];
 }
 
-+ (void)updateMenuItemsWith:(NSArray *)newItemsArray{
++ (void)updateMenuItemsWith:(NSArray<MenuModel *> *)newItemsArray {
+    
     CommonMenuView *menuView = [[UIApplication sharedApplication].keyWindow viewWithTag:kMenuTag];
     [menuView.menuDataArray removeAllObjects];
     menuView.menuDataArray = [NSMutableArray arrayWithArray:newItemsArray];
