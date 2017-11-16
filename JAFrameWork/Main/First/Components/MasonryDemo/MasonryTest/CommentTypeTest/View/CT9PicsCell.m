@@ -115,7 +115,7 @@
 #pragma mark - Private
 - (void)addSeeMoreButton {
     
-    JAWeakSelf
+    JAWeakSelf;
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"... 查看全文"];
     
     YYTextHighlight *hi = [[YYTextHighlight alloc] init];

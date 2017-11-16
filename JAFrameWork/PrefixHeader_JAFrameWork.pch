@@ -31,6 +31,7 @@
 #import "UIFont+JAExpand.h"
 #import "NSString+JAExpand.h"
 //Macros
+#import "UtilsMacros.h"
 #import "DimensionMacros.h"
 
 

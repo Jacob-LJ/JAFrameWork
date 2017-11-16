@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		160CB06F1FBB3AE600D1A360 /* SearchHistoryCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB06E1FBB3AE600D1A360 /* SearchHistoryCCell.m */; };
 		160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB0711FBB3BA900D1A360 /* HIstoryAlignmentLayout.m */; };
+		160CB07E1FBDD17000D1A360 /* PopMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB07C1FBDD17000D1A360 /* PopMenuController.m */; };
+		160CB07F1FBDD17000D1A360 /* PopMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160CB07D1FBDD17000D1A360 /* PopMenuController.xib */; };
+		160CB08A1FBDDA1600D1A360 /* CommonMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB0831FBDD2A100D1A360 /* CommonMenuView.m */; };
+		160CB08B1FBDDA1600D1A360 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB0851FBDD2A100D1A360 /* MenuModel.m */; };
+		160CB08C1FBDDA1600D1A360 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB0871FBDD2A100D1A360 /* MenuTableViewCell.m */; };
+		160CB08D1FBDDA1600D1A360 /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CB0891FBDD2A100D1A360 /* UIView+AdjustFrame.m */; };
 		161280671FAEA1850098C86E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280661FAEA1850098C86E /* MainTabBarController.m */; };
 		161280761FAEA4150098C86E /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280751FAEA4150098C86E /* FirstController.m */; };
 		161280791FAEA4240098C86E /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280781FAEA4240098C86E /* SecondController.m */; };
@@ -84,6 +90,17 @@
 		160CB0711FBB3BA900D1A360 /* HIstoryAlignmentLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIstoryAlignmentLayout.m; sourceTree = "<group>"; };
 		160CB0741FBC9BB500D1A360 /* DimensionMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimensionMacros.h; sourceTree = "<group>"; };
 		160CB0751FBC9D4A00D1A360 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		160CB07B1FBDD17000D1A360 /* PopMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuController.h; sourceTree = "<group>"; };
+		160CB07C1FBDD17000D1A360 /* PopMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuController.m; sourceTree = "<group>"; };
+		160CB07D1FBDD17000D1A360 /* PopMenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopMenuController.xib; sourceTree = "<group>"; };
+		160CB0821FBDD2A100D1A360 /* CommonMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMenuView.h; sourceTree = "<group>"; };
+		160CB0831FBDD2A100D1A360 /* CommonMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMenuView.m; sourceTree = "<group>"; };
+		160CB0841FBDD2A100D1A360 /* MenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		160CB0851FBDD2A100D1A360 /* MenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		160CB0861FBDD2A100D1A360 /* MenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		160CB0871FBDD2A100D1A360 /* MenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		160CB0881FBDD2A100D1A360 /* UIView+AdjustFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AdjustFrame.h"; sourceTree = "<group>"; };
+		160CB0891FBDD2A100D1A360 /* UIView+AdjustFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AdjustFrame.m"; sourceTree = "<group>"; };
 		161280651FAEA1850098C86E /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		161280661FAEA1850098C86E /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		161280741FAEA4150098C86E /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstController.h; sourceTree = "<group>"; };
@@ -272,6 +289,40 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
+		160CB0761FBDD07300D1A360 /* PopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				160CB0771FBDD0A900D1A360 /* Contoller */,
+				160CB0811FBDD2A100D1A360 /* Menu */,
+			);
+			path = PopMenu;
+			sourceTree = "<group>";
+		};
+		160CB0771FBDD0A900D1A360 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				160CB07B1FBDD17000D1A360 /* PopMenuController.h */,
+				160CB07C1FBDD17000D1A360 /* PopMenuController.m */,
+				160CB07D1FBDD17000D1A360 /* PopMenuController.xib */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		160CB0811FBDD2A100D1A360 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				160CB0821FBDD2A100D1A360 /* CommonMenuView.h */,
+				160CB0831FBDD2A100D1A360 /* CommonMenuView.m */,
+				160CB0841FBDD2A100D1A360 /* MenuModel.h */,
+				160CB0851FBDD2A100D1A360 /* MenuModel.m */,
+				160CB0861FBDD2A100D1A360 /* MenuTableViewCell.h */,
+				160CB0871FBDD2A100D1A360 /* MenuTableViewCell.m */,
+				160CB0881FBDD2A100D1A360 /* UIView+AdjustFrame.h */,
+				160CB0891FBDD2A100D1A360 /* UIView+AdjustFrame.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +493,7 @@
 			children = (
 				16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */,
 				16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */,
+				160CB0761FBDD07300D1A360 /* PopMenu */,
 				164942AC1FBC31F6005493AB /* ShareSheet */,
 				16148FF91F888888004B4EC8 /* MasonryTest */,
 				160D66F61FB0B52400A9CE0F /* SearchBarAndHistory */,
@@ -962,6 +1014,7 @@
 				161B5AA41F82A14C0062D34F /* JADefaultPlaceholderView_NoneData.png in Resources */,
 				16FD84C51F82403D00DE8F82 /* LaunchScreen.storyboard in Resources */,
 				16FD84C21F82403D00DE8F82 /* Assets.xcassets in Resources */,
+				160CB07F1FBDD17000D1A360 /* PopMenuController.xib in Resources */,
 				16FD84C01F82403D00DE8F82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1028,6 +1081,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160CB08A1FBDDA1600D1A360 /* CommonMenuView.m in Sources */,
+				160CB08B1FBDDA1600D1A360 /* MenuModel.m in Sources */,
+				160CB08C1FBDDA1600D1A360 /* MenuTableViewCell.m in Sources */,
+				160CB08D1FBDDA1600D1A360 /* UIView+AdjustFrame.m in Sources */,
 				160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */,
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
 				1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */,
@@ -1054,6 +1111,7 @@
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
+				160CB07E1FBDD17000D1A360 /* PopMenuController.m in Sources */,
 				1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */,
 				161280A31FAF284E0098C86E /* BaseRequestService.m in Sources */,
 				16612BA51FB2051E0091D49A /* SamplePubuCCell.m in Sources */,

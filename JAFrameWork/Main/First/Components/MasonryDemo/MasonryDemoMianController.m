@@ -13,6 +13,7 @@
 #import "SearchBarandHistoryController.h"
 #import "ShareSheetController.h"
 #import "SamplePubuController.h"
+#import "PopMenuController.h"
 
 static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
@@ -72,6 +73,9 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
         case 4:
             [self.navigationController pushViewController:[[SamplePubuController alloc] init] animated:YES];
             break;
+        case 5:
+            [self.navigationController pushViewController:[[PopMenuController alloc] init] animated:YES];
+            break;
         default:
             break;
     }
@@ -85,7 +89,8 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
                        @"1 九宫格评论",
                        @"2 简单Nav内的searchBar和靠左的 collectionView搜索关键字历史记录",
                        @"3 分享actionSheet样式",
-                       @"4 简单瀑布流"
+                       @"4 简单瀑布流",
+                       @"5 PopMenu",
                        ];
     }
     return _dataArray;
