@@ -31,26 +31,15 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    GTShareActionSheet *shareSheet = [[GTShareActionSheet alloc] initWithFrame:CGRectMake(0, 0, JAScreenW, JAScreenH)];
+    GTShareActionSheet *shareSheet = [GTShareActionSheet showShareActionSheet];
+    JAWeakSelf;
     shareSheet.clickShareItemBlock = ^(GTShareItem *item) {
-        NSLog(@"%@",item);
+        UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:item.name message:nil preferredStyle:UIAlertControllerStyleAlert];
+        [alertVc addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        }]];
+        [weakSelf presentViewController:alertVc animated:YES completion:nil];
     };
-    [shareSheet showShareActionSheet];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

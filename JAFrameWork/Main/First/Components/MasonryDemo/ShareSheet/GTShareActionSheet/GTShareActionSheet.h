@@ -13,6 +13,6 @@
 
 @property (nonatomic, copy) void(^clickShareItemBlock)(GTShareItem *item);
 
-- (void)showShareActionSheet;
++ (instancetype)showShareActionSheet;
 
 @end

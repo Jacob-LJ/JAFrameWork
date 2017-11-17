@@ -34,6 +34,25 @@
 
 @implementation GTShareActionSheet
 
++ (instancetype)showShareActionSheet {
+    
+    GTShareActionSheet *shareSheet = [[GTShareActionSheet alloc] initWithFrame:CGRectMake(0, 0, JAScreenW, JAScreenH)];
+    
+    CGFloat margin = 0;
+    if (isiPhoneX) margin = 20;
+    
+    [shareSheet.actionSheetContainerV mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(shareSheet).offset(JAScreenH - shareSheet.actionSheetContainerV.bounds.size.height - margin);
+    }];
+    [shareSheet setNeedsUpdateConstraints];
+    
+    [UIView animateWithDuration:kSASAnimationDuration animations:^{
+        [shareSheet layoutIfNeeded];
+    }];
+    
+    return shareSheet;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         
@@ -54,10 +73,13 @@
         make.edges.equalTo(self);
     }];
     
+    CGFloat actionSheetContainerVH = kSASActionSheetContainerVH;
+    if (!self.shareItemArrM.count) actionSheetContainerVH -= (kSASTableViewCellH + kSASMarginSecitonH);
+    
     [self.actionSheetContainerV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self);
-        make.top.equalTo(self).offset(kScreenHeight);
-        make.height.mas_equalTo(kSASActionSheetContainerVH);
+        make.top.equalTo(self).offset(JAScreenH);
+        make.height.mas_equalTo(actionSheetContainerVH);
     }];
     
     [self layoutIfNeeded];
@@ -79,7 +101,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     GTShareActionSheetCell *cell = [tableView dequeueReusableCellWithIdentifier:GTShareActionSheetCellID forIndexPath:indexPath];
     if (indexPath.section == 0) {
-        [cell configWithItemArray:self.shareItemArrM];
+        if (self.shareItemArrM.count) {
+            [cell configWithItemArray:self.shareItemArrM];
+        } else {
+            [cell configWithItemArray:self.funcItemArrM];
+        }
     } else if (indexPath.section == 1) {
         [cell configWithItemArray:self.funcItemArrM];
     }
@@ -87,6 +113,7 @@
     cell.clickItemBlock = ^(GTShareItem *item) {
         if (weakSelf.clickShareItemBlock) {
             weakSelf.clickShareItemBlock(item);
+            [weakSelf dismissSheet];
         }
     };
     return cell;
@@ -102,6 +129,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     if (section == 0) {
+        if (tableView.numberOfSections == 1) {
+            return 0.01;
+        }
         return kSASMarginSecitonH;
     }
     return 0.01;
@@ -121,22 +151,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-}
-
-#pragma mark - public
-- (void)showShareActionSheet {
-    
-    CGFloat margin = 0;
-    if (isiPhoneX) margin = 20;
-    
-    [self.actionSheetContainerV mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(JAScreenH - kSASActionSheetContainerVH - margin);
-    }];
-    [self setNeedsUpdateConstraints];
-    
-    [UIView animateWithDuration:kSASAnimationDuration animations:^{
-        [self layoutIfNeeded];
-    }];
 }
 
 #pragma mark - private
@@ -324,7 +338,7 @@
         if (hadInstalledSina) {
             GTShareItem *item1 = [[GTShareItem alloc] init];
             item1.imgName = @"general_weibo";
-            item1.name = @"微信好友";
+            item1.name = @"微博";
             item1.itemType = GTShareItemTypeWeiBo;
             [_shareItemArrM addObject:item1];
         }
