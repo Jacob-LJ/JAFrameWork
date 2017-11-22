@@ -28,6 +28,26 @@
 		161280A31FAF284E0098C86E /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280A21FAF284E0098C86E /* BaseRequestService.m */; };
 		161280A91FAF2A280098C86E /* NSError+BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280A81FAF2A280098C86E /* NSError+BaseRequest.m */; };
 		161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 161280AB1FAF2B470098C86E /* BRResponseMessage.m */; };
+		1613BB6C1FC5C9C900B94D6F /* UIView+JAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB6A1FC5C9C900B94D6F /* UIView+JAFrame.m */; };
+		1613BB9C1FC5CC7900B94D6F /* XiaoQLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB9B1FC5CC7900B94D6F /* XiaoQLoginController.m */; };
+		1613BB9D1FC5CE9400B94D6F /* FindPwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB7E1FC5CC2E00B94D6F /* FindPwController.m */; };
+		1613BB9E1FC5CE9400B94D6F /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB801FC5CC2E00B94D6F /* LoginController.m */; };
+		1613BB9F1FC5CE9400B94D6F /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB821FC5CC2E00B94D6F /* RegisterController.m */; };
+		1613BBA01FC5CE9400B94D6F /* RegisterInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB841FC5CC2E00B94D6F /* RegisterInfoController.m */; };
+		1613BBA11FC5CE9400B94D6F /* SettingPwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB861FC5CC2E00B94D6F /* SettingPwController.m */; };
+		1613BBA21FC5CE9400B94D6F /* settingPwSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB881FC5CC2E00B94D6F /* settingPwSuccessController.m */; };
+		1613BBA31FC5CE9400B94D6F /* GTFindPayPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB8B1FC5CC2E00B94D6F /* GTFindPayPasswordController.m */; };
+		1613BBA61FC5CE9400B94D6F /* GTModifyEmailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB911FC5CC2E00B94D6F /* GTModifyEmailController.m */; };
+		1613BBA71FC5CE9400B94D6F /* GTModifyLoginPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB931FC5CC2E00B94D6F /* GTModifyLoginPasswordController.m */; };
+		1613BBA81FC5CE9400B94D6F /* GTModifyPayPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB951FC5CC2E00B94D6F /* GTModifyPayPasswordController.m */; };
+		1613BBA91FC5CE9400B94D6F /* GTModifyPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB971FC5CC2E00B94D6F /* GTModifyPhoneController.m */; };
+		1613BBAA1FC5CE9400B94D6F /* GTSetNewPayPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB991FC5CC2E00B94D6F /* GTSetNewPayPasswordController.m */; };
+		1613BBAB1FC5CE9400B94D6F /* GraphCodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB721FC5CAE600B94D6F /* GraphCodeInputView.m */; };
+		1613BBAC1FC5CE9400B94D6F /* PasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB741FC5CAE600B94D6F /* PasswordInputView.m */; };
+		1613BBAD1FC5CE9400B94D6F /* PhoneInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB761FC5CAE600B94D6F /* PhoneInputView.m */; };
+		1613BBAE1FC5CE9400B94D6F /* SecurityCodeIputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB781FC5CAE600B94D6F /* SecurityCodeIputView.m */; };
+		1613BBAF1FC5CE9400B94D6F /* UserNameInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB7B1FC5CAE600B94D6F /* UserNameInputView.m */; };
+		1613BBB01FC5D32000B94D6F /* JAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB691FC5C9A100B94D6F /* JAButton.m */; };
 		1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471721F91B42D00630BDD /* LeeStarEvaluationView.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
@@ -133,6 +153,47 @@
 		161280A81FAF2A280098C86E /* NSError+BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+BaseRequest.m"; sourceTree = "<group>"; };
 		161280AA1FAF2B470098C86E /* BRResponseMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRResponseMessage.h; sourceTree = "<group>"; };
 		161280AB1FAF2B470098C86E /* BRResponseMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRResponseMessage.m; sourceTree = "<group>"; };
+		1613BB681FC5C9A100B94D6F /* JAButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAButton.h; sourceTree = "<group>"; };
+		1613BB691FC5C9A100B94D6F /* JAButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAButton.m; sourceTree = "<group>"; };
+		1613BB6A1FC5C9C900B94D6F /* UIView+JAFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JAFrame.m"; sourceTree = "<group>"; };
+		1613BB6B1FC5C9C900B94D6F /* UIView+JAFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JAFrame.h"; sourceTree = "<group>"; };
+		1613BB711FC5CAE600B94D6F /* GraphCodeInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphCodeInputView.h; sourceTree = "<group>"; };
+		1613BB721FC5CAE600B94D6F /* GraphCodeInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphCodeInputView.m; sourceTree = "<group>"; };
+		1613BB731FC5CAE600B94D6F /* PasswordInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordInputView.h; sourceTree = "<group>"; };
+		1613BB741FC5CAE600B94D6F /* PasswordInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordInputView.m; sourceTree = "<group>"; };
+		1613BB751FC5CAE600B94D6F /* PhoneInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneInputView.h; sourceTree = "<group>"; };
+		1613BB761FC5CAE600B94D6F /* PhoneInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneInputView.m; sourceTree = "<group>"; };
+		1613BB771FC5CAE600B94D6F /* SecurityCodeIputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityCodeIputView.h; sourceTree = "<group>"; };
+		1613BB781FC5CAE600B94D6F /* SecurityCodeIputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityCodeIputView.m; sourceTree = "<group>"; };
+		1613BB791FC5CAE600B94D6F /* TextInputConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextInputConst.h; sourceTree = "<group>"; };
+		1613BB7A1FC5CAE600B94D6F /* UserNameInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserNameInputView.h; sourceTree = "<group>"; };
+		1613BB7B1FC5CAE600B94D6F /* UserNameInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserNameInputView.m; sourceTree = "<group>"; };
+		1613BB7D1FC5CC2E00B94D6F /* FindPwController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPwController.h; sourceTree = "<group>"; };
+		1613BB7E1FC5CC2E00B94D6F /* FindPwController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPwController.m; sourceTree = "<group>"; };
+		1613BB7F1FC5CC2E00B94D6F /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		1613BB801FC5CC2E00B94D6F /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		1613BB811FC5CC2E00B94D6F /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		1613BB821FC5CC2E00B94D6F /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		1613BB831FC5CC2E00B94D6F /* RegisterInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterInfoController.h; sourceTree = "<group>"; };
+		1613BB841FC5CC2E00B94D6F /* RegisterInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterInfoController.m; sourceTree = "<group>"; };
+		1613BB851FC5CC2E00B94D6F /* SettingPwController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingPwController.h; sourceTree = "<group>"; };
+		1613BB861FC5CC2E00B94D6F /* SettingPwController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingPwController.m; sourceTree = "<group>"; };
+		1613BB871FC5CC2E00B94D6F /* settingPwSuccessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settingPwSuccessController.h; sourceTree = "<group>"; };
+		1613BB881FC5CC2E00B94D6F /* settingPwSuccessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = settingPwSuccessController.m; sourceTree = "<group>"; };
+		1613BB8A1FC5CC2E00B94D6F /* GTFindPayPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFindPayPasswordController.h; sourceTree = "<group>"; };
+		1613BB8B1FC5CC2E00B94D6F /* GTFindPayPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTFindPayPasswordController.m; sourceTree = "<group>"; };
+		1613BB901FC5CC2E00B94D6F /* GTModifyEmailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTModifyEmailController.h; sourceTree = "<group>"; };
+		1613BB911FC5CC2E00B94D6F /* GTModifyEmailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTModifyEmailController.m; sourceTree = "<group>"; };
+		1613BB921FC5CC2E00B94D6F /* GTModifyLoginPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTModifyLoginPasswordController.h; sourceTree = "<group>"; };
+		1613BB931FC5CC2E00B94D6F /* GTModifyLoginPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTModifyLoginPasswordController.m; sourceTree = "<group>"; };
+		1613BB941FC5CC2E00B94D6F /* GTModifyPayPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTModifyPayPasswordController.h; sourceTree = "<group>"; };
+		1613BB951FC5CC2E00B94D6F /* GTModifyPayPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTModifyPayPasswordController.m; sourceTree = "<group>"; };
+		1613BB961FC5CC2E00B94D6F /* GTModifyPhoneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTModifyPhoneController.h; sourceTree = "<group>"; };
+		1613BB971FC5CC2E00B94D6F /* GTModifyPhoneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTModifyPhoneController.m; sourceTree = "<group>"; };
+		1613BB981FC5CC2E00B94D6F /* GTSetNewPayPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSetNewPayPasswordController.h; sourceTree = "<group>"; };
+		1613BB991FC5CC2E00B94D6F /* GTSetNewPayPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSetNewPayPasswordController.m; sourceTree = "<group>"; };
+		1613BB9A1FC5CC7900B94D6F /* XiaoQLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaoQLoginController.h; sourceTree = "<group>"; };
+		1613BB9B1FC5CC7900B94D6F /* XiaoQLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaoQLoginController.m; sourceTree = "<group>"; };
 		161471711F91B42D00630BDD /* LeeStarEvaluationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeStarEvaluationView.h; sourceTree = "<group>"; };
 		161471721F91B42D00630BDD /* LeeStarEvaluationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeStarEvaluationView.m; sourceTree = "<group>"; };
 		161471731F91B42D00630BDD /* star_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@2x.png"; sourceTree = "<group>"; };
@@ -406,6 +467,99 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		1613BB671FC5C9A100B94D6F /* JAButton */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB681FC5C9A100B94D6F /* JAButton.h */,
+				1613BB691FC5C9A100B94D6F /* JAButton.m */,
+			);
+			path = JAButton;
+			sourceTree = "<group>";
+		};
+		1613BB6D1FC5CA9600B94D6F /* XiaoQLogin */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB9A1FC5CC7900B94D6F /* XiaoQLoginController.h */,
+				1613BB9B1FC5CC7900B94D6F /* XiaoQLoginController.m */,
+				1613BB6E1FC5CAA800B94D6F /* Controller */,
+				1613BB6F1FC5CAB400B94D6F /* View */,
+			);
+			path = XiaoQLogin;
+			sourceTree = "<group>";
+		};
+		1613BB6E1FC5CAA800B94D6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB7C1FC5CC2E00B94D6F /* GTLogin */,
+				1613BB891FC5CC2E00B94D6F /* Settings */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1613BB6F1FC5CAB400B94D6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB701FC5CAE600B94D6F /* TextInputView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1613BB701FC5CAE600B94D6F /* TextInputView */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB711FC5CAE600B94D6F /* GraphCodeInputView.h */,
+				1613BB721FC5CAE600B94D6F /* GraphCodeInputView.m */,
+				1613BB731FC5CAE600B94D6F /* PasswordInputView.h */,
+				1613BB741FC5CAE600B94D6F /* PasswordInputView.m */,
+				1613BB751FC5CAE600B94D6F /* PhoneInputView.h */,
+				1613BB761FC5CAE600B94D6F /* PhoneInputView.m */,
+				1613BB771FC5CAE600B94D6F /* SecurityCodeIputView.h */,
+				1613BB781FC5CAE600B94D6F /* SecurityCodeIputView.m */,
+				1613BB791FC5CAE600B94D6F /* TextInputConst.h */,
+				1613BB7A1FC5CAE600B94D6F /* UserNameInputView.h */,
+				1613BB7B1FC5CAE600B94D6F /* UserNameInputView.m */,
+			);
+			path = TextInputView;
+			sourceTree = "<group>";
+		};
+		1613BB7C1FC5CC2E00B94D6F /* GTLogin */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB7D1FC5CC2E00B94D6F /* FindPwController.h */,
+				1613BB7E1FC5CC2E00B94D6F /* FindPwController.m */,
+				1613BB7F1FC5CC2E00B94D6F /* LoginController.h */,
+				1613BB801FC5CC2E00B94D6F /* LoginController.m */,
+				1613BB811FC5CC2E00B94D6F /* RegisterController.h */,
+				1613BB821FC5CC2E00B94D6F /* RegisterController.m */,
+				1613BB831FC5CC2E00B94D6F /* RegisterInfoController.h */,
+				1613BB841FC5CC2E00B94D6F /* RegisterInfoController.m */,
+				1613BB851FC5CC2E00B94D6F /* SettingPwController.h */,
+				1613BB861FC5CC2E00B94D6F /* SettingPwController.m */,
+				1613BB871FC5CC2E00B94D6F /* settingPwSuccessController.h */,
+				1613BB881FC5CC2E00B94D6F /* settingPwSuccessController.m */,
+			);
+			path = GTLogin;
+			sourceTree = "<group>";
+		};
+		1613BB891FC5CC2E00B94D6F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1613BB8A1FC5CC2E00B94D6F /* GTFindPayPasswordController.h */,
+				1613BB8B1FC5CC2E00B94D6F /* GTFindPayPasswordController.m */,
+				1613BB901FC5CC2E00B94D6F /* GTModifyEmailController.h */,
+				1613BB911FC5CC2E00B94D6F /* GTModifyEmailController.m */,
+				1613BB921FC5CC2E00B94D6F /* GTModifyLoginPasswordController.h */,
+				1613BB931FC5CC2E00B94D6F /* GTModifyLoginPasswordController.m */,
+				1613BB941FC5CC2E00B94D6F /* GTModifyPayPasswordController.h */,
+				1613BB951FC5CC2E00B94D6F /* GTModifyPayPasswordController.m */,
+				1613BB961FC5CC2E00B94D6F /* GTModifyPhoneController.h */,
+				1613BB971FC5CC2E00B94D6F /* GTModifyPhoneController.m */,
+				1613BB981FC5CC2E00B94D6F /* GTSetNewPayPasswordController.h */,
+				1613BB991FC5CC2E00B94D6F /* GTSetNewPayPasswordController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		161471551F91A6A400630BDD /* CommentTypeTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +615,8 @@
 		161471691F91AE4500630BDD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1613BB6B1FC5C9C900B94D6F /* UIView+JAFrame.h */,
+				1613BB6A1FC5C9C900B94D6F /* UIView+JAFrame.m */,
 				161280811FAEB6BC0098C86E /* UIColor+JAExpand.h */,
 				161280821FAEB6BC0098C86E /* UIColor+JAExpand.m */,
 				1612808A1FAEBF7C0098C86E /* UIFont+JAExpand.h */,
@@ -493,6 +649,7 @@
 			children = (
 				16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */,
 				16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */,
+				1613BB6D1FC5CA9600B94D6F /* XiaoQLogin */,
 				160CB0761FBDD07300D1A360 /* PopMenu */,
 				164942AC1FBC31F6005493AB /* ShareSheet */,
 				16148FF91F888888004B4EC8 /* MasonryTest */,
@@ -560,6 +717,7 @@
 			isa = PBXGroup;
 			children = (
 				16FAE5161F9ADFB30035BCC3 /* README.md */,
+				1613BB671FC5C9A100B94D6F /* JAButton */,
 				16FD84CF1F82414A00DE8F82 /* JAPlaceholderView */,
 			);
 			path = ThirdParty;
@@ -1081,12 +1239,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1613BBB01FC5D32000B94D6F /* JAButton.m in Sources */,
+				1613BB9D1FC5CE9400B94D6F /* FindPwController.m in Sources */,
+				1613BB9E1FC5CE9400B94D6F /* LoginController.m in Sources */,
+				1613BB9F1FC5CE9400B94D6F /* RegisterController.m in Sources */,
+				1613BBA01FC5CE9400B94D6F /* RegisterInfoController.m in Sources */,
+				1613BBA11FC5CE9400B94D6F /* SettingPwController.m in Sources */,
+				1613BBA21FC5CE9400B94D6F /* settingPwSuccessController.m in Sources */,
+				1613BBA31FC5CE9400B94D6F /* GTFindPayPasswordController.m in Sources */,
+				1613BBA61FC5CE9400B94D6F /* GTModifyEmailController.m in Sources */,
+				1613BBA71FC5CE9400B94D6F /* GTModifyLoginPasswordController.m in Sources */,
+				1613BBA81FC5CE9400B94D6F /* GTModifyPayPasswordController.m in Sources */,
+				1613BBA91FC5CE9400B94D6F /* GTModifyPhoneController.m in Sources */,
+				1613BBAA1FC5CE9400B94D6F /* GTSetNewPayPasswordController.m in Sources */,
+				1613BBAB1FC5CE9400B94D6F /* GraphCodeInputView.m in Sources */,
+				1613BBAC1FC5CE9400B94D6F /* PasswordInputView.m in Sources */,
+				1613BBAD1FC5CE9400B94D6F /* PhoneInputView.m in Sources */,
+				1613BBAE1FC5CE9400B94D6F /* SecurityCodeIputView.m in Sources */,
+				1613BBAF1FC5CE9400B94D6F /* UserNameInputView.m in Sources */,
 				160CB08A1FBDDA1600D1A360 /* CommonMenuView.m in Sources */,
 				160CB08B1FBDDA1600D1A360 /* MenuModel.m in Sources */,
 				160CB08C1FBDDA1600D1A360 /* MenuTableViewCell.m in Sources */,
 				160CB08D1FBDDA1600D1A360 /* UIView+AdjustFrame.m in Sources */,
 				160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */,
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
+				1613BB6C1FC5C9C900B94D6F /* UIView+JAFrame.m in Sources */,
 				1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */,
 				161280A91FAF2A280098C86E /* NSError+BaseRequest.m in Sources */,
 				16FAE5201F9AE6690035BCC3 /* LayoutDemoMianController.m in Sources */,
@@ -1136,6 +1313,7 @@
 				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
 				1695BE431FB7031D00A9DAB6 /* SearchBarandHistoryController.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
+				1613BB9C1FC5CC7900B94D6F /* XiaoQLoginController.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				164942B91FBC31F6005493AB /* GTShareActionSheetCell.m in Sources */,
 				164942B81FBC31F6005493AB /* GTShareActionSheet.m in Sources */,

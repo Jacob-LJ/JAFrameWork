@@ -14,6 +14,7 @@
 #import "ShareSheetController.h"
 #import "SamplePubuController.h"
 #import "PopMenuController.h"
+#import "XiaoQLoginController.h"
 
 static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
@@ -76,6 +77,9 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
         case 5:
             [self.navigationController pushViewController:[[PopMenuController alloc] init] animated:YES];
             break;
+        case 6:
+            [self.navigationController pushViewController:[[XiaoQLoginController alloc] init] animated:YES];
+            break;
         default:
             break;
     }
@@ -91,6 +95,7 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
                        @"3 分享actionSheet样式",
                        @"4 简单瀑布流",
                        @"5 PopMenu",
+                       @"6 小Q登录"
                        ];
     }
     return _dataArray;
