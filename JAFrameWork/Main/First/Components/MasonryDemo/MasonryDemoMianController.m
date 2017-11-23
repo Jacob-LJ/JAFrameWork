@@ -15,6 +15,7 @@
 #import "SamplePubuController.h"
 #import "PopMenuController.h"
 #import "XiaoQLoginController.h"
+#import "DropDownMenuController.h"
 
 static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
 
@@ -80,6 +81,9 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
         case 6:
             [self.navigationController pushViewController:[[XiaoQLoginController alloc] init] animated:YES];
             break;
+        case 7:
+            [self.navigationController pushViewController:[[DropDownMenuController alloc] init] animated:YES];
+            break;
         default:
             break;
     }
@@ -95,7 +99,8 @@ static NSString * const JAMasonryLayoutTestCellID = @"JAMasonryLayoutTestCell";
                        @"3 分享actionSheet样式",
                        @"4 简单瀑布流",
                        @"5 PopMenu",
-                       @"6 小Q登录"
+                       @"6 小Q登录",
+                       @"7 下来菜单s",
                        ];
     }
     return _dataArray;

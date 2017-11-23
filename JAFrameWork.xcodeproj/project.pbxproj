@@ -48,6 +48,14 @@
 		1613BBAE1FC5CE9400B94D6F /* SecurityCodeIputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB781FC5CAE600B94D6F /* SecurityCodeIputView.m */; };
 		1613BBAF1FC5CE9400B94D6F /* UserNameInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB7B1FC5CAE600B94D6F /* UserNameInputView.m */; };
 		1613BBB01FC5D32000B94D6F /* JAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BB691FC5C9A100B94D6F /* JAButton.m */; };
+		1613BBCC1FC7106900B94D6F /* SampleDPMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBCB1FC7106900B94D6F /* SampleDPMenuController.m */; };
+		1613BBCD1FC7150C00B94D6F /* DropDownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBC81FC7104A00B94D6F /* DropDownMenuController.m */; };
+		1613BBCE1FC7150C00B94D6F /* GTDiscoveryFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBB61FC70F4400B94D6F /* GTDiscoveryFilterController.m */; };
+		1613BBCF1FC7150C00B94D6F /* GTDiscoverySortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBB81FC70F4400B94D6F /* GTDiscoverySortController.m */; };
+		1613BBD01FC7150C00B94D6F /* GTDiscoveryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBBB1FC70F4500B94D6F /* GTDiscoveryCell.m */; };
+		1613BBD11FC7150C00B94D6F /* GTPullDownSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBBE1FC70F4500B94D6F /* GTPullDownSortCell.m */; };
+		1613BBD21FC7150C00B94D6F /* YZCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBC11FC70F4500B94D6F /* YZCover.m */; };
+		1613BBD31FC7150C00B94D6F /* YZPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1613BBC31FC70F4500B94D6F /* YZPullDownMenu.m */; };
 		1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161471721F91B42D00630BDD /* LeeStarEvaluationView.m */; };
 		161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964621F8316F400B6D081 /* DefaultPlaceholderVController.m */; };
 		161964661F83812900B6D081 /* UITableView+testLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 161964651F83812900B6D081 /* UITableView+testLoad.m */; };
@@ -194,6 +202,23 @@
 		1613BB991FC5CC2E00B94D6F /* GTSetNewPayPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSetNewPayPasswordController.m; sourceTree = "<group>"; };
 		1613BB9A1FC5CC7900B94D6F /* XiaoQLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaoQLoginController.h; sourceTree = "<group>"; };
 		1613BB9B1FC5CC7900B94D6F /* XiaoQLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaoQLoginController.m; sourceTree = "<group>"; };
+		1613BBB51FC70F4400B94D6F /* GTDiscoveryFilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDiscoveryFilterController.h; sourceTree = "<group>"; };
+		1613BBB61FC70F4400B94D6F /* GTDiscoveryFilterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDiscoveryFilterController.m; sourceTree = "<group>"; };
+		1613BBB71FC70F4400B94D6F /* GTDiscoverySortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDiscoverySortController.h; sourceTree = "<group>"; };
+		1613BBB81FC70F4400B94D6F /* GTDiscoverySortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDiscoverySortController.m; sourceTree = "<group>"; };
+		1613BBBA1FC70F4500B94D6F /* GTDiscoveryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDiscoveryCell.h; sourceTree = "<group>"; };
+		1613BBBB1FC70F4500B94D6F /* GTDiscoveryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDiscoveryCell.m; sourceTree = "<group>"; };
+		1613BBBD1FC70F4500B94D6F /* GTPullDownSortCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTPullDownSortCell.h; sourceTree = "<group>"; };
+		1613BBBE1FC70F4500B94D6F /* GTPullDownSortCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTPullDownSortCell.m; sourceTree = "<group>"; };
+		1613BBC01FC70F4500B94D6F /* YZCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZCover.h; sourceTree = "<group>"; };
+		1613BBC11FC70F4500B94D6F /* YZCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZCover.m; sourceTree = "<group>"; };
+		1613BBC21FC70F4500B94D6F /* YZPullDownMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZPullDownMenu.h; sourceTree = "<group>"; };
+		1613BBC31FC70F4500B94D6F /* YZPullDownMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZPullDownMenu.m; sourceTree = "<group>"; };
+		1613BBC81FC7104A00B94D6F /* DropDownMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuController.m; sourceTree = "<group>"; };
+		1613BBC91FC7104A00B94D6F /* DropDownMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownMenuController.h; sourceTree = "<group>"; };
+		1613BBCA1FC7106900B94D6F /* SampleDPMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleDPMenuController.h; sourceTree = "<group>"; };
+		1613BBCB1FC7106900B94D6F /* SampleDPMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleDPMenuController.m; sourceTree = "<group>"; };
+		1613BBD41FC7167000B94D6F /* GTMarcros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMarcros.h; sourceTree = "<group>"; };
 		161471711F91B42D00630BDD /* LeeStarEvaluationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeStarEvaluationView.h; sourceTree = "<group>"; };
 		161471721F91B42D00630BDD /* LeeStarEvaluationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeStarEvaluationView.m; sourceTree = "<group>"; };
 		161471731F91B42D00630BDD /* star_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_nor@2x.png"; sourceTree = "<group>"; };
@@ -346,6 +371,7 @@
 			children = (
 				160CB0741FBC9BB500D1A360 /* DimensionMacros.h */,
 				160CB0751FBC9D4A00D1A360 /* UtilsMacros.h */,
+				1613BBD41FC7167000B94D6F /* GTMarcros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -560,6 +586,69 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		1613BBB11FC70EAB00B94D6F /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1613BBC91FC7104A00B94D6F /* DropDownMenuController.h */,
+				1613BBC81FC7104A00B94D6F /* DropDownMenuController.m */,
+				1613BBC71FC70FE000B94D6F /* SampleDropDownMenu */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		1613BBB41FC70F4400B94D6F /* PullDownController */ = {
+			isa = PBXGroup;
+			children = (
+				1613BBB51FC70F4400B94D6F /* GTDiscoveryFilterController.h */,
+				1613BBB61FC70F4400B94D6F /* GTDiscoveryFilterController.m */,
+				1613BBB71FC70F4400B94D6F /* GTDiscoverySortController.h */,
+				1613BBB81FC70F4400B94D6F /* GTDiscoverySortController.m */,
+			);
+			path = PullDownController;
+			sourceTree = "<group>";
+		};
+		1613BBB91FC70F4500B94D6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1613BBBA1FC70F4500B94D6F /* GTDiscoveryCell.h */,
+				1613BBBB1FC70F4500B94D6F /* GTDiscoveryCell.m */,
+				1613BBBC1FC70F4500B94D6F /* PullDownView */,
+				1613BBBF1FC70F4500B94D6F /* YZPullDownMenu */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1613BBBC1FC70F4500B94D6F /* PullDownView */ = {
+			isa = PBXGroup;
+			children = (
+				1613BBBD1FC70F4500B94D6F /* GTPullDownSortCell.h */,
+				1613BBBE1FC70F4500B94D6F /* GTPullDownSortCell.m */,
+			);
+			path = PullDownView;
+			sourceTree = "<group>";
+		};
+		1613BBBF1FC70F4500B94D6F /* YZPullDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1613BBC01FC70F4500B94D6F /* YZCover.h */,
+				1613BBC11FC70F4500B94D6F /* YZCover.m */,
+				1613BBC21FC70F4500B94D6F /* YZPullDownMenu.h */,
+				1613BBC31FC70F4500B94D6F /* YZPullDownMenu.m */,
+			);
+			path = YZPullDownMenu;
+			sourceTree = "<group>";
+		};
+		1613BBC71FC70FE000B94D6F /* SampleDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1613BBCA1FC7106900B94D6F /* SampleDPMenuController.h */,
+				1613BBCB1FC7106900B94D6F /* SampleDPMenuController.m */,
+				1613BBB41FC70F4400B94D6F /* PullDownController */,
+				1613BBB91FC70F4500B94D6F /* View */,
+			);
+			path = SampleDropDownMenu;
+			sourceTree = "<group>";
+		};
 		161471551F91A6A400630BDD /* CommentTypeTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -649,6 +738,7 @@
 			children = (
 				16FAE5241F9AEBB10035BCC3 /* MasonryDemoMianController.h */,
 				16FAE5251F9AEBB10035BCC3 /* MasonryDemoMianController.m */,
+				1613BBB11FC70EAB00B94D6F /* DropDownMenu */,
 				1613BB6D1FC5CA9600B94D6F /* XiaoQLogin */,
 				160CB0761FBDD07300D1A360 /* PopMenu */,
 				164942AC1FBC31F6005493AB /* ShareSheet */,
@@ -1239,6 +1329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1613BBCD1FC7150C00B94D6F /* DropDownMenuController.m in Sources */,
+				1613BBCE1FC7150C00B94D6F /* GTDiscoveryFilterController.m in Sources */,
+				1613BBCF1FC7150C00B94D6F /* GTDiscoverySortController.m in Sources */,
+				1613BBD01FC7150C00B94D6F /* GTDiscoveryCell.m in Sources */,
+				1613BBD11FC7150C00B94D6F /* GTPullDownSortCell.m in Sources */,
+				1613BBD21FC7150C00B94D6F /* YZCover.m in Sources */,
+				1613BBD31FC7150C00B94D6F /* YZPullDownMenu.m in Sources */,
 				1613BBB01FC5D32000B94D6F /* JAButton.m in Sources */,
 				1613BB9D1FC5CE9400B94D6F /* FindPwController.m in Sources */,
 				1613BB9E1FC5CE9400B94D6F /* LoginController.m in Sources */,
@@ -1252,6 +1349,7 @@
 				1613BBA81FC5CE9400B94D6F /* GTModifyPayPasswordController.m in Sources */,
 				1613BBA91FC5CE9400B94D6F /* GTModifyPhoneController.m in Sources */,
 				1613BBAA1FC5CE9400B94D6F /* GTSetNewPayPasswordController.m in Sources */,
+				1613BBCC1FC7106900B94D6F /* SampleDPMenuController.m in Sources */,
 				1613BBAB1FC5CE9400B94D6F /* GraphCodeInputView.m in Sources */,
 				1613BBAC1FC5CE9400B94D6F /* PasswordInputView.m in Sources */,
 				1613BBAD1FC5CE9400B94D6F /* PhoneInputView.m in Sources */,

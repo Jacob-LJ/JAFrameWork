@@ -33,6 +33,7 @@
 //Macros
 #import "UtilsMacros.h"
 #import "DimensionMacros.h"
+#import "GTMarcros.h"
 
 
 #endif //__OBJC__

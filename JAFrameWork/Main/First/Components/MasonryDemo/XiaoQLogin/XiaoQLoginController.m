@@ -19,9 +19,7 @@
 
 static NSString * const CellID = @"XiaoQLoginController";
 
-@interface XiaoQLoginController ()
-
-<UITableViewDelegate, UITableViewDataSource>
+@interface XiaoQLoginController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *dataArray;
 
