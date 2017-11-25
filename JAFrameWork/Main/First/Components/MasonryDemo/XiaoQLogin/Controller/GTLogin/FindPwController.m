@@ -39,6 +39,7 @@ static const CGFloat kNextBtnTop = 37;
 
 - (void)setUpInit {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeTop; //reference http://www.jianshu.com/p/a7fa9932c46c
 }
 
 - (void)setUpNav {

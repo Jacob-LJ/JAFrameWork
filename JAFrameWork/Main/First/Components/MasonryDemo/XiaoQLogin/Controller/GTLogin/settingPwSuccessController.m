@@ -34,6 +34,7 @@ static const CGFloat kConfirmBtnTop = 44;
 
 - (void)setUpInit {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeTop; //reference http://www.jianshu.com/p/a7fa9932c46c
 }
 
 - (void)setUpNav {

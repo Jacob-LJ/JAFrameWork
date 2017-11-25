@@ -155,6 +155,9 @@ NSString * const YZUpdateMenuTitleNote = @"YZUpdateMenuTitleNote";
         // 隐藏下拉菜单
         [self dismiss];
         
+        //选择菜单子选项后，切换已选中按钮的状态
+        [self btnClick:self.lastSelectedBtn];
+        
         // 获取所有值
         NSArray *allValues = note.userInfo.allValues;
         

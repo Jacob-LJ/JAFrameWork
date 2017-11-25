@@ -43,6 +43,8 @@ static const CGFloat kPwInputVTop = 11;
 }
 
 - (void)setUpInit {
+//    self.navigationController.navigationBar.translucent = NO; //当translucent = false的时候，VC中的布局就会回到iOS 6以前那样，y==0的位置是navigationbar底部。相比iOS 7以后从屏幕顶部开始计算刚好相差64像素
+        self.edgesForExtendedLayout = UIRectEdgeTop; //reference http://www.jianshu.com/p/a7fa9932c46c
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

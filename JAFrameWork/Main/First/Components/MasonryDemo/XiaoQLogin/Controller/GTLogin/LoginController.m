@@ -48,6 +48,8 @@ static const CGFloat kOtherLoginBtnH = 62;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.translucent = NO; //当translucent = false的时候，VC中的布局就会回到iOS 6以前那样，y==0的位置是navigationbar底部。相比iOS 7以后从屏幕顶部开始计算刚好相差64像素
+//    self.edgesForExtendedLayout = UIRectEdgeNone; //reference http://www.jianshu.com/p/a7fa9932c46c
     [self setUpInit];
     [self setUpNav];
     [self addConstraintOnSubviews];
