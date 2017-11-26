@@ -62,6 +62,20 @@
 		161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161B5A9E1F8250770062D34F /* UICollectionView+JAPlaceholderView.m */; };
 		161B5AA41F82A14C0062D34F /* JADefaultPlaceholderView_NoneData.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D51F82455100DE8F82 /* JADefaultPlaceholderView_NoneData.png */; };
 		161B5AA51F82A1510062D34F /* JADefaultPlaceholderView_NetConnectError.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD84D41F8243E400DE8F82 /* JADefaultPlaceholderView_NetConnectError.png */; };
+		161BA0481FC984660013A889 /* jaView_tableView_Mas.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0471FC984660013A889 /* jaView_tableView_Mas.m */; };
+		161BA04C1FC9863F0013A889 /* jaCell_Mas.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA04B1FC9863F0013A889 /* jaCell_Mas.m */; };
+		161BA0501FC989EB0013A889 /* CodeSnippetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA04F1FC989EB0013A889 /* CodeSnippetsController.m */; };
+		161BA0561FC98AD60013A889 /* View_tableView_MasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0551FC98AD60013A889 /* View_tableView_MasController.m */; };
+		161BA0591FCA55180013A889 /* jaView_Mas.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0581FCA55180013A889 /* jaView_Mas.m */; };
+		161BA05C1FCA56270013A889 /* View_MasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA05B1FCA56270013A889 /* View_MasController.m */; };
+		161BA05F1FCA5C9C0013A889 /* jaView_CollectionV_Mas.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA05E1FCA5C9C0013A889 /* jaView_CollectionV_Mas.m */; };
+		161BA0621FCA5EAD0013A889 /* jaCCell_Mas.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0611FCA5EAD0013A889 /* jaCCell_Mas.m */; };
+		161BA0651FCA5FB40013A889 /* View_CollectionV_Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0641FCA5FB40013A889 /* View_CollectionV_Controller.m */; };
+		161BA0AA1FCA82B10013A889 /* jaTableViewVC_GT.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0A91FCA82B10013A889 /* jaTableViewVC_GT.m */; };
+		161BA0B31FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0B21FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.m */; };
+		161BA0B61FCA8F080013A889 /* jaCell_CollectionV_Mas.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0B51FCA8F080013A889 /* jaCell_CollectionV_Mas.m */; };
+		161BA0BC1FCA8FAE0013A889 /* Cell_CollectionV_Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0BB1FCA8FAE0013A889 /* Cell_CollectionV_Controller.m */; };
+		161BA0BF1FCA929E0013A889 /* jaCollectionViewVC_GT.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BA0BE1FCA929E0013A889 /* jaCollectionViewVC_GT.m */; };
 		162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */; };
 		16414C121FA0E13B003CD66C /* AddingPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C111FA0E13B003CD66C /* AddingPicController.m */; };
 		16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16414C141FA0E19F003CD66C /* APImageCCell.m */; };
@@ -233,6 +247,38 @@
 		161B5A9D1F8250770062D34F /* UICollectionView+JAPlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+JAPlaceholderView.h"; sourceTree = "<group>"; };
 		161B5A9E1F8250770062D34F /* UICollectionView+JAPlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+JAPlaceholderView.m"; sourceTree = "<group>"; };
 		161B5AA01F8251E30062D34F /* JAPlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAPlaceholderView.h; sourceTree = "<group>"; };
+		161BA0461FC984660013A889 /* jaView_tableView_Mas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaView_tableView_Mas.h; sourceTree = "<group>"; };
+		161BA0471FC984660013A889 /* jaView_tableView_Mas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaView_tableView_Mas.m; sourceTree = "<group>"; };
+		161BA0491FC985290013A889 /* CodeSnipNameRule.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CodeSnipNameRule.md; sourceTree = "<group>"; };
+		161BA04A1FC9863F0013A889 /* jaCell_Mas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaCell_Mas.h; sourceTree = "<group>"; };
+		161BA04B1FC9863F0013A889 /* jaCell_Mas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaCell_Mas.m; sourceTree = "<group>"; };
+		161BA04E1FC989EB0013A889 /* CodeSnippetsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeSnippetsController.h; sourceTree = "<group>"; };
+		161BA04F1FC989EB0013A889 /* CodeSnippetsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeSnippetsController.m; sourceTree = "<group>"; };
+		161BA0541FC98AD60013A889 /* View_tableView_MasController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View_tableView_MasController.h; sourceTree = "<group>"; };
+		161BA0551FC98AD60013A889 /* View_tableView_MasController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_tableView_MasController.m; sourceTree = "<group>"; };
+		161BA0571FCA55180013A889 /* jaView_Mas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaView_Mas.h; sourceTree = "<group>"; };
+		161BA0581FCA55180013A889 /* jaView_Mas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaView_Mas.m; sourceTree = "<group>"; };
+		161BA05A1FCA56270013A889 /* View_MasController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View_MasController.h; sourceTree = "<group>"; };
+		161BA05B1FCA56270013A889 /* View_MasController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_MasController.m; sourceTree = "<group>"; };
+		161BA05D1FCA5C9C0013A889 /* jaView_CollectionV_Mas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaView_CollectionV_Mas.h; sourceTree = "<group>"; };
+		161BA05E1FCA5C9C0013A889 /* jaView_CollectionV_Mas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaView_CollectionV_Mas.m; sourceTree = "<group>"; };
+		161BA0601FCA5EAD0013A889 /* jaCCell_Mas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaCCell_Mas.h; sourceTree = "<group>"; };
+		161BA0611FCA5EAD0013A889 /* jaCCell_Mas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaCCell_Mas.m; sourceTree = "<group>"; };
+		161BA0631FCA5FB40013A889 /* View_CollectionV_Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View_CollectionV_Controller.h; sourceTree = "<group>"; };
+		161BA0641FCA5FB40013A889 /* View_CollectionV_Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_CollectionV_Controller.m; sourceTree = "<group>"; };
+		161BA0A81FCA82B10013A889 /* jaTableViewVC_GT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaTableViewVC_GT.h; sourceTree = "<group>"; };
+		161BA0A91FCA82B10013A889 /* jaTableViewVC_GT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaTableViewVC_GT.m; sourceTree = "<group>"; };
+		161BA0AB1FCA85A70013A889 /* GTConfigDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTConfigDefine.h; sourceTree = "<group>"; };
+		161BA0AC1FCA861D0013A889 /* GTBaseVCMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTBaseVCMethods.h; sourceTree = "<group>"; };
+		161BA0AD1FCA871C0013A889 /* GTVC_Note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GTVC_Note.md; sourceTree = "<group>"; };
+		161BA0B11FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFoodSpecialOffersTableViewCell.h; sourceTree = "<group>"; };
+		161BA0B21FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTFoodSpecialOffersTableViewCell.m; sourceTree = "<group>"; };
+		161BA0B41FCA8F080013A889 /* jaCell_CollectionV_Mas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaCell_CollectionV_Mas.h; sourceTree = "<group>"; };
+		161BA0B51FCA8F080013A889 /* jaCell_CollectionV_Mas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaCell_CollectionV_Mas.m; sourceTree = "<group>"; };
+		161BA0BA1FCA8FAE0013A889 /* Cell_CollectionV_Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell_CollectionV_Controller.h; sourceTree = "<group>"; };
+		161BA0BB1FCA8FAE0013A889 /* Cell_CollectionV_Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cell_CollectionV_Controller.m; sourceTree = "<group>"; };
+		161BA0BD1FCA929E0013A889 /* jaCollectionViewVC_GT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jaCollectionViewVC_GT.h; sourceTree = "<group>"; };
+		161BA0BE1FCA929E0013A889 /* jaCollectionViewVC_GT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jaCollectionViewVC_GT.m; sourceTree = "<group>"; };
 		162696EC1F8474A00005E412 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		162696EE1F847EB90005E412 /* JAPlaceholderTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAPlaceholderTableView.h; sourceTree = "<group>"; };
 		162696EF1F847EB90005E412 /* JAPlaceholderTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAPlaceholderTableView.m; sourceTree = "<group>"; };
@@ -864,6 +910,69 @@
 			path = TableViewTest;
 			sourceTree = "<group>";
 		};
+		161BA0431FC982B00013A889 /* CodeSnippets(OnlyRead) */ = {
+			isa = PBXGroup;
+			children = (
+				161BA04E1FC989EB0013A889 /* CodeSnippetsController.h */,
+				161BA04F1FC989EB0013A889 /* CodeSnippetsController.m */,
+				161BA0661FCA81B70013A889 /* GTControllerSnip */,
+				161BA04D1FC989AA0013A889 /* Test */,
+				161BA0491FC985290013A889 /* CodeSnipNameRule.md */,
+				161BA0461FC984660013A889 /* jaView_tableView_Mas.h */,
+				161BA0471FC984660013A889 /* jaView_tableView_Mas.m */,
+				161BA04A1FC9863F0013A889 /* jaCell_Mas.h */,
+				161BA04B1FC9863F0013A889 /* jaCell_Mas.m */,
+				161BA0571FCA55180013A889 /* jaView_Mas.h */,
+				161BA0581FCA55180013A889 /* jaView_Mas.m */,
+				161BA05D1FCA5C9C0013A889 /* jaView_CollectionV_Mas.h */,
+				161BA05E1FCA5C9C0013A889 /* jaView_CollectionV_Mas.m */,
+				161BA0601FCA5EAD0013A889 /* jaCCell_Mas.h */,
+				161BA0611FCA5EAD0013A889 /* jaCCell_Mas.m */,
+				161BA0B41FCA8F080013A889 /* jaCell_CollectionV_Mas.h */,
+				161BA0B51FCA8F080013A889 /* jaCell_CollectionV_Mas.m */,
+			);
+			path = "CodeSnippets(OnlyRead)";
+			sourceTree = "<group>";
+		};
+		161BA04D1FC989AA0013A889 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				161BA0541FC98AD60013A889 /* View_tableView_MasController.h */,
+				161BA0551FC98AD60013A889 /* View_tableView_MasController.m */,
+				161BA05A1FCA56270013A889 /* View_MasController.h */,
+				161BA05B1FCA56270013A889 /* View_MasController.m */,
+				161BA0631FCA5FB40013A889 /* View_CollectionV_Controller.h */,
+				161BA0641FCA5FB40013A889 /* View_CollectionV_Controller.m */,
+				161BA0BA1FCA8FAE0013A889 /* Cell_CollectionV_Controller.h */,
+				161BA0BB1FCA8FAE0013A889 /* Cell_CollectionV_Controller.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		161BA0661FCA81B70013A889 /* GTControllerSnip */ = {
+			isa = PBXGroup;
+			children = (
+				161BA0C01FCA92A70013A889 /* Other */,
+				161BA0AD1FCA871C0013A889 /* GTVC_Note.md */,
+				161BA0A81FCA82B10013A889 /* jaTableViewVC_GT.h */,
+				161BA0A91FCA82B10013A889 /* jaTableViewVC_GT.m */,
+				161BA0BD1FCA929E0013A889 /* jaCollectionViewVC_GT.h */,
+				161BA0BE1FCA929E0013A889 /* jaCollectionViewVC_GT.m */,
+			);
+			path = GTControllerSnip;
+			sourceTree = "<group>";
+		};
+		161BA0C01FCA92A70013A889 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				161BA0AC1FCA861D0013A889 /* GTBaseVCMethods.h */,
+				161BA0AB1FCA85A70013A889 /* GTConfigDefine.h */,
+				161BA0B11FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.h */,
+				161BA0B21FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		162696ED1F847E950005E412 /* JASpecialClassPlaceholderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -984,6 +1093,7 @@
 		16C743F21FB6F35800DD16CB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				161BA0431FC982B00013A889 /* CodeSnippets(OnlyRead) */,
 				16148FF51F8887CB004B4EC8 /* MasonryDemo */,
 				16FD84DD1F824B5700DE8F82 /* PlaceholderViewDemo */,
 				161490011F892DA9004B4EC8 /* LayoutKnowledge */,
@@ -1353,18 +1463,22 @@
 				1613BBAB1FC5CE9400B94D6F /* GraphCodeInputView.m in Sources */,
 				1613BBAC1FC5CE9400B94D6F /* PasswordInputView.m in Sources */,
 				1613BBAD1FC5CE9400B94D6F /* PhoneInputView.m in Sources */,
+				161BA0651FCA5FB40013A889 /* View_CollectionV_Controller.m in Sources */,
 				1613BBAE1FC5CE9400B94D6F /* SecurityCodeIputView.m in Sources */,
 				1613BBAF1FC5CE9400B94D6F /* UserNameInputView.m in Sources */,
 				160CB08A1FBDDA1600D1A360 /* CommonMenuView.m in Sources */,
 				160CB08B1FBDDA1600D1A360 /* MenuModel.m in Sources */,
+				161BA05C1FCA56270013A889 /* View_MasController.m in Sources */,
 				160CB08C1FBDDA1600D1A360 /* MenuTableViewCell.m in Sources */,
 				160CB08D1FBDDA1600D1A360 /* UIView+AdjustFrame.m in Sources */,
 				160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */,
+				161BA0591FCA55180013A889 /* jaView_Mas.m in Sources */,
 				1614722E1F936A3B00630BDD /* LeeStarEvaluationView.m in Sources */,
 				1613BB6C1FC5C9C900B94D6F /* UIView+JAFrame.m in Sources */,
 				1612807C1FAEA42E0098C86E /* ThirdController.m in Sources */,
 				161280A91FAF2A280098C86E /* NSError+BaseRequest.m in Sources */,
 				16FAE5201F9AE6690035BCC3 /* LayoutDemoMianController.m in Sources */,
+				161BA0481FC984660013A889 /* jaView_tableView_Mas.m in Sources */,
 				16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */,
 				16FAE5111F9ADA230035BCC3 /* JANotifation.m in Sources */,
 				161964631F83173300B6D081 /* DefaultPlaceholderVController.m in Sources */,
@@ -1378,26 +1492,35 @@
 				16FAE5291F9AEC490035BCC3 /* MTKeyboardShowHideController.m in Sources */,
 				16FD84DB1F82474700DE8F82 /* JADefaultPlaceholderView.m in Sources */,
 				16FD84E41F824DC900DE8F82 /* NSObject+JAPlaceholderViewSwizzling.m in Sources */,
+				161BA0BC1FCA8FAE0013A889 /* Cell_CollectionV_Controller.m in Sources */,
 				16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */,
 				16FAE5261F9AEBB20035BCC3 /* MasonryDemoMianController.m in Sources */,
+				161BA0B61FCA8F080013A889 /* jaCell_CollectionV_Mas.m in Sources */,
 				164942BE1FBC3211005493AB /* ShareSheetController.m in Sources */,
+				161BA05F1FCA5C9C0013A889 /* jaView_CollectionV_Mas.m in Sources */,
 				1612807F1FAEA43B0098C86E /* FourthController.m in Sources */,
 				16612B9C1FB201380091D49A /* UIImage+JAExpand.m in Sources */,
 				162696F01F847EB90005E412 /* JAPlaceholderTableView.m in Sources */,
 				16FD84C81F82403D00DE8F82 /* main.m in Sources */,
 				16FD84BA1F82403D00DE8F82 /* AppDelegate.m in Sources */,
 				160CB07E1FBDD17000D1A360 /* PopMenuController.m in Sources */,
+				161BA0561FC98AD60013A889 /* View_tableView_MasController.m in Sources */,
 				1612808C1FAEBF7C0098C86E /* UIFont+JAExpand.m in Sources */,
 				161280A31FAF284E0098C86E /* BaseRequestService.m in Sources */,
 				16612BA51FB2051E0091D49A /* SamplePubuCCell.m in Sources */,
 				1612809C1FAEFDE30098C86E /* JAImagePickerController.m in Sources */,
+				161BA0501FC989EB0013A889 /* CodeSnippetsController.m in Sources */,
 				16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */,
 				161280AC1FAF2B470098C86E /* BRResponseMessage.m in Sources */,
 				160CB06F1FBB3AE600D1A360 /* SearchHistoryCCell.m in Sources */,
 				164942BA1FBC31F6005493AB /* GTShareItemCCell.m in Sources */,
 				161280991FAEFD990098C86E /* ApplicationService.m in Sources */,
+				161BA04C1FC9863F0013A889 /* jaCell_Mas.m in Sources */,
+				161BA0B31FCA8BA30013A889 /* GTFoodSpecialOffersTableViewCell.m in Sources */,
+				161BA0621FCA5EAD0013A889 /* jaCCell_Mas.m in Sources */,
 				16414C151FA0E19F003CD66C /* APImageCCell.m in Sources */,
 				16FAE5351F9AEDCA0035BCC3 /* CTCommentModel.m in Sources */,
+				161BA0BF1FCA929E0013A889 /* jaCollectionViewVC_GT.m in Sources */,
 				16FD84D81F8245BE00DE8F82 /* JABasePlaceholderView.m in Sources */,
 				1695BE401FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m in Sources */,
 				16FAE4FE1F9ACE670035BCC3 /* JALongPressMoveableTableView.m in Sources */,
@@ -1410,6 +1533,7 @@
 				16FD84E01F824B8000DE8F82 /* JAPlaceholderViewTestController.m in Sources */,
 				16FAE52F1F9AED460035BCC3 /* CTComment9PicsController.m in Sources */,
 				1695BE431FB7031D00A9DAB6 /* SearchBarandHistoryController.m in Sources */,
+				161BA0AA1FCA82B10013A889 /* jaTableViewVC_GT.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
 				1613BB9C1FC5CC7900B94D6F /* XiaoQLoginController.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,

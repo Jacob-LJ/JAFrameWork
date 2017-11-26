@@ -9,6 +9,7 @@
 #import "FirstController.h"
 
 //testDemo
+#import "CodeSnippetsController.h"
 #import "JAPlaceholderViewTestController.h"
 #import "MasonryDemoMianController.h"
 #import "LayoutDemoMianController.h"
@@ -70,8 +71,8 @@ static NSString * const MainCellID = @"MainCell";
     
     switch (indexPath.row) {
         case 0: {
-            //tableView 或 collectionView 的空状态占位视图
-            [self.navigationController pushViewController:[[JAPlaceholderViewTestController alloc] init] animated:YES];
+            //常用代码片段
+            [self.navigationController pushViewController:[[CodeSnippetsController alloc] init] animated:YES];
             break;
         }
         case 1: {
@@ -80,11 +81,16 @@ static NSString * const MainCellID = @"MainCell";
             break;
         }
         case 2: {
+            //tableView 或 collectionView 的空状态占位视图
+            [self.navigationController pushViewController:[[JAPlaceholderViewTestController alloc] init] animated:YES];
+            break;
+        }
+        case 3: {
             //布局相关知识点 Demo
             [self.navigationController pushViewController:[[LayoutDemoMianController alloc] init] animated:YES];
             break;
         }
-        case 3: {
+        case 4: {
 
             break;
         }
@@ -97,8 +103,9 @@ static NSString * const MainCellID = @"MainCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[
-                       @"tableView 或 collectionView 的空状态占位视图\nJAPlaceholderViewTestController",
+                       @"CodeSnippets",
                        @"控件集(masonry布局)\nMasonryDemoMianController",
+                       @"tableView 或 collectionView 的空状态占位视图\nJAPlaceholderViewTestController",
                        @"布局相关知识点\nLayoutDemoMianController",
                        ];
     }
