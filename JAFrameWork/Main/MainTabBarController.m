@@ -34,23 +34,22 @@
 }
 
 
-
 - (void)setUpSubControllers {
     //第一
      JABaseNavigationController *recommendNav = [[JABaseNavigationController alloc] initWithRootViewController:[[FirstController alloc] init]];
-    recommendNav.tabBarItem = [self tabBarItemWithTitle:@"推荐" image:@"tab_home" selectedImage:@"tab_home_selected"];
+    recommendNav.tabBarItem = [self tabBarItemWithTitle:@"推荐" image:@"home_tab_icon_discover_n" selectedImage:@"home_tab_icon_discover_s"];
     
     //
     JABaseNavigationController *discoveryNav = [[JABaseNavigationController alloc] initWithRootViewController:[[SecondController alloc] init]];
-    discoveryNav.tabBarItem = [self tabBarItemWithTitle:@"发现" image:@"tab_home" selectedImage:@"tab_home_selected"];
+    discoveryNav.tabBarItem = [self tabBarItemWithTitle:@"发现" image:@"home_tab_icon_menber_n" selectedImage:@"home_tab_icon_menber_s"];
     
     //
     JABaseNavigationController *depositNav = [[JABaseNavigationController alloc] initWithRootViewController:[[ThirdController alloc] init]];
-    depositNav.tabBarItem = [self tabBarItemWithTitle:@"充值" image:@"tab_home" selectedImage:@"tab_home_selected"];
+    depositNav.tabBarItem = [self tabBarItemWithTitle:@"充值" image:@"home_tab_icon_recharge_n" selectedImage:@"home_tab_icon_recharge_s"];
     
     //
     JABaseNavigationController *memberNav = [[JABaseNavigationController alloc] initWithRootViewController:[[FourthController alloc] init]];
-    memberNav.tabBarItem = [self tabBarItemWithTitle:@"会员" image:@"tab_home" selectedImage:@"tab_home_selected"];
+    memberNav.tabBarItem = [self tabBarItemWithTitle:@"会员" image:@"home_tab_icon_recommendation_n" selectedImage:@"home_tab_icon_recommendation_s"];
     
     self.viewControllers = @[recommendNav, discoveryNav, depositNav, memberNav];
 }

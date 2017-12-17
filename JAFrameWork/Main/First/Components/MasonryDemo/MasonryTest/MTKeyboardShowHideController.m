@@ -16,6 +16,13 @@
 
 @implementation MTKeyboardShowHideController
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.hidesBottomBarWhenPushed = YES;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -28,10 +35,10 @@
     [self.view addSubview:_textField];
     
     [_textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(20);
-        make.centerX.equalTo(self.view);
+        make.left.equalTo(self.view).offset(20);
+        make.right.equalTo(self.view).offset(-20);
+        make.bottom.equalTo(self.view);
         make.height.mas_equalTo(40);
-        make.bottom.mas_equalTo(0);
     }];
     
     // 注册键盘通知
@@ -71,7 +78,7 @@
 - (void)keyboardWillHideNotification:(NSNotification *)notification {
     
     // 获得键盘动画时长
-    NSDictionary *userInfo = [notification userInfo];
+//    NSDictionary *userInfo = [notification userInfo];
     //    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     
     // 修改为以前的约束（距下边距0）

@@ -91,6 +91,8 @@
 		16612BA81FB206AA0091D49A /* SamplePubuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 16612BA71FB206AA0091D49A /* SamplePubuLayout.m */; };
 		1695BE401FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1695BE3F1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m */; };
 		1695BE431FB7031D00A9DAB6 /* SearchBarandHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1695BE421FB7031D00A9DAB6 /* SearchBarandHistoryController.m */; };
+		16D576AA1FE6179A00234190 /* JACVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D576A91FE6179A00234190 /* JACVTabBarController.m */; };
+		16D576AD1FE61D3D00234190 /* JACVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D576AC1FE61D3D00234190 /* JACVTabBar.m */; };
 		16FAE4F41F9ACCCA0035BCC3 /* JABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */; };
 		16FAE4F71F9ACCD90035BCC3 /* JABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F61F9ACCD90035BCC3 /* JABaseViewController.m */; };
 		16FAE4FA1F9ACCF50035BCC3 /* JABaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FAE4F91F9ACCF50035BCC3 /* JABaseNavigationController.m */; };
@@ -312,6 +314,10 @@
 		1695BE3F1FB7030300A9DAB6 /* SearchSelectionAndHistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionAndHistoryView.m; sourceTree = "<group>"; };
 		1695BE411FB7031D00A9DAB6 /* SearchBarandHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBarandHistoryController.h; sourceTree = "<group>"; };
 		1695BE421FB7031D00A9DAB6 /* SearchBarandHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarandHistoryController.m; sourceTree = "<group>"; };
+		16D576A81FE6179A00234190 /* JACVTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACVTabBarController.h; sourceTree = "<group>"; };
+		16D576A91FE6179A00234190 /* JACVTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACVTabBarController.m; sourceTree = "<group>"; };
+		16D576AB1FE61D3D00234190 /* JACVTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACVTabBar.h; sourceTree = "<group>"; };
+		16D576AC1FE61D3D00234190 /* JACVTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACVTabBar.m; sourceTree = "<group>"; };
 		16FAE4F21F9ACCCA0035BCC3 /* JABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseTableViewController.h; sourceTree = "<group>"; };
 		16FAE4F31F9ACCCA0035BCC3 /* JABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JABaseTableViewController.m; sourceTree = "<group>"; };
 		16FAE4F51F9ACCD90035BCC3 /* JABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JABaseViewController.h; sourceTree = "<group>"; };
@@ -1106,6 +1112,7 @@
 			children = (
 				161280771FAEA4240098C86E /* SecondController.h */,
 				161280781FAEA4240098C86E /* SecondController.m */,
+				16D576A31FE6090200234190 /* Components */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -1126,6 +1133,41 @@
 				1612807E1FAEA43B0098C86E /* FourthController.m */,
 			);
 			path = Fourth;
+			sourceTree = "<group>";
+		};
+		16D576A31FE6090200234190 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				16D576A51FE6173900234190 /* TabBarCenterView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		16D576A51FE6173900234190 /* TabBarCenterView */ = {
+			isa = PBXGroup;
+			children = (
+				16D576A71FE6176700234190 /* Controller */,
+				16D576A61FE6175A00234190 /* View */,
+			);
+			path = TabBarCenterView;
+			sourceTree = "<group>";
+		};
+		16D576A61FE6175A00234190 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16D576AB1FE61D3D00234190 /* JACVTabBar.h */,
+				16D576AC1FE61D3D00234190 /* JACVTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16D576A71FE6176700234190 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16D576A81FE6179A00234190 /* JACVTabBarController.h */,
+				16D576A91FE6179A00234190 /* JACVTabBarController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		16FAE4FB1F9ACE120035BCC3 /* LongPressMoveableTableView */ = {
@@ -1470,6 +1512,7 @@
 				160CB08B1FBDDA1600D1A360 /* MenuModel.m in Sources */,
 				161BA05C1FCA56270013A889 /* View_MasController.m in Sources */,
 				160CB08C1FBDDA1600D1A360 /* MenuTableViewCell.m in Sources */,
+				16D576AD1FE61D3D00234190 /* JACVTabBar.m in Sources */,
 				160CB08D1FBDDA1600D1A360 /* UIView+AdjustFrame.m in Sources */,
 				160CB0721FBB3BA900D1A360 /* HIstoryAlignmentLayout.m in Sources */,
 				161BA0591FCA55180013A889 /* jaView_Mas.m in Sources */,
@@ -1536,6 +1579,7 @@
 				161BA0AA1FCA82B10013A889 /* jaTableViewVC_GT.m in Sources */,
 				16FAE5051F9AD0660035BCC3 /* JAMoveableCollectonViewBaseCell.m in Sources */,
 				1613BB9C1FC5CC7900B94D6F /* XiaoQLoginController.m in Sources */,
+				16D576AA1FE6179A00234190 /* JACVTabBarController.m in Sources */,
 				161B5A9F1F8250770062D34F /* UICollectionView+JAPlaceholderView.m in Sources */,
 				164942B91FBC31F6005493AB /* GTShareActionSheetCell.m in Sources */,
 				164942B81FBC31F6005493AB /* GTShareActionSheet.m in Sources */,
